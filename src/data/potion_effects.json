@@ -1,0 +1,32 @@
+[
+    {
+        "id": "invisibility",
+        "level": 2,
+        "name": "Invisibilidade",
+        "description": "O usuário fica invisível por 1 hora ou até que ele ataque ou conjure uma magia."
+    },
+    {
+        "id": "resistance_fire",
+        "level": 1,
+        "name": "Resistência a Fogo",
+        "description": "O usuário Resiste a dano de Fogo por 1 hora."
+    },
+    {
+        "id": "resistance_cold",
+        "level": 1,
+        "name": "Resistência a Frio",
+        "description": "O usuário Resiste a dano de Frio por 1 hora."
+    },
+    {
+        "id": "time_stop",
+        "level": 9,
+        "name": "Parar o Tempo",
+        "description": "Por 1d4+1 rodadas, o fluxo do tempo congela para todos exceto o usuário."
+    },
+    {
+        "id": "blink",
+        "level": 3,
+        "name": "Piscar",
+        "description": "Por 1 minuto, a cada rodada o usuário alterna entre o plano material e o plano etéreo."
+    }
+]
