@@ -1,0 +1,20 @@
+{
+    "potion_name_scheme": "{{archetype}} {{firstAdjective: }}de {{nouns}} {{adjectives:}}",
+    "potion_archetypes": [
+        {
+            "id": "potion",
+            "text": "Poção",
+            "weight": 150
+        },
+        {
+            "id": "elixir",
+            "text": "Elixir",
+            "weight": 100
+        },
+        {
+            "id": "solution",
+            "text": "Solução",
+            "weight": 50
+        }
+    ]
+}

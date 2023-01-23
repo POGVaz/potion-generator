@@ -3,13 +3,15 @@
         "id": "vulnerability_cold",
         "category": "very_weak",
         "name": "Vulnerabilidade a Frio",
-        "description": "O usuário fica vulnerável a dano de Frio por 1 hora."
+        "description": "O usuário fica vulnerável a dano de Frio por 1 hora.",
+        "adjective": "de vulnerabilidade ao frio"
     },
     {
         "id": "vulnerability_fire",
         "category": "very_weak",
         "name": "Vulnerabilidade a Fogo",
-        "description": "O usuário fica vulnerável a dano de Fogo por 1 hora."
+        "description": "O usuário fica vulnerável a dano de Fogo por 1 hora.",
+        "adjective": "de vulnerabilidade ao fogo"
     },
 
     
@@ -17,30 +19,35 @@
         "id": "minor_ability_reduction_strength",
         "category": "very_weak",
         "name": "Redução de Força Mínima",
-        "description": "O usuário tem sua força reduzida em -1d4."
+        "description": "O usuário tem sua força reduzida em -1d4.",
+        "adjective": "de redução de Força mínima"
     },
     {
         "id": "small_ability_reduction_strength",
         "category": "weak",
         "name": "Redução de Força Menor",
-        "description": "O usuário tem sua força reduzida em -1d6."
+        "description": "O usuário tem sua força reduzida em -1d6.",
+        "adjective": "de redução de Força menor"
     },
     {
         "id": "ability_reduction_strength",
         "category": "medium",
         "name": "Redução de Força",
-        "description": "O usuário tem sua força reduzida em -2d4."
+        "description": "O usuário tem sua força reduzida em -2d4.",
+        "adjective": "de redução de Força"
     },
     {
         "id": "great_ability_reduction_strength",
         "category": "strong",
         "name": "Redução de Força Maior",
-        "description": "O usuário tem sua força reduzida em -2d6."
+        "description": "O usuário tem sua força reduzida em -2d6.",
+        "adjective": "de redução de Força maior"
     },
     {
         "id": "major_ability_reduction_strength",
         "category": "very_strong",
         "name": "Redução de Força Máxima",
-        "description": "O usuário tem sua força reduzida em -1d4."
+        "description": "O usuário tem sua força reduzida em -2d8.",
+        "adjective": "de redução de Força máxima"
     }
 ]

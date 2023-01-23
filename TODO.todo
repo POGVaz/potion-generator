@@ -1,0 +1,15 @@
+Next Steps:
+    ☐ Make a PotionViwer component
+    ☐ Make a PotionMaker component (with form submission)
+    ☐ First deploy
+    ☐ Make it pretty
+    ☐ Add description generation
+    ☐ Make a SavedPotions gallery
+
+Known issues:
+    ☐ Potion cost gets too low with multiple effects
+    ✔ Potions with duplicated effects @done(23-01-22 23:59)
+    ✔ Potions with duplicated side effects @done(23-01-22 23:59)
+    ☐ If there are too little effects/side effects for a given level/category, it cannot create a potion and yields an error
+    ☐ Potions with incompatible side effects for their effects (e.g. heal and damage)
+    ☐ Potions with icompatible side effects (e.g. reduce strngth and reduce strenght)

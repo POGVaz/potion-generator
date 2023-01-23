@@ -14,7 +14,7 @@ class PotionEffect {
     get basePrice() {
         return (
             this.level?
-                effects_cost[this.level] || (25 - 20 * this.level + this.level^2) :
+                effects_cost[this.level] || (25 - 20 * this.level + this.level**2) :
                 this.level
         );
     }
@@ -25,11 +25,12 @@ class PotionEffect {
 }
 
 class PotionSideEffect {
-    constructor({id, category, name, description}) {
+    constructor({ id, category, name, description, adjective }) {
         this.id = id;
         this.category = category;
         this.name = name;
         this.description = description;
+        this.adjective = adjective || name;
     }
 
     get costModifier() {
