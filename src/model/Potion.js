@@ -3,60 +3,22 @@
 import parse from 'json-templates';
 import getRandom from 'random-weight';
 
-import potion_descriptions from '../data/potion_descriptions.json';
-import effects_cost from '../data/potion_effects_cost.json';
-import side_effects_cost from '../data/potion_side_effects_modifier.json';
-
-import { convertArrayToText, getRandomFromArray } from '../utils';
+import { convertArrayToText } from '../utils';
 import { PotionEffect, PotionSideEffect } from './PotionEffect';
 
 const EFFECTS_MULTIPLIER = 1.5;
 
 class PotionFactory {
 
-    createPotion(potionBlueprint, possibleEffects, possibleSideEffects) {
-
-        //Select random effects:
-        const effects = [];
-        potionBlueprint.effectLevels.forEach((level) => {
-            let effectData = getRandomFromArray(
-                possibleEffects.filter((effect) => {
-                    return (
-                        //Is the level we are looking for
-                        effect.level === level &&
-                        //Has not been used yet
-                        !effects.some((previousEffect) => effect.id === previousEffect.id)
-                    );
-                })
-            )
-            effects.push(new PotionEffect(effectData));
-        });
-
-        //Select random side effects:
-        const sideEffects = [];
-        potionBlueprint.sideEffectCategories.forEach((category) => {
-            sideEffects.push(
-                new PotionSideEffect(
-                    getRandomFromArray(
-                        possibleSideEffects.filter((sideEffect) => {
-                            return (
-                                //Is the category we are looking for
-                                sideEffect.category === category &&
-                                //Has not been used yet
-                                !sideEffects.some((previousSideEffect) => sideEffect.id === previousSideEffect.id)
-                            );
-                        })
-                    )
-                )
-            );
-        });
-
+    createPotion(potionBlueprint, effects, sideEffects) {
         //Make the potion:
         return new Potion({ blueprint: potionBlueprint, effects, sideEffects });
     }
 }
 
 class Potion {
+    static potionDescription;
+
     #name;
 
     constructor(
@@ -79,11 +41,11 @@ class Potion {
     }
 
     generateName() {
-        const template = parse(potion_descriptions.potion_name_scheme);
+        const template = parse(Potion.potionDescription.potion_name_scheme);
 
         //Get a random potion archetype:
         const potionArchetype = getRandom(
-            potion_descriptions.potion_archetypes,
+            Potion.potionDescription.potion_archetypes,
             (archetype) => archetype.weight
         ).text;
 
@@ -138,14 +100,14 @@ class PotionBlueprint {
         //Get base value from effects
         const baseValue = this.effectLevels.reduce(
             (accumulatedValue, level) => {
-                return accumulatedValue + effects_cost[level];
+                return accumulatedValue + PotionEffect.effectsCost[level];
             }, 0
         ) * EFFECTS_MULTIPLIER**(this.effectLevels.length - 1);
 
         //Get modifier from Side Effects
         const modifier = this.sideEffectCategories.reduce(
             (accumulatedValue, category) => {
-                return accumulatedValue * side_effects_cost[category];
+                return accumulatedValue * PotionSideEffect.sideEffectsCost[category];
             }, 1
         );
 

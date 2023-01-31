@@ -4,6 +4,8 @@ import effects_cost from "../data/potion_effects_cost.json";
 import side_effects_modifier from "../data/potion_side_effects_modifier.json";
 
 class PotionEffect {
+    static effectsCost;
+
     constructor({id, level, name, description}) {
         this.id = id;
         this.level = level;
@@ -25,6 +27,8 @@ class PotionEffect {
 }
 
 class PotionSideEffect {
+    static sideEffectsCost;
+
     constructor({ id, category, name, description, adjective }) {
         this.id = id;
         this.category = category;

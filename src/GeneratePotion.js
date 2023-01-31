@@ -2,6 +2,7 @@
 
 import { getCombinationsWithRepetition, getRandomFromArray } from './utils';
 import { PotionBlueprint, PotionFactory } from './model/Potion';
+import { PotionEffect, PotionSideEffect } from './model/PotionEffect';
 
 function generatePotion({
     minEffects = 1, maxEffects = 2, possibleEffects = [],
@@ -54,9 +55,45 @@ function generatePotion({
     })
 
     //Create a new potion with a random blueprint:
-    const blueprint = getRandomFromArray(possibleBlueprints);
+    const potionBlueprint = getRandomFromArray(possibleBlueprints);
+
+    //Select random effects:
+    const effects = [];
+    potionBlueprint.effectLevels.forEach((level) => {
+        let effectData = getRandomFromArray(
+            possibleEffects.filter((effect) => {
+                return (
+                    //Is the level we are looking for
+                    effect.level === level &&
+                    //Has not been used yet
+                    !effects.some((previousEffect) => effect.id === previousEffect.id)
+                );
+            })
+        )
+        effects.push(new PotionEffect(effectData));
+    });
+
+    //Select random side effects:
+    const sideEffects = [];
+    potionBlueprint.sideEffectCategories.forEach((category) => {
+        sideEffects.push(
+            new PotionSideEffect(
+                getRandomFromArray(
+                    possibleSideEffects.filter((sideEffect) => {
+                        return (
+                            //Is the category we are looking for
+                            sideEffect.category === category &&
+                            //Has not been used yet
+                            !sideEffects.some((previousSideEffect) => sideEffect.id === previousSideEffect.id)
+                        );
+                    })
+                )
+            )
+        );
+    });
+
     const potionFactory = new PotionFactory();
-    return potionFactory.createPotion(blueprint, possibleEffects, possibleSideEffects);
+    return potionFactory.createPotion(potionBlueprint, effects, sideEffects);
 }
 
 function getAllCombinations(array, min, max) {
