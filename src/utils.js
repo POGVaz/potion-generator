@@ -41,8 +41,28 @@ function getRandomFromArray(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
+function shuffleArray(array) {
+    const shuffledArray = [...array];
+    let currentIndex = array.length, randomIndex;
+
+    // While there remain elements to shuffle.
+    while (currentIndex !== 0) {
+
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [shuffledArray[currentIndex], shuffledArray[randomIndex]] = [
+            shuffledArray[randomIndex], shuffledArray[currentIndex]];
+    }
+
+    return shuffledArray;
+}
+
 export {
     convertArrayToText,
     getCombinationsWithRepetition,
-    getRandomFromArray
+    getRandomFromArray,
+    shuffleArray
 }

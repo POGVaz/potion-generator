@@ -29,12 +29,14 @@ class PotionEffect {
 class PotionSideEffect {
     static sideEffectsCost;
 
-    constructor({ id, category, name, description, adjective }) {
+    constructor({ id, category, name, description, adjective, type = null, incompatible_with = [] }) {
         this.id = id;
         this.category = category;
+        this.type = type;
         this.name = name;
         this.description = description;
         this.adjective = adjective || name;
+        this.incompatibleWith = incompatible_with;
     }
 
     get costModifier() {

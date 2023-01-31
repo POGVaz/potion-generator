@@ -14,15 +14,20 @@ function App() {
   Potion.potionDescription = potion_descriptions;
 
   for (let index = 0; index < 10; index++) {
-    let potion = generatePotion({
-      minEffects: 1,
-      maxEffects: 1,
-      minSideEffects: 1,
-      maxSideEffects: 1,
-      possibleEffects: [effects[1], effects[2]],
-      possibleSideEffects: side_effects,
-    });
-    console.log(potion.name, ' - ', potion.value);
+    try {
+      let potion = generatePotion({
+        minEffects: 1,
+        maxEffects: 2,
+        minSideEffects: 1,
+        maxSideEffects: 2,
+        possibleEffects: [effects[0]],
+        possibleSideEffects: [side_effects[0], side_effects[1]],
+      });
+      console.log(potion.name, ' - ', potion.value);
+    } catch (error) {
+      console.log(error);
+      throw error
+    }
   }
 
   return (

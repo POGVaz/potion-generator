@@ -10,6 +10,6 @@ Known issues:
     ☐ Potion cost gets too low with multiple effects
     ✔ Potions with duplicated effects @done(23-01-22 23:59)
     ✔ Potions with duplicated side effects @done(23-01-22 23:59)
-    ☐ If there are too little effects/side effects for a given level/category, it cannot create a potion and yields an error
-    ☐ Potions with incompatible side effects for their effects (e.g. heal and damage)
-    ☐ Potions with icompatible side effects (e.g. reduce strngth and reduce strenght)
+    ✔ If there are too little effects/side effects for a given level/category, it cannot create a potion and yields an error @done(23-01-31 00:18)
+    ✔ Potions with incompatible side effects for their effects (e.g. heal and damage) @done(23-01-31 00:18)
+    ✔ Potions with icompatible side effects (e.g. reduce strngth and reduce strenght) @done(23-01-31 00:18)

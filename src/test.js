@@ -27,3 +27,4 @@ console.log(getRandomFromArray(array));
 // console.log(combinations(newArray, 1, 2).reduce((accumulated, current) => {return accumulated.includes(current)? accumulated : [...accumulated, current]}, []));
 // console.log([['apple', 'lemon']].flat().includes(['apple', 'lemon'].join()));
 
+console.log(null === null);
