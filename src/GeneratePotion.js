@@ -66,7 +66,7 @@ function generatePotion({
             newPotion = createPotionFromBlueprint(blueprint, possibleEffects, possibleSideEffects);
             return true;
         } catch (error) {
-            console.log(error);
+            // console.log(error);
             return false;
         }
     });

@@ -27,7 +27,7 @@
         "type": "reduction_strength",
         "name": "Redução de Força Mínima",
         "description": "O usuário tem sua força reduzida em -1d4.",
-        "adjective": "de redução de Força mínima"
+        "adjective": "enfraquecedora mínima"
     },
     {
         "id": "small_ability_reduction_strength",
@@ -35,7 +35,7 @@
         "type": "reduction_strength",
         "name": "Redução de Força Menor",
         "description": "O usuário tem sua força reduzida em -1d6.",
-        "adjective": "de redução de Força menor"
+        "adjective": "enfraquecedora menor"
     },
     {
         "id": "ability_reduction_strength",
@@ -43,7 +43,7 @@
         "type": "reduction_strength",
         "name": "Redução de Força",
         "description": "O usuário tem sua força reduzida em -2d4.",
-        "adjective": "de redução de Força"
+        "adjective": "enfraquecedora"
     },
     {
         "id": "great_ability_reduction_strength",
@@ -51,7 +51,7 @@
         "type": "reduction_strength",
         "name": "Redução de Força Maior",
         "description": "O usuário tem sua força reduzida em -2d6.",
-        "adjective": "de redução de Força maior"
+        "adjective": "enfraquecedora maior"
     },
     {
         "id": "major_ability_reduction_strength",
@@ -59,6 +59,6 @@
         "type": "reduction_strength",
         "name": "Redução de Força Máxima",
         "description": "O usuário tem sua força reduzida em -2d8.",
-        "adjective": "de redução de Força máxima"
+        "adjective": "enfraquecedora máxima"
     }
 ]

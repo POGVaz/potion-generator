@@ -1,5 +1,6 @@
 import './App.css';
 import {build} from './builder/DataBuilder';
+import PotionViewer from './components/PotionViewer';
 import EffectTables from './components/tables/EffectTables';
 
 import { generatePotion } from './GeneratePotion';
@@ -13,16 +14,18 @@ function App() {
   PotionSideEffect.sideEffectsCost = side_effects_cost;
   Potion.potionDescription = potion_descriptions;
 
+  const potions = [];
   for (let index = 0; index < 10; index++) {
     try {
       let potion = generatePotion({
         minEffects: 1,
-        maxEffects: 2,
+        maxEffects: 1,
         minSideEffects: 1,
         maxSideEffects: 2,
-        possibleEffects: [effects[0]],
-        possibleSideEffects: [side_effects[0], side_effects[1]],
+        possibleEffects: effects,
+        possibleSideEffects: side_effects,
       });
+      potions.push(potion);
       console.log(potion.name, ' - ', potion.value);
     } catch (error) {
       console.log(error);
@@ -32,6 +35,11 @@ function App() {
 
   return (
     <div className="App">
+
+      <PotionViewer
+        potion={potions[0]}
+      />
+
       <EffectTables 
         effectsList={effects}
         sideEffectsList={side_effects}

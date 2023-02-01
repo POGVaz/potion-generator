@@ -1,10 +1,11 @@
 Next Steps:
-    ☐ Make a PotionViwer component
-    ☐ Make a PotionMaker component (with form submission)
-    ☐ First deploy
-    ☐ Make it pretty
-    ☐ Add description generation
-    ☐ Make a SavedPotions gallery
+    ✔ 1 - Make a PotionViwer component @done(23-01-31 22:56)
+    ☐ 2 - Make a PotionMaker component (with form submission)
+    ☐ 3 - First deploy
+    ☐ 4 - Make it pretty (material ui?)
+    ☐ 5 - Add description generation
+    ☐ 6 - Make a SavedPotions gallery
+    ☐ 7 - Add ReadMe and make repo public (also add more people)
 
 Known issues:
     ☐ Potion cost gets too low with multiple effects

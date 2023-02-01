@@ -1,8 +1,5 @@
 'use-strict'
 
-import effects_cost from "../data/potion_effects_cost.json";
-import side_effects_modifier from "../data/potion_side_effects_modifier.json";
-
 class PotionEffect {
     static effectsCost;
 
@@ -16,7 +13,7 @@ class PotionEffect {
     get basePrice() {
         return (
             this.level?
-                effects_cost[this.level] || (25 - 20 * this.level + this.level**2) :
+                PotionEffect.effectsCost[this.level] || (25 - 20 * this.level + this.level**2) :
                 this.level
         );
     }
@@ -42,7 +39,7 @@ class PotionSideEffect {
     get costModifier() {
         return (
             this.category?
-                side_effects_modifier[this.category] || 0.10 :
+                PotionSideEffect.sideEffectsCost[this.category] || 0.10 :
                 0.10
         );
     }
