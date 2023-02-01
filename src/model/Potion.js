@@ -3,7 +3,8 @@
 import parse from 'json-templates';
 import getRandom from 'random-weight';
 
-import { convertArrayToText } from '../utils';
+import { potionImages } from '../builder/ImageBuilder';
+import { convertArrayToText, getRandomFromArray } from '../utils';
 import { PotionEffect, PotionSideEffect } from './PotionEffect';
 
 const EFFECTS_MULTIPLIER = 1.5;
@@ -20,6 +21,7 @@ class Potion {
     static potionDescription;
 
     #name;
+    #image;
 
     constructor(
         {blueprint, effects = [], sideEffects = []}
@@ -31,6 +33,12 @@ class Potion {
 
     get value() {
         return Math.round(this.blueprint.value);
+    }
+
+    get level() {
+        return this.effects.reduce((accumulatedLevel, effect) => {
+            return (accumulatedLevel += effect.level);
+        }, 0);
     }
 
     get name() {
@@ -85,6 +93,17 @@ class Potion {
         return template({
             archetype: potionArchetype, nouns, firstAdjective, adjectives
         });
+    }
+
+    get image() {
+        return (this.#image ?
+            this.#image :
+            this.#image = this.generateImage()
+        );
+    }
+
+    generateImage() {
+        return getRandomFromArray(potionImages);
     }
 }
 
