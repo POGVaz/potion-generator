@@ -7,7 +7,7 @@ import { PotionEffect, PotionSideEffect } from './model/PotionEffect';
 function generatePotion({
     minEffects = 1, maxEffects = 2, possibleEffects = [],
     minSideEffects = 0, maxSideEffects = 5, possibleSideEffects = [],
-    minPrice = 0, maxPrice = Infinity, price = null,
+    minPrice = 0, maxPrice = Infinity, price = null, nullPotion = false
 }) {
 
     //Get available levels from possible effects

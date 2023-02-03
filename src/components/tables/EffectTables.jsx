@@ -53,10 +53,13 @@ function renderMainEffectsTable(effects) {
 
   //return the table rendered
   return (
-    <EnhancedTable
-      tableData={effects}
-      tableColumns={columns}
-    />
+    <div>
+      <h2>Potion Effects</h2>
+      <EnhancedTable
+        tableData={effects}
+        tableColumns={columns}
+      />
+    </div>
   )
 }
 
@@ -103,10 +106,13 @@ function renderSideEffectsTable(effects) {
 
   //return the table rendered
   return (
-    <EnhancedTable
-      tableData={effects}
-      tableColumns={columns}
-    />
+    <div>
+      <h2>Potion Side Effects</h2>
+      <EnhancedTable
+        tableData={effects}
+        tableColumns={columns}
+      />
+    </div>
   )
 }
 

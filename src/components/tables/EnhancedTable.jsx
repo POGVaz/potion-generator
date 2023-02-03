@@ -12,7 +12,7 @@ function fuzzyTextFilterFn(rows, id, filterValue) {
 // Let the table remove the filter if the string is empty
 fuzzyTextFilterFn.autoRemove = val => !val
 
-function EnhancedTable({tableData, tableColumns}) {
+function EnhancedTable({ tableData, tableColumns, startSelected = true }) {
 
   const data = React.useMemo(
     () => tableData,
@@ -98,7 +98,12 @@ function EnhancedTable({tableData, tableColumns}) {
     visibleColumns,
     preGlobalFilteredRows,
     setGlobalFilter,
-  } = tableInstance
+  } = tableInstance;
+
+  React.useEffect(() => {
+    if (startSelected === true)
+      tableInstance.toggleAllRowsSelected(true);
+  }, [startSelected, tableInstance]);
 
   return (
     // apply the table props
