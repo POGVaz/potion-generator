@@ -3,25 +3,24 @@ import EnhancedTable from "./EnhancedTable";
 import { SelectColumnFilter, NumberRangeColumnFilter } from "./TableFilters";
 
 
-function EffectTables({effectsList, sideEffectsList}) {
-
+function EffectTables({effectsList, sideEffectsList, onEffectsChange, onSideEffectsChange}) {
   return (
     <div>
       <div>
         {
-          renderMainEffectsTable(effectsList)
+          renderMainEffectsTable(effectsList, onEffectsChange)
         }
       </div>
       <div>
         {
-          renderSideEffectsTable(sideEffectsList)
+          renderSideEffectsTable(sideEffectsList, onSideEffectsChange)
         }
       </div>
     </div>
   )
 }
 
-function renderMainEffectsTable(effects) {
+function renderMainEffectsTable(effects, onChange) {
 
   //Define columns for the table
   const columns = [
@@ -58,12 +57,13 @@ function renderMainEffectsTable(effects) {
       <EnhancedTable
         tableData={effects}
         tableColumns={columns}
+        onRowSelect={onChange}
       />
     </div>
   )
 }
 
-function renderSideEffectsTable(effects) {
+function renderSideEffectsTable(effects, onChange) {
 
   //Define columns for the table
   const columns = [
@@ -111,6 +111,7 @@ function renderSideEffectsTable(effects) {
       <EnhancedTable
         tableData={effects}
         tableColumns={columns}
+        onRowSelect={onChange}
       />
     </div>
   )

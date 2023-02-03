@@ -1,24 +1,43 @@
-import React, {useState} from "react";
+import React, { useRef, useState } from "react";
 
 import PotionViewer from "./PotionViewer";
 import PotionMakerForm from "./PotionMakerForm";
 import EffectTables from "./tables/EffectTables";
 import { generatePotion } from "../GeneratePotion";
 
-const PotionMaker = ({ effects, side_effects }) => {
-  
-  let potion = null;
-  
-  const [state, setState] = useState({ potion });
+const PotionMaker = ({ effects = [], side_effects = [] }) => {
 
-  const handleGenerate = (state) => {
-    potion = generatePotion({
-      ...state,
-      possibleEffects: effects,
-      possibleSideEffects: side_effects,
-    });
-    setState({ potion })
+  const [potion, setPotion] = useState( null );
+  const effectsRef = useRef(effects);
+  const sideEffectsRef = useRef(side_effects);
+
+  const handleGenerate = (formData) => {
+    try {
+      const potion = generatePotion({
+        ...formData,
+        possibleEffects: effectsRef.current,
+        possibleSideEffects: sideEffectsRef.current,
+      });
+      setPotion( potion );
+    }
+    catch(error){
+      setPotion( null );
+      throw error;
+    }
   };
+
+
+  const handleEffectsSelectionChange = (effectRows) => {
+      effectsRef.current = effectRows.map((rowData) => {
+        return rowData.original;
+      });;
+  };
+
+  const handleSideEffectsSelectionChange = (sideEffectRows) => {
+    sideEffectsRef.current = sideEffectRows.map((rowData) => {
+      return rowData.original;
+    });
+  }
 
   return (
     <div className="PotionMaker">
@@ -28,12 +47,14 @@ const PotionMaker = ({ effects, side_effects }) => {
       />
 
       <PotionViewer
-        potion={state.potion}
+        potion={potion}
       />
 
       <EffectTables
         effectsList={effects}
         sideEffectsList={side_effects}
+        onEffectsChange={handleEffectsSelectionChange}
+        onSideEffectsChange={handleSideEffectsSelectionChange}
       />
     </div>
   );

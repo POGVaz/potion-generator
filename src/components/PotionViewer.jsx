@@ -25,7 +25,7 @@ class PotionViewer extends React.Component {
       });
       
       return (
-        <div style={{"text-align": "center"}}>
+        <div style={{"textAlign": "center"}}>
           <h3 className="potion-name">
             {this.props.potion.name}
           </h3>
