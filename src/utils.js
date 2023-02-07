@@ -21,6 +21,8 @@ function convertArrayToText(arr) {
 }
 
 function getCombinationsWithRepetition(arr, combLen) {
+    combLen = Number(combLen);
+
     if (combLen === void 0) combLen = arr.length; // Length of the combinations
     let data = Array(combLen),             // Used to store state
         results = [];                // Array of results

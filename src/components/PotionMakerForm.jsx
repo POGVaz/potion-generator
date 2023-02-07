@@ -12,11 +12,12 @@ const initialValues = {
 const PotionMakerForm = ({ onSubmit }) => {
   const [state, setState] = useState(initialValues);
 
+  //Use only for Number changes on the form
   const handleChange = e => {
     let { value, name } = e.target;
     setState({
       ...state,
-      [name]: value,
+      [name]: Number(value),
     });
   };
 
