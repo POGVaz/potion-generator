@@ -7,8 +7,17 @@ import { PotionEffect, PotionSideEffect } from './model/PotionEffect';
 function generatePotion({
     minEffects = 1, maxEffects = 2, possibleEffects = [],
     minSideEffects = 0, maxSideEffects = 5, possibleSideEffects = [],
-    minPrice = 0, maxPrice = Infinity, price = null, nullPotion = false
+    minPrice = 0, maxPrice = Infinity, price = null
 }) {
+
+    if (minEffects > maxEffects) {
+        console.log("Not enough effects to generate potion")
+        throw new Error("Not enough effects to generate potion");
+    }
+    if (minSideEffects > maxSideEffects) {
+        console.log("Not enough side effects to generate potion")
+        throw new Error("Not enough side effects to generate potion");
+    }
 
     //Get available levels from possible effects
     const possibleLevels = possibleEffects.reduce(
@@ -55,7 +64,6 @@ function generatePotion({
     });
 
     //Attempts to create a new potion with a blueprint
-
     //Shuffle the blueprint array so we can use the next option if the first is bad
     const shuffledBlueprints = shuffleArray(possibleBlueprints);
 
@@ -74,7 +82,7 @@ function generatePotion({
     if (newPotion)
         return newPotion;
     else
-        throw new Error("Could not generate potion");
+        throw new Error("Could not generate potion with the given parameters");
 }
 
 function getAllCombinations(array, min, max) {
