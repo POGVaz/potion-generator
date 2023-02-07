@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/potion-generator/static/css/main.0f6f3966.css",
+    "main.js": "/potion-generator/static/js/main.1e278b4f.js",
+    "static/media/potions (4).jpg": "/potion-generator/static/media/potions (4).4048201aca44b5f1d966.jpg",
+    "static/media/potions (5).jpg": "/potion-generator/static/media/potions (5).896717ec7e7c9554add5.jpg",
+    "static/media/potions (10).jpg": "/potion-generator/static/media/potions (10).763c786fcccc81e9ebff.jpg",
+    "static/media/potions (6).jpg": "/potion-generator/static/media/potions (6).1fb45c5d793458bf8f86.jpg",
+    "static/media/potions (7).jpg": "/potion-generator/static/media/potions (7).9fab29d9ef35e06f3b4e.jpg",
+    "static/media/potions (3).jpg": "/potion-generator/static/media/potions (3).1eb65041aeee75991332.jpg",
+    "static/media/potions (9).jpg": "/potion-generator/static/media/potions (9).a293a059d75fee98668f.jpg",
+    "static/media/potions (2).jpg": "/potion-generator/static/media/potions (2).3e08fc83d10a460d7057.jpg",
+    "static/media/potions (1).jpg": "/potion-generator/static/media/potions (1).3f90e8aea2fff10bec70.jpg",
+    "static/media/potions (8).jpg": "/potion-generator/static/media/potions (8).b63c0abe4132ce8ffc29.jpg",
+    "static/media/mortar-pestle.mp4": "/potion-generator/static/media/mortar-pestle.7e652cf7fa6726f7620b.mp4",
+    "index.html": "/potion-generator/index.html",
+    "main.0f6f3966.css.map": "/potion-generator/static/css/main.0f6f3966.css.map",
+    "main.1e278b4f.js.map": "/potion-generator/static/js/main.1e278b4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f6f3966.css",
+    "static/js/main.1e278b4f.js"
+  ]
+}
