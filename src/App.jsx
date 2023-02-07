@@ -18,6 +18,10 @@ function App() {
         effects = {effects}
         side_effects = {side_effects}
       />
+
+      <footer>
+        medium magic potion by Fritz Duggan from <a href="https://thenounproject.com/browse/icons/term/medium-magic-potion/" target="_blank" rel="noreferrer" title="medium magic potion Icons">Noun Project</a>
+      </footer>
     </div>
   );
 }
