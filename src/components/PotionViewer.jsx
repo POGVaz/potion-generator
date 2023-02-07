@@ -1,4 +1,5 @@
 import React from "react";
+import MortarPestleAnimation from "../assets/animations/mortar-pestle.mp4"
 
 class PotionViewer extends React.Component {
 
@@ -46,8 +47,32 @@ class PotionViewer extends React.Component {
         </div>
       );
     }
+    else if (this.props.error)
+      return (
+        <div style={{ "textAlign": "center" }}>
+          <p style={{ "color": "red" }}>{this.props.error}</p>
+          <video
+            src={MortarPestleAnimation}
+            alt="Mortar and Pestle idle animation"
+            width="300" height="300"
+            autoPlay muted loop
+          >
+          </video>
+        </div>
+      );
     else
-      return ;
+      return (
+        <div style={{ "textAlign": "center" }}>
+          <video
+            src={MortarPestleAnimation}
+            alt="Mortar and Pestle idle animation"
+            width="300" height="300"
+            autoPlay muted loop
+            >
+              
+          </video>
+        </div>
+      );
   
   }
 

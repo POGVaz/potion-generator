@@ -1,6 +1,6 @@
 Next Steps:
     ✔ 1 - Make a PotionViwer component @done(23-01-31 22:56)
-    ☐ 2 - Make a PotionMaker component (with form submission)
+    ✔ 2 - Make a PotionMaker component (with form submission) @done(23-02-03 20:16)
     ☐ 3 - First deploy
     ☐ 4 - Make it pretty (material ui?)
     ☐ 5 - Add description generation

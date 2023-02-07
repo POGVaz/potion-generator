@@ -8,6 +8,7 @@ import { generatePotion } from "../GeneratePotion";
 const PotionMaker = ({ effects = [], side_effects = [] }) => {
 
   const [potion, setPotion] = useState( null );
+  const [potionError, setPotionError] = useState( null );
   const effectsRef = useRef(effects);
   const sideEffectsRef = useRef(side_effects);
 
@@ -22,7 +23,8 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
     }
     catch(error){
       setPotion( null );
-      throw error;
+      setPotionError(error.message);
+      // throw error;
     }
   };
 
@@ -48,6 +50,7 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
 
       <PotionViewer
         potion={potion}
+        error={potionError}
       />
 
       <EffectTables
