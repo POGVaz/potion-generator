@@ -28,7 +28,7 @@ const PotionMakerForm = ({ onSubmit }) => {
   return (
     <div>
       <label htmlFor="price">Price</label>
-      <div id="priceInput">
+      <div id="priceInput" style={{ "textAlign": "center" }}>
         <label htmlFor="minPrice">Min</label>
         <input
           id="minPrice"
@@ -56,7 +56,7 @@ const PotionMakerForm = ({ onSubmit }) => {
       </div>
 
       <label htmlFor="effects">Potion Effects</label>
-      <div id="effectsInput">
+      <div id="effectsInput" style={{ "textAlign": "center" }}>
         <label htmlFor="minEffects">Min</label>
         <input
           id="minEffects"
@@ -83,7 +83,7 @@ const PotionMakerForm = ({ onSubmit }) => {
       </div>
 
       <label htmlFor="sideEffects">Potion Side Effects</label>
-      <div id="sideEffectsInput">
+      <div id="sideEffectsInput" style={{ "textAlign": "center" }}>
         <label htmlFor="minSideEffects">Min</label>
         <input
           id="minSideEffects"
@@ -110,7 +110,7 @@ const PotionMakerForm = ({ onSubmit }) => {
       </div>
 
 
-      <div className="center">
+      <div className="GenerateButton" style={{ "textAlign": "center" }}>
         <button
           id="generate-potion-btn"
           className="generate-btn"

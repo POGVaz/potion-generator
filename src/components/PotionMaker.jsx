@@ -42,16 +42,18 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
   }
 
   return (
-    <div className="PotionMaker">
+    <div className="PotionMaker" style={{ "display": "flex" }}>
 
-      <PotionMakerForm
-        onSubmit = {handleGenerate}
-      />
+      <div>
+        <PotionViewer
+          potion={potion}
+          error={potionError}
+        />
 
-      <PotionViewer
-        potion={potion}
-        error={potionError}
-      />
+        <PotionMakerForm
+          onSubmit = {handleGenerate}
+        />
+      </div>
 
       <EffectTables
         effectsList={effects}
