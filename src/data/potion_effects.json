@@ -30,21 +30,21 @@
     {
         "id": "resistance_lightning",
         "level": 1,
-        "name": "Resistência a Elétrico",
+        "name": "Resistência Elétrica",
         "description": "Você ganha Resistência a dano Elétrico por 1 hora.",
         "duration": "1 Hora"
     },
     {
         "id": "resistance_necrotic",
         "level": 1,
-        "name": "Resistência a Necrótico",
+        "name": "Resistência Necrótica",
         "description": "Você ganha Resistência a dano Necrótico por 1 hora.",
         "duration": "1 Hora"
     },
     {
         "id": "resistance_radiant",
         "level": 1,
-        "name": "Resistência a Radiante",
+        "name": "Resistência Radiante",
         "description": "Você ganha Resistência a dano Radiante por 1 hora.",
         "duration": "1 Hora"
     },
@@ -58,14 +58,14 @@
     {
         "id": "resistance_psychic",
         "level": 1,
-        "name": "Resistência a Psíquico",
+        "name": "Resistência Psíquica",
         "description": "Você ganha Resistência a dano Psíquico por 1 hora.",
         "duration": "1 Hora"
     },
     {
         "id": "resistance_thunder",
         "level": 1,
-        "name": "Resistência a Sonoro",
+        "name": "Resistência Sonora",
         "description": "Você ganha Resistência a dano Sonoro por 1 hora.",
         "duration": "1 Hora"
     },

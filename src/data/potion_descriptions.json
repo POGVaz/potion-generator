@@ -1,5 +1,6 @@
 {
     "potion_name_scheme": "{{archetype}} {{firstAdjective: }}de {{nouns}} {{adjectives:}}",
+    "potion_description_scheme": "Um líquido {{liquidColor:}} dentro de {{container: um frasco}}, ele {{liquidTexture}} e cheira a {{liquidSmell}}. {{liquidDetail:}} Por fora, {{containerDetail}}.",
     "potion_archetypes": [
         {
             "id": "potion",
@@ -60,6 +61,143 @@
             "id": "collyrium",
             "text": "Colírio",
             "weight": 20
+        }
+    ],
+
+    "liquid_color": [
+        {
+            "id": "orange",
+            "text": "cor de laranja",
+            "weight": 100
+        },
+        {
+            "id": "transparent",
+            "text": "completamente transparente",
+            "weight": 100
+        },
+        {
+            "id": "red",
+            "text": "vermelho",
+            "weight": 100
+        },
+        {
+            "id": "black and white",
+            "text": "que alterna entre branco e preto",
+            "weight": 100
+        }
+    ],
+
+    "container": [
+        {
+            "id": "vial",
+            "text": "um frasco",
+            "weight": 100
+        },
+        {
+            "id": "wine_bottle",
+            "text": "uma garrafa de vinho usada",
+            "weight": 100
+        },
+        {
+            "id": "square_bottle",
+            "text": "uma garrafa quadrada de vidro",
+            "weight": 100
+        },
+        {
+            "id": "flask",
+            "text": "um cantil de metal",
+            "weight": 100
+        }
+    ],
+
+    "liquid_texture": [
+        {
+            "id": "oil",
+            "text": "tem a consistência de óleo",
+            "weight": 100
+        },
+        {
+            "id": "evaporates",
+            "text": "está constantemente evaporando",
+            "weight": 100
+        },
+        {
+            "id": "solid",
+            "text": "é quase sólido",
+            "weight": 100
+        },
+        {
+            "id": "water",
+            "text": "flui como água",
+            "weight": 100
+        }
+    ],
+
+    "liquid_smell": [
+        {
+            "id": "goodberry_lilacs",
+            "text": "groselha e lilases",
+            "weight": 100
+        },
+        {
+            "id": "carrion",
+            "text": "carniça",
+            "weight": 100
+        },
+        {
+            "id": "rain",
+            "text": "como se estivesse prestes a chover",
+            "weight": 100
+        },
+        {
+            "id": "nothing",
+            "text": "nada em particular",
+            "weight": 100
+        }
+    ],
+
+    "liquid_detail": [
+        {
+            "id": "surface_bubbles",
+            "text": "Bolhas lentamente deslizam sobre a superfície do líquido.",
+            "weight": 100
+        },
+        {
+            "id": "glow_light",
+            "text": "Um brilho mágico é emitido pelo líquido ao ser tocado pela luz do sol.",
+            "weight": 100
+        },
+        {
+            "id": "glow_no_moon",
+            "text": "O líquido brilha no escuro, mas somente em noites sem lua.",
+            "weight": 100
+        },
+        {
+            "id": "nothing",
+            "weight": 100
+        }
+    ],
+
+    "container_detail": [
+        {
+            "id": "note_composition",
+            "text": "há uma nota descrevendo a composição da poção",
+            "weight": 100
+        },
+        {
+            "id": "crystal_growth",
+            "text": "cristais crescem em volta do invólucro",
+            "weight": 100
+        },
+        {
+            "id": "glow_no_moon",
+            "text": "água escorre constantemente do invólucro",
+            "weight": 100
+        },
+        {
+            "id": "nothing",
+            "text": "nada chama muito a atenção",
+            "weight": 100
         }
     ]
 }

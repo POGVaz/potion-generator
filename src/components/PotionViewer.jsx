@@ -44,6 +44,9 @@ class PotionViewer extends React.Component {
               {effects}
             </ul>
           </div>
+          <div className="potion-description">
+            {this.props.potion.description}
+          </div>
         </div>
       );
     }

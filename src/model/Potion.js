@@ -22,6 +22,7 @@ class Potion {
 
     #name;
     #image;
+    #description;
 
     constructor(
         {blueprint, effects = [], sideEffects = []}
@@ -104,6 +105,62 @@ class Potion {
 
     generateImage() {
         return getRandomFromArray(potionImages);
+    }
+
+    get description() {
+        return (this.#description ?
+            this.#description :
+            this.#description = this.generateDescription()
+        );
+    }
+
+    generateDescription() {
+        const template = parse(Potion.potionDescription.potion_description_scheme);
+
+        //Get a random color:
+        const liquidColor = getRandom(
+            Potion.potionDescription.liquid_color,
+            (color) => color.weight
+        ).text;
+
+        //Get a random container:
+        const container = getRandom(
+            Potion.potionDescription.container,
+            (container) => container.weight
+        ).text;
+
+        //Get a random texture:
+        const liquidTexture = getRandom(
+            Potion.potionDescription.liquid_texture,
+            (texture) => texture.weight
+        ).text;
+
+        //Get a random smell:
+        const liquidSmell = getRandom(
+            Potion.potionDescription.liquid_smell,
+            (smell) => smell.weight
+        ).text;
+
+        //Get a random liquid detail:
+        const liquidDetail = getRandom(
+            Potion.potionDescription.liquid_detail,
+            (detail) => detail.weight
+        ).text;
+
+        //Get a random container detail:
+        const containerDetail = getRandom(
+            Potion.potionDescription.container_detail,
+            (detail) => detail.weight
+        ).text;
+
+        return template({
+            liquidColor,
+            container,
+            liquidTexture,
+            liquidSmell,
+            liquidDetail,
+            containerDetail,
+        });
     }
 }
 
