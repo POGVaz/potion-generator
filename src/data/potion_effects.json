@@ -1,32 +1,93 @@
 [
     {
-        "id": "invisibility",
-        "level": 2,
-        "name": "Invisibilidade",
-        "description": "O usuário fica invisível por 1 hora ou até que ele ataque ou conjure uma magia."
-    },
-    {
         "id": "resistance_fire",
         "level": 1,
         "name": "Resistência a Fogo",
-        "description": "O usuário Resiste a dano de Fogo por 1 hora."
+        "description": "Você ganha Resistência a dano de Fogo por 1 hora.",
+        "duration": "1 Hora"
     },
     {
         "id": "resistance_cold",
         "level": 1,
         "name": "Resistência a Frio",
-        "description": "O usuário Resiste a dano de Frio por 1 hora."
+        "description": "Você ganha Resistência a dano de Frio por 1 hora.",
+        "duration": "1 Hora"
     },
     {
-        "id": "time_stop",
-        "level": 9,
-        "name": "Parar o Tempo",
-        "description": "Por 1d4+1 rodadas, o fluxo do tempo congela para todos exceto o usuário."
+        "id": "resistance_acid",
+        "level": 1,
+        "name": "Resistência a Ácido",
+        "description": "Você ganha Resistência a dano de Ácido por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "resistance_force",
+        "level": 1,
+        "name": "Resistência a Força",
+        "description": "Você ganha Resistência a dano de Força por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "resistance_lightning",
+        "level": 1,
+        "name": "Resistência a Elétrico",
+        "description": "Você ganha Resistência a dano Elétrico por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "resistance_necrotic",
+        "level": 1,
+        "name": "Resistência a Necrótico",
+        "description": "Você ganha Resistência a dano Necrótico por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "resistance_radiant",
+        "level": 1,
+        "name": "Resistência a Radiante",
+        "description": "Você ganha Resistência a dano Radiante por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "resistance_poison",
+        "level": 1,
+        "name": "Resistência a Veneno",
+        "description": "Você ganha Resistência a dano de Veneno por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "resistance_psychic",
+        "level": 1,
+        "name": "Resistência a Psíquico",
+        "description": "Você ganha Resistência a dano Psíquico por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "resistance_thunder",
+        "level": 1,
+        "name": "Resistência a Sonoro",
+        "description": "Você ganha Resistência a dano Sonoro por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "invisibility",
+        "level": 2,
+        "name": "Invisibilidade",
+        "description": "Você e tudo que você carrega fica invisível por 1 hora. O efeito acaba se você atacar ou conjurar uma magia.",
+        "duration": "1 Hora"
     },
     {
         "id": "blink",
         "level": 3,
         "name": "Piscar",
-        "description": "Por 1 minuto, a cada rodada o usuário alterna entre o plano material e o plano etéreo."
+        "description": "Role um d20 no final de cada um dos seus turnos. Em um 11 ou mais, você aparece no Plano Etéreo (sem efeito se você já estiver nesse plano). No início do seu próximo turno você retorna a um espaço desocupado de sua escolha que você possa ver a até 3 m [10 ft] do espaço em que você desapareceu. Se não houver um espaço disponível dentro do alcance, você reaparece no espaço desocupado mais próximo.\\nQuando estiver no Plano Etéreo, você pode ver e ouvir o plano de onde você veio, que aparece em tons de cinza, e você não pode ver nada além de 18 m [60 ft]. Você só pode afetar ou ser afetado por outras criaturas no Plano Etéreo. As criaturas que não estiverem lá não podem notar você nem interagir com você, a não ser que elas tenham uma habilidade que as permita.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "time_stop",
+        "level": 9,
+        "name": "Parar o Tempo",
+        "description": "O fluxo do tempo congela para tudo e todos exceto para você por 1d4+1 Rodadas durante as quais você pode agir livremente. O efeito acaba se você ou qualquer efeito que você criar interagir com outra criatura ou objeto carregado por outra criatura. O efeito acaba se você se mover mais de 300 m [1000 ft].",
+        "duration": "1d4+1 Rodadas"
     }
 ]

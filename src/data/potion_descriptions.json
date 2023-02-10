@@ -15,6 +15,51 @@
             "id": "solution",
             "text": "Solução",
             "weight": 50
+        },
+        {
+            "id": "philter",
+            "text": "Filtro",
+            "weight": 30
+        },
+        {
+            "id": "mixture",
+            "text": "Mistura",
+            "weight": 30
+        },
+        {
+            "id": "concoction",
+            "text": "Confecção",
+            "weight": 30
+        },
+        {
+            "id": "dose",
+            "text": "Dose",
+            "weight": 20
+        },
+        {
+            "id": "ointment",
+            "text": "Unguento",
+            "weight": 50
+        },
+        {
+            "id": "salve",
+            "text": "Emplastro",
+            "weight": 50
+        },
+        {
+            "id": "balm",
+            "text": "Bálsamo",
+            "weight": 20
+        },
+        {
+            "id": "injection",
+            "text": "Injeção",
+            "weight": 20
+        },
+        {
+            "id": "collyrium",
+            "text": "Colírio",
+            "weight": 20
         }
     ]
 }
