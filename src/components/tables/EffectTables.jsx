@@ -93,7 +93,7 @@ function renderSideEffectsTable(effects, onChange) {
       Header: 'Modifier',
       accessor: 'costModifier',
       Cell: ({ value }) => {
-        return String(value < 1 ? Math.floor((0 - value) * 100) : Math.floor(value * 100)) + '%'
+        return String(value < 1 ? Math.floor((1 - value) * 100)*(-1) : Math.floor(value * 100)) + '%'
       }
     },
     {
