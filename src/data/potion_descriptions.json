@@ -1,6 +1,6 @@
 {
     "potion_name_scheme": "{{archetype}} {{firstAdjective: }}de {{nouns}} {{adjectives:}}",
-    "potion_description_scheme": "Um líquido {{liquidColor:}} dentro de {{container: um frasco}}, ele {{liquidTexture}} e cheira a {{liquidSmell}}. {{liquidDetail:}} Por fora, {{containerDetail}}.",
+    "potion_description_scheme": "Um líquido {{liquidColor:}} dentro de {{container: um frasco}}, ele {{liquidTexture}} e cheira {{liquidSmell}}. {{liquidDetail:}} Por fora, {{containerDetail}}.",
     "potion_archetypes": [
         {
             "id": "potion",
@@ -84,6 +84,86 @@
             "id": "black and white",
             "text": "que alterna entre branco e preto",
             "weight": 100
+        },
+        {
+            "id": "blue",
+            "text": "azul",
+            "weight": 100
+        },
+        {
+            "id": "green",
+            "text": "verde",
+            "weight": 100
+        },
+        {
+            "id": "pale_green",
+            "text": "verde pálido",
+            "weight": 100
+        },
+        {
+            "id": "pink",
+            "text": "core de rosa",
+            "weight": 100
+        },
+        {
+            "id": "light_blue",
+            "text": "azul claro",
+            "weight": 100
+        },
+        {
+            "id": "white",
+            "text": "branco",
+            "weight": 100
+        },
+        {
+            "id": "black",
+            "text": "preto",
+            "weight": 100
+        },
+        {
+            "id": "dark_grey",
+            "text": "cinza escuro",
+            "weight": 100
+        },
+        {
+            "id": "light_grey",
+            "text": "cinza claro",
+            "weight": 100
+        },
+        {
+            "id": "yellow",
+            "text": "amarelo",
+            "weight": 100
+        },
+        {
+            "id": "gold",
+            "text": "dourado",
+            "weight": 100
+        },
+        {
+            "id": "bronze",
+            "text": "cobreado",
+            "weight": 100
+        },
+        {
+            "id": "metallic",
+            "text": "prateado",
+            "weight": 100
+        },
+        {
+            "id": "purple",
+            "text": "roxo",
+            "weight": 100
+        },
+        {
+            "id": "brown",
+            "text": "marrom",
+            "weight": 100
+        },
+        {
+            "id": "dark_red",
+            "text": "vermelho escuro",
+            "weight": 100
         }
     ],
 
@@ -91,7 +171,7 @@
         {
             "id": "vial",
             "text": "um frasco",
-            "weight": 100
+            "weight": 50
         },
         {
             "id": "wine_bottle",
@@ -107,56 +187,435 @@
             "id": "flask",
             "text": "um cantil de metal",
             "weight": 100
+        },
+        {
+            "id": "conic_bottle",
+            "text": "uma garrafa cônica de vidro liso",
+            "weight": 100
+        },
+        {
+            "id": "a_not_quite_watertight_leather_waterskin",
+            "text": "um odre de couro não muito impermeável",
+            "weight": 100
+        },
+        {
+            "id": "a_stone_flask",
+            "text": "um frasco de pedra",
+            "weight": 100
+        },
+        {
+            "id": "a_metal_thermos",
+            "text": "uma garrafa térmica de metal",
+            "weight": 100
+        },
+        {
+            "id": "a_glass_syringe",
+            "text": "uma seringa de vidro",
+            "weight": 100
+        },
+        {
+            "id": "a_small_medical_vial",
+            "text": "um pequeno frasco médico",
+            "weight": 100
+        },
+        {
+            "id": "a_small_shot_sized_bottle",
+            "text": "uma garrafa de tamanho pequeno",
+            "weight": 100
+        },
+        {
+            "id": "a_large_metal_bottle",
+            "text": "uma grande garrafa de metal",
+            "weight": 100
+        },
+        {
+            "id": "a_capped_horn",
+            "text": "um chifre tampado",
+            "weight": 100
+        },
+        {
+            "id": "an_ornate_very_decorated_glass_bottle",
+            "text": "uma garrafa de vidro ornamentada e muito decorada",
+            "weight": 100
+        },
+        {
+            "id": "a_geometric_diamond_shaped_bottle",
+            "text": "uma garrafa geométrica em forma de diamante",
+            "weight": 100
+        },
+        {
+            "id": "a_translucent_long_wine_bottle",
+            "text": "uma longa garrafa de vinho translúcida",
+            "weight": 100
+        },
+        {
+            "id": "a_translucent_beer_bottle",
+            "text": "uma garrafa de cerveja translúcida",
+            "weight": 100
+        },
+        {
+            "id": "a_leather_pouch",
+            "text": "uma bolsa de couro",
+            "weight": 100
+        },
+        {
+            "id": "an_inhaler_like_spray_bottle",
+            "text": "um inalador como frasco de spray",
+            "weight": 100
+        },
+        {
+            "id": "a_coloured_bottle",
+            "text": "uma garrafa colorida",
+            "weight": 100
+        },
+        {
+            "id": "a_bone_flask",
+            "text": "um frasco de osso",
+            "weight": 100
+        },
+        {
+            "id": "a_small_metal_vial",
+            "text": "um pequeno frasco de metal",
+            "weight": 100
         }
     ],
 
     "liquid_texture": [
         {
+            "id": "thin and watery",
+            "text": "fino e aguado",
+            "weight": 100
+        },
+        {
+            "id": "airy and bubbly",
+            "text": "arejado e borbulhante",
+            "weight": 100
+        },
+        {
             "id": "oil",
-            "text": "tem a consistência de óleo",
-            "weight": 100
+            "text": "flui como óleo",
+            "weight": 125
         },
         {
-            "id": "evaporates",
-            "text": "está constantemente evaporando",
-            "weight": 100
-        },
-        {
-            "id": "solid",
-            "text": "é quase sólido",
+            "id": "honey",
+            "text": "flui como mel",
             "weight": 100
         },
         {
             "id": "water",
             "text": "flui como água",
+            "weight": 125
+        },
+        {
+            "id": "muddy",
+            "text": "flui como lama",
             "weight": 100
+        },
+        {
+            "id": "slimey",
+            "text": "tem consistência limosa",
+            "weight": 100
+        },
+        {
+            "id": "milky",
+            "text": "tem consistência leitosa",
+            "weight": 100
+        },
+        {
+            "id": "evaporates",
+            "text": "está constantemente evaporando",
+            "weight": 75
+        },
+        {
+            "id": "solid",
+            "text": "é quase sólido",
+            "weight": 50
+        },
+        {
+            "id": "gaseous",
+            "text": "é quase gasoso",
+            "weight": 50
         }
     ],
 
     "liquid_smell": [
         {
-            "id": "goodberry_lilacs",
-            "text": "groselha e lilases",
-            "weight": 100
+            "id": "nothing",
+            "text": "a nada em particular",
+            "weight": 50
         },
         {
             "id": "carrion",
-            "text": "carniça",
+            "text": "a carniça",
             "weight": 100
+        },
+        {
+            "id": "sulphur",
+            "text": "a enxofre",
+            "weight": 100
+        },
+        {
+            "id": "fresh_air",
+            "text": "a ar fresco",
+            "weight": 100
+        },
+        {
+            "id": "lavender",
+            "text": "a lavanda",
+            "weight": 100
+        },
+        {
+            "id": "rotting_meat",
+            "text": "a carne podre",
+            "weight": 100
+        },
+        {
+            "id": "rotten_eggs",
+            "text": "a ovos podres",
+            "weight": 100
+        },
+        {
+            "id": "fresh_bread",
+            "text": "a pão fresco",
+            "weight": 100
+        },
+        {
+            "id": "blood",
+            "text": "a sangue",
+            "weight": 100
+        },
+        {
+            "id": "garlic",
+            "text": "a alho",
+            "weight": 100
+        },
+        {
+            "id": "beer",
+            "text": "a cerveja",
+            "weight": 100
+        },
+        {
+            "id": "smoke",
+            "text": "a fumaça",
+            "weight": 100
+        },
+        {
+            "id": "wet_dog",
+            "text": "a cachorro molhado",
+            "weight": 100
+        },
+        {
+            "id": "wet_goblin",
+            "text": "a goblin molhado",
+            "weight": 100
+        },
+        {
+            "id": "perfume",
+            "text": "a perfume",
+            "weight": 100
+        },
+        {
+            "id": "cheap_perfume",
+            "text": "a perfume barato",
+            "weight": 100
+        },
+        {
+            "id": "musk",
+            "text": "a almíscar",
+            "weight": 100
+        },
+        {
+            "id": "nuts",
+            "text": "a nozes",
+            "weight": 100
+        },
+        {
+            "id": "minty",
+            "text": "a menta",
+            "weight": 100
+        },
+        {
+            "id": "alcohol",
+            "text": "a álcool",
+            "weight": 100
+        },
+        {
+            "id": "bacon",
+            "text": "a bacon",
+            "weight": 100
+        },
+        {
+            "id": "coffee",
+            "text": "a café",
+            "weight": 100
+        },
+        {
+            "id": "tea",
+            "text": "a chá",
+            "weight": 100
+        },
+        {
+            "id": "cut_grass",
+            "text": "a grama cortada",
+            "weight": 100
+        },
+        {
+            "id": "vanilla",
+            "text": "a baunilha",
+            "weight": 100
+        },
+        {
+            "id": "burning_coal",
+            "text": "a carvão em brasa",
+            "weight": 100
+        },
+        {
+            "id": "wine",
+            "text": "a vinho",
+            "weight": 100
+        },
+        {
+            "id": "cheese",
+            "text": "a queijo forte",
+            "weight": 100
+        },
+        {
+            "id": "fish",
+            "text": "a peixe",
+            "weight": 100
+        },
+        {
+            "id": "roses",
+            "text": "a rosas",
+            "weight": 100
+        },
+        {
+            "id": "ginger",
+            "text": "a gengibre",
+            "weight": 100
+        },
+        {
+            "id": "cinnamon",
+            "text": "a canela",
+            "weight": 100
+        },
+        {
+            "id": "fumes",
+            "text": "a incenso",
+            "weight": 100
+        },
+        {
+            "id": "aromatic_spices",
+            "text": "a especiarias aromáticas variadas",
+            "weight": 100
+        },
+        {
+            "id": "lilac_and_gooseberries",
+            "text": "a lilases e groselha",
+            "weight": 100
+        },
+        {
+            "id": "cirtrus",
+            "text": "como algo cítrico",
+            "weight": 100
+        },
+        {
+            "id": "leather",
+            "text": "a couro curado",
+            "weight": 100
+        },
+        {
+            "id": "holy_oils",
+            "text": "a óleos sagrados",
+            "weight": 75
+        },
+        {
+            "id": "massage_oil",
+            "text": "a óleo de massagem",
+            "weight": 75
+        },
+        {
+            "id": "swamp",
+            "text": "como o pântano de Lantana",
+            "weight": 60
+        },
+        {
+            "id": "jungle",
+            "text": "como as selvas de Entráguas",
+            "weight": 60
+        },
+        {
+            "id": "the_sewers",
+            "text": "como os esgotos de Tempesfúria",
+            "weight": 60
+        },
+        {
+            "id": "the_sea",
+            "text": "como o a brisa do mar",
+            "weight": 60
+        },
+        {
+            "id": "roast_meat",
+            "text": "a carne assada",
+            "weight": 60
         },
         {
             "id": "rain",
             "text": "como se estivesse prestes a chover",
-            "weight": 100
+            "weight": 60
         },
         {
-            "id": "nothing",
-            "text": "nada em particular",
-            "weight": 100
+            "id": "a_brothel",
+            "text": "como um bordel",
+            "weight": 60
+        },
+        {
+            "id": "indescribable",
+            "text": "como algo indescritível",
+            "weight": 50
+        },
+        {
+            "id": "indescribable_but_nice",
+            "text": "como algo indescritível, mas agradável",
+            "weight": 50
+        },
+        {
+            "id": "indescribable_but_horrid",
+            "text": "como algo indescritível, mas horrível",
+            "weight": 50
+        },
+        {
+            "id": "desirable_thing_to_you",
+            "text": "a algo agradável",
+            "weight": 50
+        },
+        {
+            "id": "worst_thing_to_you",
+            "text": "a algo repusivo",
+            "weight": 50
+        },
+        {
+            "id": "ethereal_plane",
+            "text": "como se você estivesse no plano etéreo",
+            "weight": 40
+        },
+        {
+            "id": "shadow_plane",
+            "text": "como se você estivesse no plano das sombras",
+            "weight": 40
+        },
+        {
+            "id": "feywild",
+            "text": "como se você estivesse no plano das fadas",
+            "weight": 40
         }
     ],
 
     "liquid_detail": [
+        {
+            "id": "nothing",
+            "weight": 50
+        },
         {
             "id": "surface_bubbles",
             "text": "Bolhas lentamente deslizam sobre a superfície do líquido.",
@@ -173,30 +632,421 @@
             "weight": 100
         },
         {
-            "id": "nothing",
+            "id": "flecks_of_colour",
+            "text": "Manchas de cor flutuam no líquido.",
+            "weight": 100
+        },
+        {
+            "id": "swirls_of_colour",
+            "text": "Redemoinhos de cor se movimentam no líquido.",
+            "weight": 100
+        },
+        {
+            "id": "stripes_of_colour",
+            "text": "Listras de cor flutuam no líquido.",
+            "weight": 100
+        },
+        {
+            "id": "fizzing_bubbles",
+            "text": "Bolhas efervecem do fundo até a superfície do líquido.",
+            "weight": 100
+        },
+        {
+            "id": "bubbles_suspended_in_it",
+            "text": "Bolhas de ar ficam suspensas no líquido.",
+            "weight": 100
+        },
+        {
+            "id": "some_kind_of_bone_floating_in_it",
+            "text": "Há algum tipo de osso flutuando no líquido.",
+            "weight": 100
+        },
+        {
+            "id": "leaves_and_flowers_in_it",
+            "text": "Há folhas e flores nele flutuando no líquido.",
+            "weight": 100
+        },
+        {
+            "id": "two_separated_liquid_phases",
+            "text": "O líquido tem duas fases diferentes que não se misturam por nada.",
+            "weight": 100
+        },
+        {
+            "id": "a_bright_glow",
+            "text": "O líquido emite um brilho intenso e intermitente.",
+            "weight": 100
+        },
+        {
+            "id": "a_soft_glow",
+            "text": "O líquido emite um brilho suave e constante.",
+            "weight": 100
+        },
+        {
+            "id": "blood_within_it",
+            "text": "Aparentemente, há sangue misturado com o líquido.",
+            "weight": 100
+        },
+        {
+            "id": "dirt_floating_in_it",
+            "text": "Sujeira flutua constantemente no líquido.",
+            "weight": 100
+        },
+        {
+            "id": "sand_floating_in_it",
+            "text": "Areia constantemente flutua da superfície do líquido até o fundo.",
+            "weight": 100
+        },
+        {
+            "id": "chunks_of_metal_in_it",
+            "text": "Pedaços de metal flutuam no líquido.",
+            "weight": 100
+        },
+        {
+            "id": "steam_coming_from_it",
+            "text": "Vapor é constamente exalado pelo líquido.",
+            "weight": 100
+        },
+        {
+            "id": "constantly_moving_and_shifting_liquid",
+            "text": "O líquido está em constante movimento.",
+            "weight": 100
+        },
+        {
+            "id": "clouds_float_over_it",
+            "text": "Nuvens flutuam constamente sobre o líquido.",
             "weight": 100
         }
     ],
 
     "container_detail": [
         {
+            "id": "nothing",
+            "text": "nada chama muito a atenção",
+            "weight": 50
+        },
+        {
             "id": "note_composition",
             "text": "há uma nota descrevendo a composição da poção",
             "weight": 100
         },
         {
-            "id": "crystal_growth",
-            "text": "cristais crescem em volta do invólucro",
-            "weight": 100
-        },
-        {
-            "id": "glow_no_moon",
+            "id": "water",
             "text": "água escorre constantemente do invólucro",
             "weight": 100
         },
         {
-            "id": "nothing",
-            "text": "nada chama muito a atenção",
+            "id": "constant_heat",
+            "text": "o invólucro constantemente emite calor",
+            "weight": 100
+        },
+        {
+            "id": "its_name_and_title_in_bold_letters",
+            "text": "há um rótulo com o nome e título da poção",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_ornate_elvish",
+            "text": "há uma etiqueta com a descrição da poção em élfico",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_elvish_with_a_relevant_mythic_story",
+            "text": "há uma etiqueta com uma lenda mistica",
+            "weight": 100
+        },
+        {
+            "id": "its_description_on_dwarven",
+            "text": "há uma etiqueta com a descrição da poção em anão",
+            "weight": 100
+        },
+        {
+            "id": "dwarven_runes",
+            "text": "há um selo com runas anãs",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_gnomish",
+            "text": "há uma etiqueta com a descrição da poção em gnômico",
+            "weight": 100
+        },
+        {
+            "id": "gnomish_diagrams_for_its_use",
+            "text": "há um diagrama gnômico descrvendo como se usa a poção",
+            "weight": 100
+        },
+        {
+            "id": "the_words_use_only_in_emergancies_scrawled_on_it",
+            "text": "as palavras USE APENAS EM EMERGÂNCIAS estão rabiscadas",
+            "weight": 100
+        },
+        {
+            "id": "a_mass_produced_label_claiming_the_company_has_no_fault_for_any_side_effects",
+            "text": "há um rótulo alegando que o alquimista não tem culpa por quaisquer efeitos colaterais",
+            "weight": 100
+        },
+        {
+            "id": "very_tiny_print_describing_how_the_potion_was_made_in_great_detail_around_1000_words",
+            "text": "há uma impressão muito pequena descrevendo como a poção foi feita em grande detalhe",
+            "weight": 100
+        },
+        {
+            "id": "its_name_in_bold_words_in_giant",
+            "text": "há um rótulo com o nome da poção em gigante",
+            "weight": 100
+        },
+        {
+            "id": "is_scrawled_off",
+            "text": "há algumas palavras rabiscadas",
+            "weight": 100
+        },
+        {
+            "id": "has_faded_beyond_reading",
+            "text": "há algumas palavras que se perderam ao tempo",
+            "weight": 100
+        },
+        {
+            "id": "its_description_and_a_random_fact",
+            "text": "há uma nota com a sua descrição e um fato aleatório",
+            "weight": 100
+        },
+        {
+            "id": "its_description_and_a_small_compliment_to_make_your_day_better",
+            "text": "há uma nota com a sua descrição e um pequeno elogio para o usuário",
+            "weight": 100
+        },
+        {
+            "id": "its_description_and_a_joke",
+            "text": "há uma nota com a sua descrição e uma piada",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_some_ancient_language",
+            "text": "há uma etiqueta com a descrição da poção em alguma linguagem antiga",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_elemental_languages",
+            "text": "há uma etiqueta com a descrição da poção em uma língua elementar",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_draconic",
+            "text": "há uma etiqueta com a descrição da poção em draconico",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_druidic",
+            "text": "há uma etiqueta com a descrição da poção em druídico",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_orcish",
+            "text": "há uma etiqueta com a descrição da poção em orc",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_goblin",
+            "text": "há uma etiqueta com a descrição da poção em goblin",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_halfling",
+            "text": "há uma etiqueta com a descrição da poção em halfling",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_celestial",
+            "text": "há uma etiqueta com a descrição da poção em celestial",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_strange_arcane_symbols",
+            "text": "há uma etiqueta com a descrição da poção em estranhos símbolos arcanos",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_infernal",
+            "text": "há uma etiqueta com a descrição da poção em infernal",
+            "weight": 100
+        },
+        {
+            "id": "its_description_in_symbols",
+            "text": "há uma etiqueta com a descrição da poção com símbolos em relevo",
+            "weight": 100
+        },
+        {
+            "id": "its_name_and_flavour",
+            "text": "há um rótulo com seu nome e sabor",
+            "weight": 100
+        },
+        {
+            "id": "its_name_with_a_warning_about_side_effects",
+            "text": "há um rótulo com seu nome e com um aviso sobre efeitos colaterais",
+            "weight": 100
+        },
+        {
+            "id": "its_name_and_its_recommended_buying_price",
+            "text": "há um rótulo com seu nome e seu preço de compra recomendado",
+            "weight": 100
+        },
+        {
+            "id": "its_name_glowing_with_minor_magic",
+            "text": "há um rótulo com seu nome brilhando",
+            "weight": 100
+        },
+        {
+            "id": "its_name_and_description_in_invisible_ink",
+            "text": "há um rótulo com seu nome e descrição em tinta invisível",
+            "weight": 100
+        },
+        {
+            "id": "its_name_and_recipe_for_other_alchemists",
+            "text": "há um rótulo com seu nome e receita",
+            "weight": 100
+        },
+        {
+            "id": "bloody_prints_all_over_it",
+            "text": "há impressões sangrentas por todo o invólucro",
+            "weight": 100
+        },
+        {
+            "id": "name_engraved_into_the_container",
+            "text": "há o nome da poção gravado no recipiente",
+            "weight": 100
+        },
+        {
+            "id": "a_warning_of_an_ancient_curse",
+            "text": "há um aviso de uma antiga maldição",
+            "weight": 100
+        },
+        {
+            "id": "a_name_of_a_completely_different_potion_to_what_it_does",
+            "text": "há um rótulo com o nome de uma poção diferente",
+            "weight": 100
+        },
+        {
+            "id": "a_title_describing_the_exact_opposite",
+            "text": "há um rótulo com uma descrição de outra poção",
+            "weight": 100
+        },
+        {
+            "id": "a_living_face_looking_around",
+            "text": "Um olho vivo observando ao seu redor",
+            "weight": 100
+        },
+        {
+            "id": "a_heartfelt_love_letter_for_someone",
+            "text": "há uma carta de amor sincera para alguém",
+            "weight": 100
+        },
+        {
+            "id": "a_heartfelt_hate_letter_for_someone",
+            "text": "há uma carta de ódio sincero para alguém",
+            "weight": 100
+        },
+        {
+            "id": "a_strange_prophecy",
+            "text": "há um selo com uma estranha profecia",
+            "weight": 100
+        },
+        {
+            "id": "a_small_doodle",
+            "text": "há pequenos rabiscos",
+            "weight": 100
+        },
+        {
+            "id": "a_note_saying_do_not_drink",
+            "text": "há uma nota dizendo NÃO BEBA",
+            "weight": 100
+        },
+        {
+            "id": "brightly_glowing_letters",
+            "text": "o invólucro está decorado com letras brilhantes",
+            "weight": 100
+        },
+        {
+            "id": "ornate_and_beautiful_designs",
+            "text": "o invólucro está ornamentado com fios de prata",
+            "weight": 100
+        },
+        {
+            "id": "holy_symbols",
+            "text": "o invólucro está ornamentado com símbolos sagrados",
+            "weight": 100
+        },
+        {
+            "id": "unholy_symbols",
+            "text": "o invólucro está ornamentado com símbolos profanos",
+            "weight": 100
+        },
+        {
+            "id": "fey_symbols_and_sylvan_writing",
+            "text": "o invólucro está ornamentado com dímbolos feéricos e escrita silvestre",
+            "weight": 100
+        },
+        {
+            "id": "a_note_saying_its_illegal_contraband_being_confiscated",
+            "text": "há uma nota dizendo que o contrabando desta poção é ilegal",
+            "weight": 100
+        },
+        {
+            "id": "a_note_saying_the_alchemist_thinks_it_is_its_greatest_work",
+            "text": "há uma nota dizendo que o alquimista acha que este é seu maior trabalho",
+            "weight": 100
+        },
+        {
+            "id": "a_note_saying_the_alchemist_is_sorry_for_ever_creating_it",
+            "text": "há uma nota dizendo que o alquimista está arrependido por ter criado a poção",
+            "weight": 100
+        },
+        {
+            "id": "a_map_of_where_the_potion_was_made",
+            "text": "há um pequeno mapa de onde a poção foi feita",
+            "weight": 100
+        },
+        {
+            "id": "a_small_puzzle_for_kids",
+            "text": "há um pequeno quebra-cabeça para crianças",
+            "weight": 100
+        },
+        {
+            "id": "a_list_of_ingredients_in_their_chemical_forms",
+            "text": "há uma lista de ingredientes em suas formas químicas",
+            "weight": 100
+        },
+        {
+            "id": "a_list_of_possible_side_effects_as_long_as_the_bottle_is",
+            "text": "há uma lista de possíveis efeitos colaterais do tamanho do frasco",
+            "weight": 100
+        },
+        {
+            "id": "a_red_x",
+            "text": "há um X vermelho",
+            "weight": 100
+        },
+        {
+            "id": "growing_with_vines",
+            "text": "vinhas creacem em volta do invólucro",
+            "weight": 100
+        },
+        {
+            "id": "growing_with_flowers",
+            "text": "flores creacem em volta do invólucro",
+            "weight": 100
+        },
+        {
+            "id": "growing_with_crystals",
+            "text": "cristais creacem em volta do invólucro",
+            "weight": 100
+        },
+        {
+            "id": "growing_with_rock",
+            "text": "pedra creacem em volta do invólucro",
+            "weight": 100
+        },
+        {
+            "id": "shamanistic_symbols_and_shavings",
+            "text": "há símbolos xamânicos e marcações",
             "weight": 100
         }
     ]
