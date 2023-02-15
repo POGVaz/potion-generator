@@ -16,15 +16,11 @@ var combinations = require('combinations');
 
 var array = ["apple", "banana", "lemon", "mango"];
 
-function getRandomFromArray(array) {
-    return array[Math.floor(Math.random() * array.length)];
-}
+var filteredArray = array.reduce((filtered, option) => {
+    if (option.length === 5) {
+        filtered.push(option);
+    }
+    return filtered;
+}, []);
 
-console.log(getRandomFromArray(array));
-
-// var newArray = [...array, ...array];
-
-// console.log(combinations(newArray, 1, 2).reduce((accumulated, current) => {return accumulated.includes(current)? accumulated : [...accumulated, current]}, []));
-// console.log([['apple', 'lemon']].flat().includes(['apple', 'lemon'].join()));
-
-console.log(null === null);
+console.log(filteredArray);

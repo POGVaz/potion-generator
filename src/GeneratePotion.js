@@ -79,6 +79,17 @@ function generatePotion({
         }
     });
 
+    // const potionArray = shuffledBlueprints.reduce((potions, blueprint) => {
+    //     try {
+    //         let newPotion = createPotionFromBlueprint(blueprint, possibleEffects, possibleSideEffects);
+    //         potions.push(newPotion);
+    //     } catch (error) {
+    //         // console.log(error);
+    //         // return false;
+    //     }
+    //     return potions;
+    // }, []);
+
     if (newPotion)
         return newPotion;
     else
