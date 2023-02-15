@@ -70,6 +70,97 @@
         "duration": "1 Hora"
     },
     {
+        "id": "armor_of_agathys",
+        "level": 1,
+        "name": "Armadura de Agathys",
+        "description": "Você ganha 5 pontos de vida temporários por 1 hora. Se uma criatura atingir você com um ataque corpo a corpo enquanto você tiver esses pontos de vida, a criatura sofrerá 5 de dano de frio.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "comprehend_languages",
+        "level": 1,
+        "name": "Compreender idiomas",
+        "description": "por 1 hora, você entende o significado literal de qualquer idioma falado que você ouve. Você também entende qualquer linguagem escrita que vê, mas deve estar tocando a superfície na qual as palavras estão escritas. Demora cerca de 1 minuto para ler uma página de texto.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "disguise_self",
+        "level": 1,
+        "name": "Disfarçar-se",
+        "description": "Você muda a sua aparência, incluindo suas roupas, armaduras, armas e outros pertences pessoais por 1 hora. Você pode mudar até 1 pé de altura. Você não pode mudar seu tipo de corpo. As mudanças não resistem à inspeção física.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "detect_poison_and_disease",
+        "level": 1,
+        "name": "Detectar veneno e doença",
+        "description": "Por 10 minutos, você pode sentir a presença e localização de venenos, criaturas venenosas e doenças a até 9 metros de você. Você também identifica o tipo de veneno, criatura venenosa ou doença em cada caso. O efeito pode penetrar a maioria das barreiras, mas é bloqueada por 30 cm de pedra, 2,5 cm de metal comum, uma folha fina de chumbo ou 90 cm de madeira ou terra.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "detect_magic",
+        "level": 1,
+        "name": "Detectar Magia",
+        "description": "por 10 minutos, você sente a presença de magia a até 9 metros de você. Se você sentir magia desta forma, você pode usar sua ação para ver uma aura fraca ao redor de qualquer criatura visível ou objeto na área que carrega magia, e você aprende sua escola de magia, se houver. O efeito pode penetrar a maioria das barreiras, mas é bloqueada por 30 cm de pedra, 2,5 cm de metal comum, uma folha fina de chumbo ou 90 cm de madeira ou terra.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "detect_evil_and_good",
+        "level": 1,
+        "name": "Detectar o bem e o mal",
+        "description": "Por 10 minutos, você sabe se há uma aberração, celestial, elemental, feérica, demoníaca ou morta-viva a até 9 metros de você, bem como onde a criatura está localizada. Da mesma forma, você sabe se há um lugar ou objeto a até 9 metros de você que foi consagrado ou profanado magicamente.. O efeito pode penetrar a maioria das barreiras, mas é bloqueada por 30 cm de pedra, 2,5 cm de metal comum, uma folha fina de chumbo ou 90 cm de madeira ou terra.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "speak_with_animals",
+        "level": 1,
+        "name": "Falar com Animais",
+        "description": "Você ganha a habilidade de compreender e se comunicar verbalmente com feras por 10 minutos. No mínimo, as feras podem fornecer informações sobre locais e monstros próximos, incluindo tudo o que eles podem perceber ou perceberam no dia anterior. Você pode persuadir uma fera a fazer um pequeno favor para você.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "protection_from_evil_and_good",
+        "level": 1,
+        "name": "Proteção contra o beme o mal",
+        "description": "Por 10 minutos você estará protegida contra certos tipos de criaturas: aberrações, celestiais, elementais, feéricos, demônios e mortos-vivos. Criaturas desses tipos têm desvantagem nas jogadas de ataque contra você não podem te enfeitiçar, amedrontar ou possuir. Você tem vantagem em novos testes de resistência caso já esteja sobre um desdes efeitos.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "mage_armor",
+        "level": 1,
+        "name": "Armadura Arcana",
+        "description": "Se você não estiver usando armadura, sua CA base se torna 13 + seu modificador de Destreza pelas próximas 8 horas.",
+        "duration": "8 Horas"
+    },
+    {
+        "id": "jump",
+        "level": 1,
+        "name": "Pular",
+        "description": "A distância do seu salto é triplicada por 1 minuto.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "gift_of_alacrity",
+        "level": 1,
+        "name": "Dádiva da Alacridade",
+        "description": "Você pode adicionar 1d8 às suas jogadas de iniciativa por 8 horas.",
+        "duration": "8 Horas"
+    },
+    {
+        "id": "false_life",
+        "level": 1,
+        "name": "Falso Vigor",
+        "description": "Você ganha 1d4 + 4 pontos de vida temporários por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "longstrider",
+        "level": 1,
+        "name": "Passos Largos",
+        "description": "Seu deslocamento aumenta em 3 metros por 1 hora.",
+        "duration": "1 Horas"
+    },
+    {
         "id": "invisibility",
         "level": 2,
         "name": "Invisibilidade",
