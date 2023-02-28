@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import PotionViewer from "./PotionViewer";
 import PotionMakerForm from "./PotionMakerForm";
@@ -7,15 +7,22 @@ import { generatePotion } from "../GeneratePotion";
 import PotionGallery from "./gallery/PotionGallery";
 import PotionSavedGallery from "./gallery/PotionSavedGallery";
 
+import { loadPotionsFromStorage } from "../builder/LoadDataFromStorage";
+
 const PotionMaker = ({ effects = [], side_effects = [] }) => {
 
   const [potionToDisplay, setPotionToDisplay] = useState( null );
   const [generatedPotions, setGeneratedPotions] = useState( null );
-  const [savedPotions, setSavedPotions] = useState( [] );
+  const [savedPotions, setSavedPotions] = useState(loadPotionsFromStorage("savedPotions") );
   const [potionError, setPotionError] = useState( null );
   
   const effectsRef = useRef(effects);
   const sideEffectsRef = useRef(side_effects);
+
+  //On change, save the saved potion on local storage
+  useEffect(() => {
+    localStorage.setItem('savedPotions', JSON.stringify(savedPotions ? savedPotions : []));
+  }, [savedPotions]);
 
   const handleGenerate = (formData) => {
     try {
