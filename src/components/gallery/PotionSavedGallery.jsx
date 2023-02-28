@@ -18,9 +18,9 @@ class PotionGallery extends React.Component {
             />
           </button>
           <button
-            onClick={() => { this.props.onSave(potion) }}
+            onClick={() => { this.props.onDelete(potion) }}
           >
-            Save
+            Delete
           </button>
         </div>
       );

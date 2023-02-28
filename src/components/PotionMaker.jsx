@@ -5,12 +5,15 @@ import PotionMakerForm from "./PotionMakerForm";
 import EffectTables from "./tables/EffectTables";
 import { generatePotion } from "../GeneratePotion";
 import PotionGallery from "./gallery/PotionGallery";
+import PotionSavedGallery from "./gallery/PotionSavedGallery";
 
 const PotionMaker = ({ effects = [], side_effects = [] }) => {
 
-  const [potion, setPotion] = useState( null );
-  const [potions, setPotions] = useState( null );
+  const [potionToDisplay, setPotionToDisplay] = useState( null );
+  const [generatedPotions, setGeneratedPotions] = useState( null );
+  const [savedPotions, setSavedPotions] = useState( [] );
   const [potionError, setPotionError] = useState( null );
+  
   const effectsRef = useRef(effects);
   const sideEffectsRef = useRef(side_effects);
 
@@ -24,19 +27,32 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
           amount: 5,
         });
       });
-      setPotions(potions);
-      setPotion(potions[0]);
+      setGeneratedPotions(potions);
+      setPotionToDisplay(potions[0]);
     }
     catch(error){
-      setPotion( null );
-      setPotions( [] );
+      setPotionToDisplay( null );
+      setGeneratedPotions( [] );
       setPotionError(error.message);
       // throw error;
     }
   };
 
-  const handleGalleryItemSelection = (selectedPotion) => {
-    setPotion(selectedPotion);
+  const handleGalleryItemSelection = (potion) => {
+    setPotionToDisplay(potion);
+  }
+
+  const handleGalleryItemSave = (potion) => {
+    setSavedPotions([...savedPotions, potion]);
+  }
+
+  const handleSavedGalleryItemDelete = (potion) => {
+    setSavedPotions(
+      //Filter out the selected potion
+      savedPotions.filter((savedPotion) => {
+        return (savedPotion !== potion);
+      })
+    )
   }
 
   const handleEffectsSelectionChange = (effectRows) => {
@@ -55,14 +71,23 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
     <div className="PotionMaker">
 
       <PotionGallery
-        potions={potions}
+        className="generated-potions"
+        potions={generatedPotions}
         onSelect={handleGalleryItemSelection}
+        onSave={handleGalleryItemSave}
+      />
+
+      <PotionSavedGallery
+        className="saved-potions"
+        potions={savedPotions}
+        onSelect={handleGalleryItemSelection}
+        onDelete={handleSavedGalleryItemDelete}
       />
 
       <div style={{ "display": "flex" }}>
         <div>
           <PotionViewer
-            potion={potion}
+            potion={potionToDisplay}
             error={potionError}
           />
 
