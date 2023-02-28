@@ -80,14 +80,14 @@
         "id": "comprehend_languages",
         "level": 1,
         "name": "Compreender idiomas",
-        "description": "por 1 hora, você entende o significado literal de qualquer idioma falado que você ouve. Você também entende qualquer linguagem escrita que vê, mas deve estar tocando a superfície na qual as palavras estão escritas. Demora cerca de 1 minuto para ler uma página de texto.",
+        "description": "Por 1 hora, você entende o significado literal de qualquer idioma falado que você ouve. Você também entende qualquer linguagem escrita que vê, mas deve estar tocando a superfície na qual as palavras estão escritas. Demora cerca de 1 minuto para ler uma página de texto.",
         "duration": "1 Hora"
     },
     {
         "id": "disguise_self",
         "level": 1,
         "name": "Disfarçar-se",
-        "description": "Você muda a sua aparência, incluindo suas roupas, armaduras, armas e outros pertences pessoais por 1 hora. Você pode mudar até 1 pé de altura. Você não pode mudar seu tipo de corpo. As mudanças não resistem à inspeção física.",
+        "description": "Você muda a sua aparência, incluindo suas roupas, armaduras, armas e outros pertences pessoais por 1 hora. Você pode mudar até 1 pé de altura. Você não pode mudar seu tipo de corpo. As mudanças não resistem a inspeção física.",
         "duration": "1 Hora"
     },
     {
@@ -101,7 +101,7 @@
         "id": "detect_magic",
         "level": 1,
         "name": "Detectar Magia",
-        "description": "por 10 minutos, você sente a presença de magia a até 9 metros de você. Se você sentir magia desta forma, você pode usar sua ação para ver uma aura fraca ao redor de qualquer criatura visível ou objeto na área que carrega magia, e você aprende sua escola de magia, se houver. O efeito pode penetrar a maioria das barreiras, mas é bloqueada por 30 cm de pedra, 2,5 cm de metal comum, uma folha fina de chumbo ou 90 cm de madeira ou terra.",
+        "description": "Por 10 minutos, você sente a presença de magia a até 9 metros de você. Se você sentir magia desta forma, você pode usar sua ação para ver uma aura fraca ao redor de qualquer criatura visível ou objeto na área que carrega magia, e você aprende sua escola de magia, se houver. O efeito pode penetrar a maioria das barreiras, mas é bloqueada por 30 cm de pedra, 2,5 cm de metal comum, uma folha fina de chumbo ou 90 cm de madeira ou terra.",
         "duration": "10 Minutos"
     },
     {
@@ -121,8 +121,8 @@
     {
         "id": "protection_from_evil_and_good",
         "level": 1,
-        "name": "Proteção contra o beme o mal",
-        "description": "Por 10 minutos você estará protegida contra certos tipos de criaturas: aberrações, celestiais, elementais, feéricos, demônios e mortos-vivos. Criaturas desses tipos têm desvantagem nas jogadas de ataque contra você não podem te enfeitiçar, amedrontar ou possuir. Você tem vantagem em novos testes de resistência caso já esteja sobre um desdes efeitos.",
+        "name": "Proteção contra o bem e o mal",
+        "description": "Por 10 minutos você estará protegida contra certos tipos de criaturas: aberrações, celestiais, elementais, feéricos, demônios e mortos-vivos. Criaturas desses tipos têm desvantagem nas jogadas de ataque contra você e não podem te enfeitiçar, amedrontar ou possuir. Você tem vantagem em novos testes de resistência caso já esteja sobre um desdes efeitos.",
         "duration": "10 Minutos"
     },
     {
@@ -161,10 +161,220 @@
         "duration": "1 Horas"
     },
     {
+        "id": "heroism",
+        "level": 1,
+        "name": "Heroísmo",
+        "description": "Você fica imune a ser amedrontada e ganha 1d4 pontos de vida temporários no início de cada um de seus turnos que desaparecem quando o efeito termina.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "healing",
+        "level": 1,
+        "name": "Cura",
+        "description": "Você recupera 2d4 + 2 pontos de vida.",
+        "duration": "-"
+    },
+    {
+        "id": "greater_healing",
+        "level": 3,
+        "name": "Cura Maior",
+        "description": "Você recupera 4d4 + 4 pontos de vida.",
+        "duration": "-"
+    },
+    {
+        "id": "superior_healing",
+        "level": 6,
+        "name": "Cura Superior",
+        "description": "Você recupera 8d4 + 8 pontos de vida.",
+        "duration": "-"
+    },
+    {
+        "id": "supreme_healing",
+        "level": 9,
+        "name": "Cura Suprema",
+        "description": "Você recupera 10d4 + 20 pontos de vida.",
+        "duration": "-"
+    },
+    {
         "id": "invisibility",
         "level": 2,
         "name": "Invisibilidade",
         "description": "Você e tudo que você carrega fica invisível por 1 hora. O efeito acaba se você atacar ou conjurar uma magia.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "alter_self_aquatic_adaptation",
+        "level": 2,
+        "name": "Adaptação Aquática",
+        "description": "Por 1 hora, você pode respirar embaixo d’água e ganha deslocamento de natação igual a seu deslocamento terrestre.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "alter_self_change_appearance",
+        "level": 2,
+        "name": "Mudar Aparência",
+        "description": "Por 1 hora, você transforam sua aparência, incluindo altura, peso, traços faciais, timbre da sua voz, comprimento do cabelo, coloração e características distintas. Suas estatísticas não mudam e você também não pode parecer com uma criatura de um tamanho diferente do seu nem mudar seu formato básico. A qualquer momento da duração, você pode usar sua ação para mudar sua aparência novamente.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "alter_self_natural_weapons",
+        "level": 2,
+        "name": "Armas Naturais",
+        "description": "Crescerem garras, presas, espinhos, chifres ou armas naturais diferentes em você. Você é proficiente com essas armas naturais e elas causam 1d6 de dano de concussão, perfurante ou cortante. Além disso, elas são mágicas e você tem +1 de bônus nas jogadas de ataque e dano que você fizer com elas. Elas duram 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "borrowed_knowledge",
+        "level": 2,
+        "name": "Conhecimento Emprestado",
+        "description": "Você ganha proficiência em uma perícia da sua escolha na qual você não tenha proficiência por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "blur",
+        "level": 2,
+        "name": "Nublar",
+        "description": "Por 1 minuto, criaturas têm desvantagem nas jogadas de ataque contra você. Um atacante é imune a esse efeito se não depender de visão, ou se puder ver através de ilusões.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "barkskin",
+        "level": 2,
+        "name": "Pele de Árvore",
+        "description": "Sua CA não pode ser menor do que 16 por 1 hora.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "darkvision",
+        "level": 2,
+        "name": "Enxergar no Escuro",
+        "description": "Por 8 horas, você terá visão no escuro com alcance de 18 metros [60 ft].",
+        "duration": "8 Horas"
+    },
+    {
+        "id": "locate_object",
+        "level": 2,
+        "name": "Localizar Objeto",
+        "description": "Descreva ou nomeie um objeto que lhe seja familiar. Você sente a sua direção e a direção de seu movimento se ele estiver até 300 metros [1000 ft] de você. Você pode localizar um objeto específico que você já tenha visto de perto ou o objeto mais próximo de um tipo específico. O efeito dura 10 minutos e é barrado por qualquer espessura de chumbo, mesmo uma folha fina.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "locate_animals_or_plants",
+        "level": 2,
+        "name": "Localize Animais ou Plantas",
+        "description": "Descreva ou nomeie um tipo especifico de besta ou planta. Você descobre a direção e distância da criatura ou planta mais próxima desse tipo dentro de 7,5 quilômetros [5 milhas], se houver alguma presente.",
+        "duration": "-"
+    },
+    {
+        "id": "levitate",
+        "level": 2,
+        "name": "Levitar",
+        "description": "Você se ergue verticalmente, até 6 metros [20 ft] e permanece suspenso lá pela duração. Você pode se mover puxando ou empurrarand um objeto fixo ou superfície ao seu alcance ou mudando sua altitude em até 6 metros [20 ft] como parte do seu movimento. Após 10 minutos o efeito acaba e você flutua suavemente até o chão.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "lesser_restoration",
+        "level": 2,
+        "name": "Restauração Menor",
+        "description": "Você acabar com uma doença ou condição que esteja te aflingido. A condição pode ser: cegueira, surdez, paralisia ou envenenamento. Além disso, você perde 1 nível de exaustão.",
+        "duration": "-"
+    },
+    {
+        "id": "find_traps",
+        "level": 2,
+        "name": "Encontrar Armadilhas",
+        "description": "Você sente a presença de qualquer armadilha (física ou mágica) a 36 metros [120 ft] que esteja na sua linha de visão. Você sabe da presença de armadilhas e a natureza geral do perigo que elas representam, mas não aprende a localização exata de cada armadilha.",
+        "duration": "-"
+    },
+    {
+        "id": "enlarge",
+        "level": 2,
+        "name": "Aumentar",
+        "description": "Seu tamanho dobra em todas as dimensões e seu peso é multiplicado por oito elevando sua categoria de tamanho para o próximo nível. Se não houver espaço suficiente você alcança o tamanho máximo possível no espaço disponível. Por 1 minuto, você também tem vantagem em testes de Força e testes de resistência de Força. Suas armar também dobram de tamanho e causam 1d4 de dano extra.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "reduce",
+        "level": 2,
+        "name": "Reduzir",
+        "description": "Seu tamanho é reduzido à metade em todas as dimensões e seu peso é reduzido a um oitavo do normal, reduzindo sua categoria de tamanho para o nível anterior. Por 1 minuto, você também tem desvantagem em testes de Força e testes de resistência de Força. Suas armar também encolhem e causam 1d4 de dano extra a menos.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "spider_climb",
+        "level": 2,
+        "name": "Patas de Aranha",
+        "description": "Por 1 hora, você ganha deslocamento de escalada igual a seu deslocamento e pode se mover para cima, para baixo, através de superfícies verticais e de cabeça para baixo pelos tetos, enquanto deixa suas mãos livres.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "see_invisibility",
+        "level": 2,
+        "name": "Ver o Invisível",
+        "description": "Por 1 Hora, você vê criaturas e objetos invisíveis como se eles fossem visíveis e pode ver no Plano Etéreo. Criaturas e objetos etéreos parecem espectrais e translúcidos.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "protection_from_poison",
+        "level": 2,
+        "name": "Proteção Contra Venenos",
+        "description": "Você neutraliza um veneno aleatório que estiver te afligindo. Por 1 hora, você tem vantagem em testes de resistência para não envenenado e resistência a dano de veneno.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "pass_without_trace",
+        "level": 2,
+        "name": "Passos sem Pegadas",
+        "description": "Por 1 hora, você recebe +10 de bônus em testes de Destreza (Furtividade) e não pode ser rastreada, exceto por meios mágicos. Além disso, você não deixa quaisquer pegadas ou outros vestígios da sua passagem.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "warding_wind",
+        "level": 2,
+        "name": "Vento Protetor",
+        "description": "Por 10 minutos, um vento forte sopra ao seu redor em um raio de 3 metros [10ft] e se mantém centrado em você. O vento tem os seguintes efeitos:\nEle ensurdece você e outras criaturas em sua área.\nEle extingue chamas desprotegidas em sua área que são do tamanho de tochas ou menores.\nA área é um terreno difícil para outras criaturas além de você.\nAs jogadas de ataque de ataques à distância com armas têm desvantagem se passarem pelo vento.\nEle dispersa vapor, gás e névoa.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "enhance_ability_bear_endurance",
+        "level": 2,
+        "name": "Resistência do Urso",
+        "description": "Por 1 hora, você tem vantagem em testes de Força e sua capacidade de carga dobra.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "enhance_ability_bull_strength",
+        "level": 2,
+        "name": "Força de Touro",
+        "description": "Por 1 hora, você tem vantagem em testes de Destreza e não sofre dano por cair 6 metros ou menos se não estiver incapacitado.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "enhance_ability_cat_grace",
+        "level": 2,
+        "name": "Graça do Gato",
+        "description": "Por 1 hora, você tem vantagem em testes de Constituição e ganha 2d6 pontos de vida temporários, que são perdidos quando o efeito termina.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "enhance_ability_eagle_splendor",
+        "level": 2,
+        "name": "Esplendor da Águia",
+        "description": "Por 1 hora, você tem vantagem em testes de Inteligência.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "enhance_ability_fox_cunning",
+        "level": 2,
+        "name": "Astúcia da Raposa",
+        "description": "Por 1 hora, você tem vantagem em testes de Sabedoria.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "enhance_ability_owl_wisdom",
+        "level": 2,
+        "name": "Sabedoria da Coruja",
+        "description": "Por 1 hora, você tem vantagem em testes de Carisma.",
         "duration": "1 Hora"
     },
     {
@@ -175,10 +385,101 @@
         "duration": "1 Minuto"
     },
     {
+        "id": "fly_3",
+        "level": 3,
+        "name": "Voar",
+        "description": "Você ganha velocidade de vôo igual a 18 m [60 ft] por 10 minutos. Você cairá uma vez que o efeito passe.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "feign_death",
+        "level": 3,
+        "name": "Forjar a Morte",
+        "description": "Por 1 hora, você entra em um estado catatônico que é indistinguível da morte e aparenta estar morto para todas as inspeções externas e para magias usadas para determinar a sua condição. Você estará cego e incapacitado e seu deslocamento cai para 0. Você terá resistência a todos os danos, exceto dano psíquico. Qualquer magia ou veneno que te aflija não terá qualquer efeito até a magia terminar.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "gaseous_form",
+        "level": 3,
+        "name": "Forma Gasosa",
+        "description": "Você se transforma em uma nuvem gasosa por 1 hora. Durante esse tempo: seu único meio de movimentação é 3 metros de deslocamento de voo, você pode ocupar o espaço de outra criatura e pode passar através de pequenos buracos, mas líquidos barram a sua passagem; você tem resistência a dano não-mágico e vantagem em testes de resistência de Força, Destreza e Constituição; você não pode cair e se mantem flutuando no ar, mesmo se estiver atordoado ou incapacitado; você não pode falar, manipular objetos, atacar ou conjurar magias e ninguém pode interagir com os objetos que você estava carregando. O efeito termina se você cair a 0 ponto de vida.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "haste",
+        "level": 3,
+        "name": "Velocidade",
+        "description": "Por 1 minuto, seu deslocamento é dobrado, você ganha +2 de bônus na CA, tem vantagem em testes de resistência de Destreza e ganha uma ação adicional em cada um dos seus turnos que pode ser usada apenas para Atacar (somente com arma), Correr, Desengajar, Esconder-se ou Usar um Objeto. Quando o efeito acabar, você não poderá se mover ou realizar ações até depois do seu próximo turno.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "intellect_fortress",
+        "level": 3,
+        "name": "Fortaleza do Intelecto",
+        "description": "Por 1 hora, você tem resistência a dano psíquico e vantagem em testes de resistência de Inteligência, Sabedoria e Carisma.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "meld_into_stone",
+        "level": 3,
+        "name": "Mesclar à Pedra",
+        "description": "Você entra em um objeto ou superfície rochoso, grande o suficiente para comportar seu corpo inteiro, mesclando-se, junto com todo o equipamento que você esteja carregando, com a rocha por 8 horas. Usando seu movimento, você entra na rocha num ponto que você possa tocar. Sua presença ficará indetectável por sentidos não-mágicos.\nVocê não pode ver o que está ocorrendo do lado de fora e, qualquer teste de Sabedoria (Percepção) que você fizer para ouvir os sons são feitos com desvantagem. Você continua consciente do tempo transcorrido e pode conjurar magias em você enquanto estiver imerso na rocha. Você pode usar seu movimento para sair da rocha onde você entrou, o que termina o efeito. Do contrário, você não pode se mover.\nPequenos danos físicos a rocha não te ferem, mas destruição parcial ou uma mudança no formato (fazendo que você já não caiba mais dentro dela) expelirá você causando-lhe 6d6 de dano de concussão. A destruição completa da rocha (ou transmutação em uma substância diferente) expelirá você causando-lhe 50 de dano de concussão. Se você for expelido, você ficará caído no chão em um espaço desocupado perto de onde você entrou da primeira vez.",
+        "duration": "8 Horas"
+    },
+    {
+        "id": "protection_from_energy",
+        "level": 3,
+        "name": "Proteção contra Energia",
+        "description": "Por 1 hora, você terá resistência a um tipo de dano de sua escolha entre: ácido, elétrico, fogo, frio ou trovejante.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "remove_curse",
+        "level": 3,
+        "name": "Remover Maldição",
+        "description": "Todas as maldições afetando você terminam. À discrição do mestre, você pode derramar a poção sobre um objeto para terminar as maldições afetando ele. Se o objeto for um item mágico amaldiçoado, sua maldição persiste, mas a magia rompe a sintonia do portador com o objeto, então permitindo que ele o remova.",
+        "duration": "-"
+    },
+    {
+        "id": "revivify",
+        "level": 3,
+        "name": "Revivificar",
+        "description": "Você volta a vida com 1 ponto de vida. Essa poção não pode trazer de volta a vida criaturas que tenham morrido de velhice nem pode restaurar quaisquer partes do corpo perdidas.",
+        "duration": "-"
+    },
+    {
+        "id": "tongues",
+        "level": 3,
+        "name": "Idiomas",
+        "description": "Por 1 hora, você pode compreender e falar qualquer idioma ouvir. Além disso, quando você falar, você é compreendido por qualquer criatura que saiba pelo menos um idioma e possa te ouvir.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "water_breathing",
+        "level": 3,
+        "name": "Respirar na Água",
+        "description": "Você ganha a habilidade de respirar embaixo d'água por 24 horas e também mantém sua forma natural de respiração.",
+        "duration": "24 Horas"
+    },
+    {
+        "id": "water_walk",
+        "level": 3,
+        "name": "Caminhar na Água",
+        "description": "Você ganha a habilidade de se mover através de qualquer superfície líquida como se fosse chão sólido (apesar de que lava, por exemplo, ainda pode causar dano de calor) por 1 hora. Se você já estiver submersa, você flutua para a superfície do líquido a uma taxa de 18 metros [60 ft] por rodada.",
+        "duration": "1 Hora"
+    },
+    {
         "id": "time_stop",
         "level": 9,
         "name": "Parar o Tempo",
         "description": "O fluxo do tempo congela para tudo e todos exceto para você por 1d4+1 Rodadas durante as quais você pode agir livremente. O efeito acaba se você ou qualquer efeito que você criar interagir com outra criatura ou objeto carregado por outra criatura. O efeito acaba se você se mover mais de 300 m [1000 ft].",
         "duration": "1d4+1 Rodadas"
+    },
+    {
+        "id": "teleport_7",
+        "level": 7,
+        "name": "Teleporte",
+        "description": "Você teleporta-se instantanemente com todas as suas coisas para alguma localidade escolhida por você. Quanto mais você conhecer o lugar maior a probabilidade de ir parar no lugar correto. Caso o lugar seja muito familiar há 75% de chance de acerto, conhecimento casula 50%, visto apenas uma vez ou descrito para você 25% de chance. Fica a critério do mestre indicar o tamanho do erro e onde você irá parar ao tomar a poção caso não acerte o alvo.",
+        "duration": "Instantâneo"
     }
 ]

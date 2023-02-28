@@ -21,7 +21,7 @@ const loadPotionsFromStorage = (storageKey) => {
 
                 return new Potion(potionData);
             });
-        console.log("savedLocalPotions:", savedLocalPotions);
+        // console.log("savedLocalPotions:", savedLocalPotions);
         return savedLocalPotions;
     }
     else return [];
