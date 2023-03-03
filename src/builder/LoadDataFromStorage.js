@@ -1,14 +1,11 @@
 'use-strict'
 
-import { Potion, PotionBlueprint } from "../model/Potion";
-import { PotionEffect, PotionSideEffect } from "../model/PotionEffect";
-
+import { Potion } from "../model/Potion";
 const loadPotionsFromStorage = (storageKey) => {
     const savedPotionsString = localStorage.getItem(storageKey);
-    console.log("Saved data: ", savedPotionsString);
 
     return (
-        (savedPotionsString && JSON.parse(savedPotionsString.length) > 0)?
+        (savedPotionsString && JSON.parse(savedPotionsString.length) > 0) ?
             JSON.parse(savedPotionsString).map((potionString) => Potion.parse(potionString)) :
             []
     )
