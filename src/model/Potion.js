@@ -25,8 +25,11 @@ class Potion {
     #description;
 
     constructor(
-        {blueprint, effects = [], sideEffects = []}
+        { blueprint, name, image, description, effects = [], sideEffects = []}
     ) {
+        this.#name = name;
+        this.#image = image;
+        this.#description = description;
         this.effects = effects;
         this.sideEffects = sideEffects;
         this.blueprint = blueprint
@@ -161,6 +164,27 @@ class Potion {
             liquidDetail,
             containerDetail,
         });
+    }
+
+    stringify() {
+        return JSON.stringify({
+            ...this,
+            name: this.#name,
+            description: this.#description,
+            image: this.#image,
+        });
+    }
+
+    static parse(potionData) {
+
+        const parsedData = potionData;
+
+        //Restore potion data:
+        parsedData.blueprint = new PotionBlueprint(parsedData.blueprint)
+        parsedData.effects = parsedData.effects.map((effectData) => new PotionEffect(effectData));
+        parsedData.sideEffects = parsedData.sideEffects.map((sideEffectData) => new PotionSideEffect(sideEffectData));
+
+        return new Potion(parsedData);
     }
 }
 

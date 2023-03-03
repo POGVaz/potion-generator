@@ -19,9 +19,9 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
   const effectsRef = useRef(effects);
   const sideEffectsRef = useRef(side_effects);
 
-  //On change, save the saved potion on local storage
+  //On change, save the saved potions on local storage
   useEffect(() => {
-    localStorage.setItem('savedPotions', JSON.stringify(savedPotions ? savedPotions : []));
+    localStorage.setItem('savedPotions', savedPotions ? "["+savedPotions.map((savedPotion) => savedPotion.stringify())+"]" : []);
   }, [savedPotions]);
 
   const handleGenerate = (formData) => {

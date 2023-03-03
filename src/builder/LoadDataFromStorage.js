@@ -5,26 +5,13 @@ import { PotionEffect, PotionSideEffect } from "../model/PotionEffect";
 
 const loadPotionsFromStorage = (storageKey) => {
     const savedPotionsString = localStorage.getItem(storageKey);
-    if (savedPotionsString) {
-        const savedLocalPotions =
-            JSON.parse(savedPotionsString).map((potionData) => {
+    console.log("Saved data: ", savedPotionsString);
 
-                potionData.effects = potionData.effects.map((effectData) => {
-                    return new PotionEffect(effectData);
-                });
-
-                potionData.sideEffects = potionData.sideEffects.map((sideEffectData) => {
-                    return new PotionSideEffect(sideEffectData);
-                });
-
-                potionData.blueprint = new PotionBlueprint(potionData.blueprint);
-
-                return new Potion(potionData);
-            });
-        // console.log("savedLocalPotions:", savedLocalPotions);
-        return savedLocalPotions;
-    }
-    else return [];
+    return (
+        (savedPotionsString && JSON.parse(savedPotionsString.length) > 0)?
+            JSON.parse(savedPotionsString).map((potionString) => Potion.parse(potionString)) :
+            []
+    )
 }
 
 export { loadPotionsFromStorage }

@@ -1,26 +1,25 @@
 'use-strict'
+import { Potion } from './model/Potion';
+const { generatePotion } = require("./GeneratePotion");
 
-// import effects from './data/potion_effects.json';
-// const effects_data = require('./data/potion_effects.json')
+const test = (effects, side_effects) => {
+    const potion = generatePotion({
+        minPrice: 0,
+        maxPrice: 100,
+        minEffects: 2,
+        maxEffects: 2,
+        minSideEffects: 2,
+        maxSideEffects: 2,
+        possibleEffects: effects,
+        possibleSideEffects: side_effects,
+        amount: 5,
+    });
 
-// console.log(effects_data[0].description);
+    console.log("Potion: ", potion);
+    // console.log(JSON.stringify(potion));
+    console.log("Stringified: ", potion.stringify());
 
-// const parse = require("json-templates");
+    console.log("Parse: ", Potion.parse(potion.stringify()));
+}
 
-// const template = parse("{{archetype}} {{adjective.0: }}de {{noun.0}}{{foo:}}");
-
-// console.log(template({ archetype: "Poção", noun: ["Invisibilidade"] }));
-
-var combinations = require('combinations');
-// var getRandom = require('random-weight').default;
-
-var array = ["apple", "banana", "lemon", "mango"];
-
-var filteredArray = array.reduce((filtered, option) => {
-    if (option.length === 5) {
-        filtered.push(option);
-    }
-    return filtered;
-}, []);
-
-console.log(filteredArray);
+export default test;
