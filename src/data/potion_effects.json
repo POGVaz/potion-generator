@@ -469,11 +469,186 @@
         "duration": "1 Hora"
     },
     {
-        "id": "time_stop",
-        "level": 9,
-        "name": "Parar o Tempo",
-        "description": "O fluxo do tempo congela para tudo e todos exceto para você por 1d4+1 Rodadas durante as quais você pode agir livremente. O efeito acaba se você ou qualquer efeito que você criar interagir com outra criatura ou objeto carregado por outra criatura. O efeito acaba se você se mover mais de 300 m [1000 ft].",
-        "duration": "1d4+1 Rodadas"
+        "id": "aura_of_purity_4",
+        "level": 4,
+        "name": "Aura de Pureza",
+        "description": "Durante 10 minutos, você irradia uma aura de 9 metros [30 ft] que se move com você. Todas as criaturas vivas não-hostis na aura (incluindo você) não podem ficar doentes, tem resistência a dano de veneno e tem vantagem em testes de resistência contra efeitos que deixem ela com alguma destas condições: amedrontado, atordoado, cego, enfeitiçado, envenenado, paralisado ou surdo.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "aura_of_life_4",
+        "level": 4,
+        "name": "Aura da Vida",
+        "description": "Durante 10 minutos, você irradia uma aura de 9 metros [30 ft] que se move com você. Todas as criaturas vivas não-hostis na aura (incluindo você) tem resistência a dano necrótico, seu máximo de pontos de vida não pode ser reduzido e recupera 1 ponto de vida quando começa seu turno na aura com 0 pontos de vida.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "death_ward_4",
+        "level": 4,
+        "name": "Proteção contra Morte",
+        "description": "A primeira vez que você cair a 0 ponto de vida dentro de 8 horas como resultado de ter sofrido dano, você fica com 1 ponto de vida e o efeito da poção termina. Alternativamente, se você for afetada por um efeito que te mataria instantaneamente sem causar dano, esse efeito é negado para você e o efeito da poção termina.",
+        "duration": "8 Horas"
+    },
+    {
+        "id": "divination_4",
+        "level": 4,
+        "name": "Adivinhação",
+        "description": "Você faz uma única pergunta a respeito de um objetivo, evento ou atividade específica que irá ocorrer dentro de 7 dias. O Mestre oferece uma resposta confiável. A resposta deve ser uma frase curta, uma rima enigmática ou um presságio. A poção não leva em consideração qualquer possível circunstância que possa mudar o que está por vir. Se você usar este efeito duas ou mais vezes antes de completar seu próximo descanso longo, existe uma chance de 25 por cento a cada conjuração ter um resultado aleatório feito secretamente pelo mestre.",
+        "duration": "-"
+    },
+    {
+        "id": "fire_shield_fire_4",
+        "level": 4,
+        "name": "Escudo de Fogo",
+        "description": "Durante 10 minutos você fica rodeado por chamas que lhe garantem resistência a dano de Frio, emitem luz plena a 3 [10 ft] metros e penumbra a 3 [10 ft] metros adicionais. Além disso, sempre que uma criatura a 1,5 metro [5 ft] de você lhe atingir com um ataque corpo-a-corpo, o atacante sofre 2d8 de dano de Fogo.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "fire_shield_cold_4",
+        "level": 4,
+        "name": "Escudo de Frio",
+        "description": "Durante 10 minutos você fica rodeado por chamas frias que lhe garantem resistência a dano de Fogo, emitem luz plena a 3 [10 ft] metros e penumbra a 3 [10 ft] metros adicionais. Além disso, sempre que uma criatura a 1,5 metro [5 ft] de você lhe atingir com um ataque corpo-a-corpo, o atacante sofre 2d8 de dano de Frio.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "freedom_of_movement_4",
+        "level": 4,
+        "name": "Liberdade de Movimento",
+        "description": "Por 1 hora, seus movimentos não são afetados por terreno difícil. Magias ou outros efeitos mágicos não podem reduzir seu deslocamento, lhe impedir ou lhe paralisar. Você também pode gastar 1,5 metro [5 ft] de deslocamento para escapar automaticamente de impedimentos não-mágicos. Finalmente, estar submerso não impõe penalidades em seu deslocamento ou ataques.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "greater_invisibility_4",
+        "level": 4,
+        "name": "Invisibilidade Maior",
+        "description": "Você se torna invisível até a magia acabar. Qualquer coisa que você estiver vestindo ou carregando fica invisível enquanto estiver em sua posse.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "locate_creature_4",
+        "level": 4,
+        "name": "Localizar Criatura",
+        "description": "Descreva ou nomeie uma criatura que lhe seja familiar. Você sente a sua direção e seu movimento se ela estiver até 300 metros [1000 ft] de você. Você pode localizar uma criatura específica que você já tenha visto de perto ou ou a criatura mais próxima de um tipo especifico. Se a criatura que você descreveu ou nomeou estiver em uma forma diferente, como um efeito de metamorfose, essa magia não localizará a criatura. O efeito dura 10 minutos e é barrado se água corrente de, pelo menos 3 metros de largura, bloquear o caminho direito entre você e a criatura.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "otiluke_s_resilient_sphere_4",
+        "level": 4,
+        "name": "Esfera Resiliente de Otiluke",
+        "description": "Você é englobado por uma esfera de energia por 1 minuto. Nada – nem objetos físicos, energia ou outros efeitos mágicos – pode atravessar a barreira, para dentro ou para fora, mas você pode respirar lá dentro. A esfera é imune a todos os danos e impede que você sofa ou cause dano a criaturas de fora. A esfera não tem peso e é grande o suficiente apenas para lhe conter. Você pode usar sua ação para empurrar a parede da esfera e rolar a esfera a metade do seu deslocamento. Outras criaturas podem mover e erguer a esfera. A magia Desintegrar pode destruir a esfera e não causará dano a você.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "polymorph_4",
+        "level": 4,
+        "name": "Polimorfia",
+        "description": "Por 1 hora ou até você cair a 0 ponto de vida, você é transformado em qualquer besta cujo nível do desafio seja igual ou inferior ao seu nível. Todas as suas estatísticas de jogo são substituídas pelas estatísticas da besta escolhida, mas você mantém sua tendência e personalidade. Quando você reverter à sua forma normal, você retorna à quantidade de pontos de vida que tinha antes da transformação, qualquer dano excedente é recebido pela sua forma normal. Essa poção não afeta um alvo com 0 pontos de vida. A criatura é limitada em suas ações pela natureza da sua nova forma e ela não pode falar, conjurar magias ou realizar qualquer outra ação que precise de mãos ou de vocalização. Seu equipamento se mescla à sua nova forma e você não pode ativar, empunhar ou, de outra forma, se beneficiar de qualquer de seus equipamentos.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "shadow_of_moil_4",
+        "level": 4,
+        "name": "Sombra de Moil",
+        "description": "Sombras em forma de chamas envolvem seu corpo por 1 minuto. Você fica obscurecido para outras criaturas. A 3 metros [10 ft] de você, penumbra se torna escuridão e luz se torna penumbra. As sombras lhe concedem resistência a dano Radiante e sempre que uma criatura a até 3 metros de você lhe atingir com um ataque, as sombras causam 2d8 de dano necrótico.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "antilife_shell",
+        "level": 5,
+        "name": "Cúpula Antivida",
+        "description": "Durante 1 hora, você irradia uma barreira de 3 metros [10 ft] de raio que se move com você. A barreira impede a passagem de qualquer criatura que não seja um constructo ou morto-vivo. Uma criatura afetada pode conjurar magias ou realizar ataques à distância ou com alcance através da barreira. Se você se mover forçando uma criatura afetada a atravessar a barreira, o efeito termina.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "circle_of_power",
+        "level": 5,
+        "name": "Círculo de Poder",
+        "description": "Durante 10 minutos, você irradia energia divina em uma esfera de 9 metros [30 ft] que se move com você. Cada criatura amigável na área (incluindo você) tem vantagem em testes de resistência contra magias e outros efeitos mágicos. Além disso, quando uma criatura afetada for bem sucedida num teste de resistência contra uma magia ou efeito mágico realizado para sofrer apenas metade do dano, ela não sofrerá dano nenhum se passar no teste.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "greater_restoration",
+        "level": 5,
+        "name": "Restauração Maior",
+        "description": "A poção remove um dos seguintes efeitos que esteja te afligindo: Enfeitiçado, petrificação, maldição (incluindo sintonização com um item amaldiçoado), redução de pontos de habilidade, redução de pontos de vida máximo ou até 3 níveis de exaustão.",
+        "duration": "-"
+    },
+    {
+        "id": "mislead",
+        "level": 5,
+        "name": "Despistar",
+        "description": "Você fica invisível ao mesmo tempo que uma cópia ilusória sua aparece onde você estava. A cópia permanece por 1 hora, mas a invisibilidade acaba se você atacar ou conjurar uma magia ou após 1 hora. Você pode usar sua ação para mover a cópia ilusória até o dobro do seu deslocamento e fazê-la se comportar da forma que você quiser. Você pode ver através dos olhos e ouvir através dos ouvidos da cópia. Com uma ação bônus, você pode trocar o uso dos sentidos dela pelo seu ou vice-versa. Enquanto você está usando os sentidos dela, você fica cego e surdo ao que está a sua volta.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "skill_empowerment",
+        "level": 5,
+        "name": "Conhecimento Aprimorado",
+        "description": "Por 1 hora, você dobra seu bônus de proficiência para testes de habilidade que fizer usando uma habilidade a sua escolha. Você deve escolher uma habilidade na qual seja proficiente e que não se beneficie de um efeito que dobre seu bônus de proficiência.",
+        "duration": "1 hora"
+    },
+    {
+        "id": "tree_stride",
+        "level": 5,
+        "name": "Caminhar pelas Árvores",
+        "description": "Por 1 minuto, você pode usar 3 metros [10 ft] de deslocamento para entrar numa árvore e sair em outra árvore do mesmo tipo a até 150 metros [500 ft]. Enquanto estiver dentro da árvore, você sabe a localização de todas as árvores do mesmo tipo a 150 metros [500 ft]. Ambas as árvores devem estar vivas e ter, pelo menos, o mesmo tamanho que você. Você só pode usar essa habilidade de transporte uma vez por rodada e deve terminar cada um de seus turnos fora da árvore.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "globe_of_invulnerability",
+        "level": 6,
+        "name": "Globo da Invulnerabilidade",
+        "description": "Por 1 minuto, uma barreira imóvel e cintilante de 3 metros [10 ft] centrada em você impede que qualquer magia de 5° nível ou inferior, conjurada de fora da barreira, afete criaturas ou objetos dentro dela, mesmo que a magia seja conjurada usando um espaço de magia de nível superior. Tais magias podem ter como alvo criaturas e objetos dentro da barreira, mas a magia não produz nenhum efeito neles. Similarmente, a área dentro da barreira é excluída das áreas afetadas por essas magias.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "heal",
+        "level": 6,
+        "name": "Cura Restauradora",
+        "description": "Você recupera 70 pontos de vida e efeitos de cegueira, surdez ou doença acabam. Essa poção não tem efeito em constructos ou mortos-vivos.",
+        "duration": "-"
+    },
+    {
+        "id": "investiture_of_flame",
+        "level": 6,
+        "name": "Investidura de Chamas",
+        "description": "Por 10 minutos, você tem os seguintes benefícios: Você irradia luz plena em um raio de 9 metros [30 ft] e penumbra por mais 9 metros [30 ft]; Você é imune a dano de Fogo e tem resistência a dano de Frio; Uma criatura que se mova a até 1,5 metros [5 ft] de você pela primeira vez no turno ou termine seu turno nesse local recebe 1d10 de dano de Fogo; Você pode usar sua ação para criar uma linha de fogo de 4,5 metros [15 ft] de comprimento e 1,5 metros [5 ft] de largura estendendo-se de você na direção que você escolher, cada criatura na linha deve fazer um teste de resistência de Destreza (CD 15?) sofrendo 4d8 de dano de Fogo se falhar na resistência, ou metade desse dano se obtiver sucesso.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "investiture_of_ice",
+        "level": 6,
+        "name": "Investidura de Gelo",
+        "description": "Por 10 minutos, você tem os seguintes benefícios: Você é imune a dano de Frio e tem resistência a dano de Fogo; Você pode se mover em terreno difícil criado por gelo ou neve sem gastar movimento extra; O solo a 3 metros [10 ft] ao seu redor é terreno difícil para outras criaturas; Você pode usar sua ação para criar uma cone de 4,5 metros [15 ft] na direção que você escolher, cada criatura no cone deve fazer um teste de resistência de Constituição (CD 15?) sofrendo 4d6 de dano de Frio e reduzindo seu deslocamento pela metade até o início do seu próximo turno se falhar, ou metade desse dano se obtiver sucesso.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "investiture_of_stone",
+        "level": 6,
+        "name": "Investidura de Pedra",
+        "description": "Por 10 minutos, você tem os seguintes benefícios: Você tem resistência a dano de Concussão, Perfuração e Cortante de armas não mágicas; Você pode se mover por terreno difícil feito de terra ou pedra sem gastar movimento extra e pode se mover através de terra sólida ou pedra como se fosse ar sem desestabilizá-la, mas não pode terminar seu movimento ali (Se fizer isso, você será ejetado para o espaço desocupado mais próximo atordoado até o final do seu próximo turno e o efeito acabará); Você pode usar sua ação para criar um pequeno terremoto no chão em um raio de 4,5 metros [15 ft] centrado em você, outras criaturas naquele terreno devem ser bem sucedidas em um teste de resistência de Destreza (CD 15?) ou serão derrubadas no chão.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "investiture_of_wind",
+        "level": 6,
+        "name": "Investidura de Vento",
+        "description": "Por 10 minutos, você tem os seguintes benefícios: Ataques com armas à distância feitos contra você têm desvantagem na jogada de ataque; Você ganha deslocamento de voo de 18 metros [60 ft], mas se ainda estiver voando quando o efeito terminar, você cairá; Você pode usar sua ação para criar um cubo de 4,5 metros [15 ft] em um ponto que você possa ver a até 18 metros [60ft], cada criatura na área deve fazer um teste de resistência de Constituição (CD 15?) sofrendo 2d10 de dano de Concussão em caso de falha, ou metade em caso de sucesso. Se uma criatura Grande ou menor falhar no teste de resistência, ela também é empurrada até 3 metros do centro do cubo.",
+        "duration": "10 Minutos"
+    },
+    {
+        "id": "primordial_ward",
+        "level": 6,
+        "name": "Proteção Primordial",
+        "description": "Você tem resistência a dano de Ácido, Frio, Fogo, Elétrico e Sonoro por 1 minuto. Ao receber dano de um desses tipos, você pode usar sua reação para ganhar imunidade contra esse tipo de dano, inclusive contra o dano desencadeador. Se você fizer isso, as resistências terminam e você tem imunidade até o final do seu próximo turno, quando o efeito termina.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "true_seeing",
+        "level": 6,
+        "name": "Visão Verdadeira",
+        "description": "Por 1 hora e num alcance de até 36 metros, você tem visão verdadeira, pode perceber portas secretas escondidas por magia e pode ver no Plano Etéreo.",
+        "duration": "1 Hora"
     },
     {
         "id": "teleport_7",
@@ -481,5 +656,95 @@
         "name": "Teleporte",
         "description": "Você teleporta-se instantanemente com todas as suas coisas para alguma localidade escolhida por você. Quanto mais você conhecer o lugar maior a probabilidade de ir parar no lugar correto. Caso o lugar seja muito familiar há 75% de chance de acerto, conhecimento casula 50%, visto apenas uma vez ou descrito para você 25% de chance. Fica a critério do mestre indicar o tamanho do erro e onde você irá parar ao tomar a poção caso não acerte o alvo.",
         "duration": "Instantâneo"
+    },
+    {
+        "id": "crown_of_stars",
+        "level": 7,
+        "name": "Coroa de Estrelas",
+        "description": "Sete esferas de luz orbitam sua cabeça por 1 hora. Você pode usar uma ação bônus e gastar uma esfera para fazer um ataque de magia à distância contra um alvo a 36 metros [120 ft] que causa 4d12 de dano Radiante. Quatro ou mais esferas emitem luz plena em um raio de 9 metros [30 ft] e penumbra por mais 9 metros [30 ft]. Menos de três esferas emitem penumbra em um raio de 9 metros [30 ft].",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "draconic_transformation",
+        "level": 7,
+        "name": "Transformação Dracônica",
+        "description": "Você ganhas os seguintes benefícios por 1 minuto: Você ganha deslocamento de voo de 18 metros [60 ft]; Você tem visão às cegas em 9 metros [30 ft]: Dentro desse alcance, você percebe qualquer coisa que não esteja atrás de cobertura total, mesmo se estiver cego ou na escuridão e você enxerga criaturas invisíveis, a menos que ela se esconda de você com sucesso; Quando você conjura esta magia e com uma ação bônus nos turnos subseqüentes, você pode exalar energia em um cone de 18 metros [60 ft] em que cada criatura deve fazer um teste de resistência de Destreza, recebendo 6d8 de dano de Força em uma falha, ou metade do dano em um sucesso.",
+        "duration": "1 Minuto"
+    },
+    {
+        "id": "etherealness",
+        "level": 7,
+        "name": "Forma Etérea",
+        "description": "Você entra na fronteira do Plano Etéreo com seu plano atual e pode ficar lá por até 8 horas. Você pode ver e ouvir em ambos os planos, mas tudo parece cinzento e você não vê além de 18 metros [60 ft] no seu plano original. Você pode se mover para qualquer direção, mas cada metro que você se mover para cima ou para baixo custa dois metros de deslocamento. Você pode afetar e ser afetado apenas por criaturas e objetos no Plano Etéreo, permitindo que você se mova através de objetos no seu plano original. As criaturas que não estiverem no Plano Etéreo não notam sua presença e não podem normalmente interagir com você. Quando o efeito acaba você retorna para o espaço desocupado mais próximo que você puder ocupar no seu plano original, se você não estiver ocupando esse espaço e tiver que ser movido, você sofrerá 10 pontos de dano de Força para cada 1,5 metros [5 ft] que você foi movido. A poção não tem efeito se você já estiver no Plano Etéreo ou em algum plano que não faça fronteira com ele.",
+        "duration": "8 Horas"
+    },
+    {
+        "id": "sequester",
+        "level": 7,
+        "name": "Isolamento",
+        "description": "Você fica invisível e não pode ser percebido através de magias ou efeitos de adivinhação. Durante a duração, você fica num estado de animação suspensa, o tempo para de fluir para você e você não envelhece. O efeito acaba se você sofrer algum dano ou por alguma condição determinada pelo mestre, como por exemplo \"depois de 1.000 anos\" ou \"quando a profecia se concretizar\".",
+        "duration": "Até ser dissipado"
+    },
+    {
+        "id": "antimagic_field",
+        "level": 8,
+        "name": "Campo Antimagia",
+        "description": "Por 1 hora, você irradia uma esfera de antimagia com 3 metros [10 ft] de raio, que se move com você. Magias e outros efeitos mágicos que forem usados em uma criatura ou objeto dentro da esfera não surtem efeito no alvo. A área de outra magia ou efeito mágico não se estende para dentro da esfera. Se a esfera sobrepor um área mágica, a parte da área que for coberta pela espera é suprimida. Qualquer magia ativa ou efeito mágico em uma criatura ou objeto dentro da esfera é suprimido enquanto permanecer dentro da esfera. As propriedades e poderes de itens mágicos são suprimidas dentro da esfera e não podem alvejar um alvo dentro da esfera. Se uma arma mágica ou munição mágica deixar a esfera completamente, a magia do item deixa de ser suprimida tão logo ele deixe a esfera. Teletransporte e viagem planar não funciona dentro da esfera, tanto se a esfera for o destino quando o ponto de partida para tais viagens mágicas. Um portal ou espaço extradimensional aberto é temporariamente fechado enquanto estiver dentro da esfera. Uma criatura ou objeto invocado ou criado através de magia desaparece temporariamente dentro da esfera e reaparece quando o espaço que ele ocupa não estiver mais dentro da esfera. Magias e efeitos que dissipam magias não surtem efeito sob esfera. Esferas criadas por magias ou poções de Campo Antimagia diferentes não se anulam. Um espaço gasto para conjurar uma magia suprimida é consumido e o tempo que ela estiver suprimida é descontado da sua duração. A critério do mestre, efeitos mágicos criados por Artefatos ou Divindades sõa imunes a estes efeitos.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "glibness",
+        "level": 8,
+        "name": "Loquacidade",
+        "description": "Por 1 hora, quando você realizar um teste de Carisma você pode substituir o número rolado por 15. Além disso, não importa o que você diga, magias que determinam se você está dizendo a verdade indicarão que você está sendo sincero.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "mind_blank",
+        "level": 8,
+        "name": "Limpar a Mente",
+        "description": "Por 24 horas, você fica imune a dano Psíquico, a qualquer efeito que poderia sentir suas emoções ou ler seus pensamentos, a magias de adivinhação e a condição enfeitiçado. A magia pode até mesmo evitar a magia desejo e magias ou efeitos de poder similar usados para afetar sua mente ou para adquirir informações sobre você.",
+        "duration": "24 Horas"
+    },
+    {
+        "id": "telepathy",
+        "level": 8,
+        "name": "Telepatia",
+        "description": "Você cria uma ligação telepática com uma criatura voluntária com a qual você seja familiarizado. O alvo reconhece que você é a criatura que está se comunicando com ele. A criatura pode estar em qualquer lugar no mesmo plano de existência que você, mas o efeito termina se vocês não estiverem mais no mesmo plano. Por 24 horas você e o alvo podem compartilhar palavras, imagens, sons e outras mensagens sensoriais um com o outro. A poção permite que uma criatura com valor de Inteligência de pelo menos 1 compreenda o sentido das suas palavras e capta o sentido geral de qualquer mensagem sensorial que você enviar.",
+        "duration": "24 Horas"
+    },
+    {
+        "id": "shapechange",
+        "level": 9,
+        "name": "Metamorfose",
+        "description": "Por 1 hora, você assume a forma de qualquer criatura com um nível de desafio igual ao seu nível ou menor. A criatura não pode ser nem um constructo nem um morto-vivo e você deve ter visto esse tipo de criatura pelo menos uma vez. Você se transforma num exemplar médio da criatura, sem quaisquer níveis de classe nem ou a característica Conjuração. Suas estatísticas de jogo são substituídas pelas estatísticas da forma escolhida. Você mantem sua tendência, Inteligência, Sabedoria, Carisma, e proficiências (em habilidades e resistências) além de ganhar as proficiências da nova criatura. Use o maior bônus de proficiência entre o seu e o da nova criatura. Você não pode usar qualquer ação lendária ou de covil da nova forma. Você assume os pontos de vida da nova forma. Quando você reverter a sua forma normal, você retorna à quantidade de pontos de vida que tinha antes da transformação. Se você reverter como resultado de ter caído a 0 pontos de vida, qualquer dano excedente é recebido pela sua forma normal. Você mantem os benefícios de qualquer característica da sua classe, raça ou outra fonte e pode usa-las, considerando que sua nova forma é fisicamente capaz de fazê-lo. Você não pode usar quaisquer sentidos especiais que você possua a não ser que a nova forma também possua o sentido. Você só poderá falar se a nova forma, normalmente, puder falar. Quando você se transforma, você pode escolher se o seu equipamento cai no chão, é assimilado a sua nova forma ou é usado por ela. O Mestre decide qual equipamento é viável para a nova forma. O seu equipamento não muda de forma ou tamanho para se adaptar à nova forma e, qualquer equipamento que a nova forma não possa vestir deve, ou cair no chão ou ser assimilado por ela. Equipamentos assimilados não terão efeito nesse estado. Pela duração da magia, você pode usar sua ação para assumir uma forma diferente, seguindo as mesmas restrições e regras da forma anterior, com uma exceção: se sua nova forma tiver mais pontos de vida que sua forma atual, seus pontos de vida mantem o valor atual.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "power_word_heal",
+        "level": 9,
+        "name": "Palavra de Poder: Curar",
+        "description": "Você recupera todos os seus pontos de vida. Se você estiver enfeitiçada, amedrontada, paralisada ou atordoada, a condição termina. Se você estiver caída, você pode usar a sua reação para se levantar. Esta poção não afeta mortos-vivos ou constructos."
+    },
+    {
+        "id": "invulnerability",
+        "level": 9,
+        "name": "Invulnerabilidade",
+        "description": "Por 10 minutos você é imune a todo tipo de dano.",
+        "duration": "10 Minuto"
+    },
+    {
+        "id": "true_polymorph",
+        "level": 9,
+        "name": "Polimorfia Verdadeira",
+        "description": "Você se transforma em uma criatura cujo nível de desafio seja igual ou menor ao seu nível. As suas estatísticas são substituídas pelas da nova forma. Você mantem sua tendência e personalidade. Você assume os pontos de vida da sua nova forma e retorna à quantidade de pontos de vida que tinha antes da transformação quando o efeito acaba. Qualquer dano excedente é recebido pela sua forma original. Você é limitada em suas ações pela natureza da sua nova forma e só pode realizar ações que a nova forma seja capaz de realizar, inclusive conjurar magias. Seu equipamento se mescla à sua nova forma e você não pode mais interagir com ele. Metamorfos ou criaturas com 0 pontos de vida não são afetados por esta poção. A transformação permanece por 1 hora, até cair a 0 ponto de vida ou até morrer. Se a transformação se mantiver por 1 hora, ela será permanente.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "time_stop",
+        "level": 9,
+        "name": "Parar o Tempo",
+        "description": "O fluxo do tempo congela para tudo e todos exceto para você por 1d4+1 Rodadas durante as quais você pode agir livremente. O efeito acaba se você ou qualquer efeito que você criar interagir com outra criatura ou objeto carregado por outra criatura. O efeito acaba se você se mover mais de 300 m [1000 ft].",
+        "duration": "1d4+1 Rodadas"
     }
 ]
