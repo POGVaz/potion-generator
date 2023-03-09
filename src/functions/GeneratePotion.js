@@ -1,8 +1,8 @@
 'use-strict'
 
 import { getCombinationsWithRepetition, getRandomFromArray, shuffleArray } from './utils';
-import { PotionBlueprint, PotionFactory } from './model/Potion';
-import { PotionEffect, PotionSideEffect } from './model/PotionEffect';
+import { PotionBlueprint, PotionFactory } from '../model/Potion';
+import { PotionEffect, PotionSideEffect } from '../model/PotionEffect';
 
 function generatePotion({
     minEffects = 1, maxEffects = 2, possibleEffects = [],

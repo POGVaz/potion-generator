@@ -4,7 +4,7 @@ import parse from 'json-templates';
 import getRandom from 'random-weight';
 
 import { potionImages } from '../builder/ImageBuilder';
-import { convertArrayToText, getRandomFromArray } from '../utils';
+import { convertArrayToText, getRandomFromArray } from '../functions/utils';
 import { PotionEffect, PotionSideEffect } from './PotionEffect';
 
 const EFFECTS_MULTIPLIER = 1.5;

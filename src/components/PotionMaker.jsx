@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import PotionViewer from "./PotionViewer";
 import PotionMakerForm from "./PotionMakerForm";
 import EffectTables from "./tables/EffectTables";
-import { generatePotion } from "../GeneratePotion";
+import { generatePotion } from "../functions/GeneratePotion";
 import PotionGallery from "./gallery/PotionGallery";
 import PotionSavedGallery from "./gallery/PotionSavedGallery";
 
