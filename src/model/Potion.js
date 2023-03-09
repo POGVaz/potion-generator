@@ -36,7 +36,7 @@ class Potion {
     }
 
     get value() {
-        return (this.blueprint? Math.round(this.blueprint.value) : NaN);
+        return (this.blueprint? Math.round(this.blueprint.value) : null);
     }
 
     get level() {
