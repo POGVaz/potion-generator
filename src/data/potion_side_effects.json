@@ -6,7 +6,12 @@
         "description": "Você tem Vulnerabilidade a dano de Frio por 1 hora.",
         "adjective": "de vulnerabilidade a frio",
         "incompatible_with": [
-            "resistance_cold"
+            "resistance_cold",
+            "feign_death",
+            "fire_shield_cold_4",
+            "investiture_of_flame",
+            "investiture_of_ice",
+            "primordial_ward"
         ]
     },
     {
@@ -16,7 +21,12 @@
         "description": "Você tem Vulnerabilidade a dano de Fogo por 1 hora.",
         "adjective": "de vulnerabilidade a fogo",
         "incompatible_with": [
-            "resistance_fire"
+            "resistance_fire",
+            "feign_death",
+            "fire_shield_fire_4",
+            "investiture_of_flame",
+            "investiture_of_ice",
+            "primordial_ward"
         ]
     },
     {
@@ -26,7 +36,9 @@
         "description": "Você tem Vulnerabilidade a dano de Ácido por 1 hora.",
         "adjective": "de vulnerabilidade a ácido",
         "incompatible_with": [
-            "resistance_acid"
+            "resistance_acid",
+            "feign_death",
+            "primordial_ward"
         ]
     },
     {
@@ -36,7 +48,8 @@
         "description": "Você tem Vulnerabilidade a dano de Força por 1 hora.",
         "adjective": "de vulnerabilidade a força",
         "incompatible_with": [
-            "resistance_force"
+            "resistance_force",
+            "feign_death"
         ]
     },
     {
@@ -46,7 +59,9 @@
         "description": "Você tem Vulnerabilidade a dano Elétrico por 1 hora.",
         "adjective": "de vulnerabilidade elétrica",
         "incompatible_with": [
-            "resistance_lightning"
+            "resistance_lightning",
+            "feign_death",
+            "primordial_ward"
         ]
     },
     {
@@ -56,7 +71,9 @@
         "description": "Você tem Vulnerabilidade a dano Necrótico por 1 hora.",
         "adjective": "de vulnerabilidade necrótica",
         "incompatible_with": [
-            "resistance_necrotic"
+            "resistance_necrotic",
+            "feign_death",
+            "aura_of_life_4"
         ]
     },
     {
@@ -66,7 +83,9 @@
         "description": "Você tem Vulnerabilidade a dano Radiante por 1 hora.",
         "adjective": "de vulnerabilidade radiante",
         "incompatible_with": [
-            "resistance_radiant"
+            "resistance_radiant",
+            "feign_death",
+            "shadow_of_moil_4"
         ]
     },
     {
@@ -76,7 +95,10 @@
         "description": "Você tem Vulnerabilidade a dano de Veneno por 1 hora.",
         "adjective": "de vulnerabilidade a veneno",
         "incompatible_with": [
-            "resistance_poison"
+            "resistance_poison",
+            "feign_death",
+            "protection_from_poison",
+            "aura_of_purity_4"
         ]
     },
     {
@@ -86,7 +108,9 @@
         "description": "Você tem Vulnerabilidade a dano Psíquico por 1 hora.",
         "adjective": "de vulnerabilidade mental",
         "incompatible_with": [
-            "resistance_psychic"
+            "resistance_psychic",
+            "feign_death",
+            "intellect_fortress"
         ]
     },
     {
@@ -96,7 +120,9 @@
         "description": "Você tem Vulnerabilidade a dano Sonoro por 1 hora.",
         "adjective": "de vulnerabilidade sonora",
         "incompatible_with": [
-            "resistance_thunder"
+            "resistance_thunder",
+            "feign_death",
+            "primordial_ward"
         ]
     },
     {
@@ -105,7 +131,10 @@
         "type": "reduction_strength",
         "name": "Redução de Força Mínima",
         "description": "Você tem sua força reduzida em -1d4.",
-        "adjective": "enfraquecedora mínima"
+        "adjective": "enfraquecedora mínima",
+        "incompatible_with": [
+            "enhance_ability_bull_strength"
+        ]
     },
     {
         "id": "small_ability_reduction_strength",
@@ -113,7 +142,10 @@
         "type": "reduction_strength",
         "name": "Redução de Força Menor",
         "description": "Você tem sua força reduzida em -1d6.",
-        "adjective": "enfraquecedora menor"
+        "adjective": "enfraquecedora menor",
+        "incompatible_with": [
+            "enhance_ability_bull_strength"
+        ]
     },
     {
         "id": "ability_reduction_strength",
@@ -121,7 +153,10 @@
         "type": "reduction_strength",
         "name": "Redução de Força",
         "description": "Você tem sua força reduzida em -2d4.",
-        "adjective": "enfraquecedora"
+        "adjective": "enfraquecedora",
+        "incompatible_with": [
+            "enhance_ability_bull_strength"
+        ]
     },
     {
         "id": "great_ability_reduction_strength",
@@ -129,7 +164,10 @@
         "type": "reduction_strength",
         "name": "Redução de Força Maior",
         "description": "Você tem sua força reduzida em -1d6.",
-        "adjective": "enfraquecedora maior"
+        "adjective": "enfraquecedora maior",
+        "incompatible_with": [
+            "enhance_ability_bull_strength"
+        ]
     },
     {
         "id": "major_ability_reduction_strength",
@@ -137,7 +175,10 @@
         "type": "reduction_strength",
         "name": "Redução de Força Máxima",
         "description": "Você tem sua força reduzida em -2d8.",
-        "adjective": "enfraquecedora máxima"
+        "adjective": "enfraquecedora máxima",
+        "incompatible_with": [
+            "enhance_ability_bull_strength"
+        ]
     },
     {
         "id": "minor_ability_reduction_dexterity",
@@ -145,7 +186,10 @@
         "type": "reduction_dexterity",
         "name": "Redução de Destreza Mínima",
         "description": "Você tem sua destreza reduzida em -1d4.",
-        "adjective": "letárgica mínima"
+        "adjective": "letárgica mínima",
+        "incompatible_with": [
+            "enhance_ability_cat_grace"
+        ]
     },
     {
         "id": "small_ability_reduction_dexterity",
@@ -153,7 +197,10 @@
         "type": "reduction_dexterity",
         "name": "Redução de Destreza Menor",
         "description": "Você tem sua destreza reduzida em -1d6.",
-        "adjective": "letárgica menor"
+        "adjective": "letárgica menor",
+        "incompatible_with": [
+            "enhance_ability_cat_grace"
+        ]
     },
     {
         "id": "ability_reduction_dexterity",
@@ -161,7 +208,10 @@
         "type": "reduction_dexterity",
         "name": "Redução de Destreza",
         "description": "Você tem sua destreza reduzida em -2d4.",
-        "adjective": "letárgica"
+        "adjective": "letárgica",
+        "incompatible_with": [
+            "enhance_ability_cat_grace"
+        ]
     },
     {
         "id": "great_ability_reduction_dexterity",
@@ -169,7 +219,10 @@
         "type": "reduction_dexterity",
         "name": "Redução de Destreza Maior",
         "description": "Você tem sua destreza reduzida em -1d6.",
-        "adjective": "letárgica maior"
+        "adjective": "letárgica maior",
+        "incompatible_with": [
+            "enhance_ability_cat_grace"
+        ]
     },
     {
         "id": "major_ability_reduction_dexterity",
@@ -177,7 +230,10 @@
         "type": "reduction_dexterity",
         "name": "Redução de Destreza Máxima",
         "description": "Você tem sua destreza reduzida em -2d8.",
-        "adjective": "letárgica máxima"
+        "adjective": "letárgica máxima",
+        "incompatible_with": [
+            "enhance_ability_cat_grace"
+        ]
     },
     {
         "id": "minor_ability_reduction_constitution",
@@ -185,7 +241,10 @@
         "type": "reduction_constitution",
         "name": "Redução de Constituição Mínima",
         "description": "Você tem sua constituição reduzida em -1d4.",
-        "adjective": "desvigorante mínima"
+        "adjective": "desvigorante mínima",
+        "incompatible_with": [
+            "enhance_ability_bear_endurance"
+        ]
     },
     {
         "id": "small_ability_reduction_constitution",
@@ -193,7 +252,10 @@
         "type": "reduction_constitution",
         "name": "Redução de Constituição Menor",
         "description": "Você tem sua constituição reduzida em -1d6.",
-        "adjective": "desvigorante menor"
+        "adjective": "desvigorante menor",
+        "incompatible_with": [
+            "enhance_ability_bear_endurance"
+        ]
     },
     {
         "id": "ability_reduction_constitution",
@@ -201,7 +263,10 @@
         "type": "reduction_constitution",
         "name": "Redução de Constituição",
         "description": "Você tem sua constituição reduzida em -2d4.",
-        "adjective": "desvigorante"
+        "adjective": "desvigorante",
+        "incompatible_with": [
+            "enhance_ability_bear_endurance"
+        ]
     },
     {
         "id": "great_ability_reduction_constitution",
@@ -209,7 +274,10 @@
         "type": "reduction_constitution",
         "name": "Redução de Constituição Maior",
         "description": "Você tem sua constituição reduzida em -1d6.",
-        "adjective": "desvigorante maior"
+        "adjective": "desvigorante maior",
+        "incompatible_with": [
+            "enhance_ability_bear_endurance"
+        ]
     },
     {
         "id": "major_ability_reduction_constitution",
@@ -217,7 +285,10 @@
         "type": "reduction_constitution",
         "name": "Redução de Constituição Máxima",
         "description": "Você tem sua constituição reduzida em -2d8.",
-        "adjective": "desvigorante máxima"
+        "adjective": "desvigorante máxima",
+        "incompatible_with": [
+            "enhance_ability_bear_endurance"
+        ]
     },
     {
         "id": "minor_ability_reduction_intelligence",
@@ -225,7 +296,10 @@
         "type": "reduction_intelligence",
         "name": "Redução de Inteligência Mínima",
         "description": "Você tem sua inteligência reduzida em -1d4.",
-        "adjective": "equivocante mínima"
+        "adjective": "equivocante mínima",
+        "incompatible_with": [
+            "enhance_ability_fox_cunning"
+        ]
     },
     {
         "id": "small_ability_reduction_intelligence",
@@ -233,7 +307,10 @@
         "type": "reduction_intelligence",
         "name": "Redução de Inteligência Menor",
         "description": "Você tem sua inteligência reduzida em -1d6.",
-        "adjective": "equivocante menor"
+        "adjective": "equivocante menor",
+        "incompatible_with": [
+            "enhance_ability_fox_cunning"
+        ]
     },
     {
         "id": "ability_reduction_intelligence",
@@ -241,7 +318,10 @@
         "type": "reduction_intelligence",
         "name": "Redução de Inteligência",
         "description": "Você tem sua inteligência reduzida em -2d4.",
-        "adjective": "equivocante"
+        "adjective": "equivocante",
+        "incompatible_with": [
+            "enhance_ability_fox_cunning"
+        ]
     },
     {
         "id": "great_ability_reduction_intelligence",
@@ -249,7 +329,10 @@
         "type": "reduction_intelligence",
         "name": "Redução de Inteligência Maior",
         "description": "Você tem sua inteligência reduzida em -1d6.",
-        "adjective": "equivocante maior"
+        "adjective": "equivocante maior",
+        "incompatible_with": [
+            "enhance_ability_fox_cunning"
+        ]
     },
     {
         "id": "major_ability_reduction_intelligence",
@@ -257,7 +340,10 @@
         "type": "reduction_intelligence",
         "name": "Redução de Inteligência Máxima",
         "description": "Você tem sua inteligência reduzida em -2d8.",
-        "adjective": "equivocante máxima"
+        "adjective": "equivocante máxima",
+        "incompatible_with": [
+            "enhance_ability_fox_cunning"
+        ]
     },
     {
         "id": "minor_ability_reduction_wisdom",
@@ -265,7 +351,10 @@
         "type": "reduction_wisdom",
         "name": "Redução de Sabedoria Mínima",
         "description": "Você tem sua sabedoria reduzida em -1d4.",
-        "adjective": "desnorteante mínima"
+        "adjective": "desnorteante mínima",
+        "incompatible_with": [
+            "enhance_ability_owl_wisdom"
+        ]
     },
     {
         "id": "small_ability_reduction_wisdom",
@@ -273,7 +362,10 @@
         "type": "reduction_wisdom",
         "name": "Redução de Sabedoria Menor",
         "description": "Você tem sua sabedoria reduzida em -1d6.",
-        "adjective": "desnorteante menor"
+        "adjective": "desnorteante menor",
+        "incompatible_with": [
+            "enhance_ability_owl_wisdom"
+        ]
     },
     {
         "id": "ability_reduction_wisdom",
@@ -281,7 +373,10 @@
         "type": "reduction_wisdom",
         "name": "Redução de Sabedoria",
         "description": "Você tem sua sabedoria reduzida em -2d4.",
-        "adjective": "desnorteante"
+        "adjective": "desnorteante",
+        "incompatible_with": [
+            "enhance_ability_owl_wisdom"
+        ]
     },
     {
         "id": "great_ability_reduction_wisdom",
@@ -289,7 +384,10 @@
         "type": "reduction_wisdom",
         "name": "Redução de Sabedoria Maior",
         "description": "Você tem sua sabedoria reduzida em -1d6.",
-        "adjective": "desnorteante maior"
+        "adjective": "desnorteante maior",
+        "incompatible_with": [
+            "enhance_ability_owl_wisdom"
+        ]
     },
     {
         "id": "major_ability_reduction_wisdom",
@@ -297,7 +395,10 @@
         "type": "reduction_wisdom",
         "name": "Redução de Sabedoria Máxima",
         "description": "Você tem sua sabedoria reduzida em -2d8.",
-        "adjective": "desnorteante máxima"
+        "adjective": "desnorteante máxima",
+        "incompatible_with": [
+            "enhance_ability_owl_wisdom"
+        ]
     },
     {
         "id": "minor_ability_reduction_charisma",
@@ -305,7 +406,10 @@
         "type": "reduction_charisma",
         "name": "Redução de Carisma Mínima",
         "description": "Você tem sua carisma reduzida em -1d4.",
-        "adjective": "desvirtuante mínima"
+        "adjective": "desvirtuante mínima",
+        "incompatible_with": [
+            "enhance_ability_eagle_splendor"
+        ]
     },
     {
         "id": "small_ability_reduction_charisma",
@@ -313,7 +417,10 @@
         "type": "reduction_charisma",
         "name": "Redução de Carisma Menor",
         "description": "Você tem sua carisma reduzida em -1d6.",
-        "adjective": "desvirtuante menor"
+        "adjective": "desvirtuante menor",
+        "incompatible_with": [
+            "enhance_ability_eagle_splendor"
+        ]
     },
     {
         "id": "ability_reduction_charisma",
@@ -321,7 +428,10 @@
         "type": "reduction_charisma",
         "name": "Redução de Carisma",
         "description": "Você tem sua carisma reduzida em -2d4.",
-        "adjective": "desvirtuante"
+        "adjective": "desvirtuante",
+        "incompatible_with": [
+            "enhance_ability_eagle_splendor"
+        ]
     },
     {
         "id": "great_ability_reduction_charisma",
@@ -329,7 +439,10 @@
         "type": "reduction_charisma",
         "name": "Redução de Carisma Maior",
         "description": "Você tem sua carisma reduzida em -1d6.",
-        "adjective": "desvirtuante maior"
+        "adjective": "desvirtuante maior",
+        "incompatible_with": [
+            "enhance_ability_eagle_splendor"
+        ]
     },
     {
         "id": "major_ability_reduction_charisma",
@@ -337,6 +450,9 @@
         "type": "reduction_charisma",
         "name": "Redução de Carisma Máxima",
         "description": "Você tem sua carisma reduzida em -2d8.",
-        "adjective": "desvirtuante máxima"
+        "adjective": "desvirtuante máxima",
+        "incompatible_with": [
+            "enhance_ability_eagle_splendor"
+        ]
     }
 ]
