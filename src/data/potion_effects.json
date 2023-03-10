@@ -228,7 +228,8 @@
         "level": 2,
         "name": "Conhecimento Emprestado",
         "description": "Você ganha proficiência em uma perícia da sua escolha na qual você não tenha proficiência por 1 hora.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "component_constant_cost": 25
     },
     {
         "id": "blur",
@@ -336,44 +337,44 @@
         "duration": "10 Minutos"
     },
     {
-        "id": "enhance_ability_bear_endurance",
-        "level": 2,
-        "name": "Resistência do Urso",
-        "description": "Por 1 hora, você tem vantagem em testes de Força e sua capacidade de carga dobra.",
-        "duration": "1 Hora"
-    },
-    {
         "id": "enhance_ability_bull_strength",
         "level": 2,
         "name": "Força de Touro",
-        "description": "Por 1 hora, você tem vantagem em testes de Destreza e não sofre dano por cair 6 metros ou menos se não estiver incapacitado.",
+        "description": "Por 1 hora, você tem vantagem em testes de Força e sua capacidade de carga dobra.",
         "duration": "1 Hora"
     },
     {
         "id": "enhance_ability_cat_grace",
         "level": 2,
         "name": "Graça do Gato",
-        "description": "Por 1 hora, você tem vantagem em testes de Constituição e ganha 2d6 pontos de vida temporários, que são perdidos quando o efeito termina.",
+        "description": "Por 1 hora, você tem vantagem em testes de Destreza e não sofre dano por cair 6 metros ou menos se não estiver incapacitado.",
         "duration": "1 Hora"
     },
     {
-        "id": "enhance_ability_eagle_splendor",
+        "id": "enhance_ability_bear_endurance",
         "level": 2,
-        "name": "Esplendor da Águia",
-        "description": "Por 1 hora, você tem vantagem em testes de Inteligência.",
+        "name": "Resistência do Urso",
+        "description": "Por 1 hora, você tem vantagem em testes de Constituição e ganha 2d6 pontos de vida temporários, que são perdidos quando o efeito termina.",
         "duration": "1 Hora"
     },
     {
         "id": "enhance_ability_fox_cunning",
         "level": 2,
         "name": "Astúcia da Raposa",
-        "description": "Por 1 hora, você tem vantagem em testes de Sabedoria.",
+        "description": "Por 1 hora, você tem vantagem em testes de Inteligência.",
         "duration": "1 Hora"
     },
     {
         "id": "enhance_ability_owl_wisdom",
         "level": 2,
         "name": "Sabedoria da Coruja",
+        "description": "Por 1 hora, você tem vantagem em testes de Sabedoria.",
+        "duration": "1 Hora"
+    },
+    {
+        "id": "enhance_ability_eagle_splendor",
+        "level": 2,
+        "name": "Esplendor da Águia",
         "description": "Por 1 hora, você tem vantagem em testes de Carisma.",
         "duration": "1 Hora"
     },
@@ -445,7 +446,8 @@
         "level": 3,
         "name": "Revivificar",
         "description": "Você volta a vida com 1 ponto de vida. Essa poção não pode trazer de volta a vida criaturas que tenham morrido de velhice nem pode restaurar quaisquer partes do corpo perdidas.",
-        "duration": "-"
+        "duration": "-",
+        "component_consumed_cost": 300
     },
     {
         "id": "tongues",
@@ -494,7 +496,8 @@
         "level": 4,
         "name": "Adivinhação",
         "description": "Você faz uma única pergunta a respeito de um objetivo, evento ou atividade específica que irá ocorrer dentro de 7 dias. O Mestre oferece uma resposta confiável. A resposta deve ser uma frase curta, uma rima enigmática ou um presságio. A poção não leva em consideração qualquer possível circunstância que possa mudar o que está por vir. Se você usar este efeito duas ou mais vezes antes de completar seu próximo descanso longo, existe uma chance de 25 por cento a cada conjuração ter um resultado aleatório feito secretamente pelo mestre.",
-        "duration": "-"
+        "duration": "-",
+        "component_consumed_cost": 25
     },
     {
         "id": "fire_shield_fire_4",
@@ -550,7 +553,8 @@
         "level": 4,
         "name": "Sombra de Moil",
         "description": "Sombras em forma de chamas envolvem seu corpo por 1 minuto. Você fica obscurecido para outras criaturas. A 3 metros [10 ft] de você, penumbra se torna escuridão e luz se torna penumbra. As sombras lhe concedem resistência a dano Radiante e sempre que uma criatura a até 3 metros de você lhe atingir com um ataque, as sombras causam 2d8 de dano necrótico.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "component_constant_cost": 150
     },
     {
         "id": "antilife_shell",
@@ -571,7 +575,8 @@
         "level": 5,
         "name": "Restauração Maior",
         "description": "A poção remove um dos seguintes efeitos que esteja te afligindo: Enfeitiçado, petrificação, maldição (incluindo sintonização com um item amaldiçoado), redução de pontos de habilidade, redução de pontos de vida máximo ou até 3 níveis de exaustão.",
-        "duration": "-"
+        "duration": "-",
+        "component_consumed_cost": 100
     },
     {
         "id": "mislead",
@@ -648,7 +653,8 @@
         "level": 6,
         "name": "Visão Verdadeira",
         "description": "Por 1 hora e num alcance de até 36 metros, você tem visão verdadeira, pode perceber portas secretas escondidas por magia e pode ver no Plano Etéreo.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "component_consumed_cost": 25
     },
     {
         "id": "teleport_7",
@@ -668,8 +674,9 @@
         "id": "draconic_transformation",
         "level": 7,
         "name": "Transformação Dracônica",
-        "description": "Você ganhas os seguintes benefícios por 1 minuto: Você ganha deslocamento de voo de 18 metros [60 ft]; Você tem visão às cegas em 9 metros [30 ft]: Dentro desse alcance, você percebe qualquer coisa que não esteja atrás de cobertura total, mesmo se estiver cego ou na escuridão e você enxerga criaturas invisíveis, a menos que ela se esconda de você com sucesso; Quando você conjura esta magia e com uma ação bônus nos turnos subseqüentes, você pode exalar energia em um cone de 18 metros [60 ft] em que cada criatura deve fazer um teste de resistência de Destreza, recebendo 6d8 de dano de Força em uma falha, ou metade do dano em um sucesso.",
-        "duration": "1 Minuto"
+        "description": "Você ganhas os seguintes benefícios por 1 minuto: Você ganha deslocamento de voo de 18 metros [60 ft]; Você tem visão às cegas em 9 metros [30 ft]: Dentro desse alcance, você percebe qualquer coisa que não esteja atrás de cobertura total, mesmo se estiver cego ou na escuridão e você enxerga criaturas invisíveis, a menos que ela se esconda de você com sucesso; Quando você conjura esta magia e com uma ação bônus nos turnos subseqüentes, você pode exalar energia em um cone de 18 metros [60 ft] em que cada criatura deve fazer um teste de resistência de Destreza (CD 15?), recebendo 6d8 de dano de Força em uma falha, ou metade do dano em um sucesso.",
+        "duration": "1 Minuto",
+        "component_constant_cost": 500
     },
     {
         "id": "etherealness",
@@ -683,7 +690,8 @@
         "level": 7,
         "name": "Isolamento",
         "description": "Você fica invisível e não pode ser percebido através de magias ou efeitos de adivinhação. Durante a duração, você fica num estado de animação suspensa, o tempo para de fluir para você e você não envelhece. O efeito acaba se você sofrer algum dano ou por alguma condição determinada pelo mestre, como por exemplo \"depois de 1.000 anos\" ou \"quando a profecia se concretizar\".",
-        "duration": "Até ser dissipado"
+        "duration": "Até ser dissipado",
+        "component_consumed_cost": 5000
     },
     {
         "id": "antimagic_field",
@@ -718,7 +726,8 @@
         "level": 9,
         "name": "Metamorfose",
         "description": "Por 1 hora, você assume a forma de qualquer criatura com um nível de desafio igual ao seu nível ou menor. A criatura não pode ser nem um constructo nem um morto-vivo e você deve ter visto esse tipo de criatura pelo menos uma vez. Você se transforma num exemplar médio da criatura, sem quaisquer níveis de classe nem ou a característica Conjuração. Suas estatísticas de jogo são substituídas pelas estatísticas da forma escolhida. Você mantem sua tendência, Inteligência, Sabedoria, Carisma, e proficiências (em habilidades e resistências) além de ganhar as proficiências da nova criatura. Use o maior bônus de proficiência entre o seu e o da nova criatura. Você não pode usar qualquer ação lendária ou de covil da nova forma. Você assume os pontos de vida da nova forma. Quando você reverter a sua forma normal, você retorna à quantidade de pontos de vida que tinha antes da transformação. Se você reverter como resultado de ter caído a 0 pontos de vida, qualquer dano excedente é recebido pela sua forma normal. Você mantem os benefícios de qualquer característica da sua classe, raça ou outra fonte e pode usa-las, considerando que sua nova forma é fisicamente capaz de fazê-lo. Você não pode usar quaisquer sentidos especiais que você possua a não ser que a nova forma também possua o sentido. Você só poderá falar se a nova forma, normalmente, puder falar. Quando você se transforma, você pode escolher se o seu equipamento cai no chão, é assimilado a sua nova forma ou é usado por ela. O Mestre decide qual equipamento é viável para a nova forma. O seu equipamento não muda de forma ou tamanho para se adaptar à nova forma e, qualquer equipamento que a nova forma não possa vestir deve, ou cair no chão ou ser assimilado por ela. Equipamentos assimilados não terão efeito nesse estado. Pela duração da magia, você pode usar sua ação para assumir uma forma diferente, seguindo as mesmas restrições e regras da forma anterior, com uma exceção: se sua nova forma tiver mais pontos de vida que sua forma atual, seus pontos de vida mantem o valor atual.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "component_constant_cost": 1500
     },
     {
         "id": "power_word_heal",
@@ -731,7 +740,8 @@
         "level": 9,
         "name": "Invulnerabilidade",
         "description": "Por 10 minutos você é imune a todo tipo de dano.",
-        "duration": "10 Minuto"
+        "duration": "10 Minuto",
+        "component_consumed_cost": 500
     },
     {
         "id": "true_polymorph",

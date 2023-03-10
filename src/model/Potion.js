@@ -32,11 +32,28 @@ class Potion {
         this.#description = description;
         this.effects = effects;
         this.sideEffects = sideEffects;
-        this.blueprint = blueprint
+        this.blueprint = blueprint;
     }
 
     get value() {
-        return (this.blueprint? Math.round(this.blueprint.value) : null);
+        //Gets the blueprint base value
+        const baseValue = (this.blueprint ? Math.round(this.blueprint.value) : 0);
+
+        //Adds any separate consumed values from individual effects
+        const consumedComponentCost = this.effects.reduce(
+            (accumulatedValue, effects) => {
+                return accumulatedValue + effects.componentConsumedCost;
+            }, 0
+        )
+        return baseValue + consumedComponentCost;
+    }
+
+    get componentConstantCost() {
+        return this.effects.reduce(
+            (accumulatedValue, effects) => {
+                return accumulatedValue + effects.componentConstantCost;
+            }, 0
+        )
     }
 
     get level() {

@@ -24,7 +24,7 @@ class PotionViewer extends React.Component {
           </li>
         );
       });
-      
+
       return (
         <div style={{"textAlign": "center"}}>
           <h3 className="potion-name">
@@ -39,6 +39,11 @@ class PotionViewer extends React.Component {
           <div className="potion-price">
             Price: {this.props.potion.value} 💰
           </div>
+
+          <div className="potion-constant-price" style={{ display: this.props.potion.componentConstantCost > 0 ? "block" : "none" }}>
+            Static Components: {this.props.potion.componentConstantCost} 💰
+          </div>
+
           <div className="potion-effects">
             <ul>
               {effects}

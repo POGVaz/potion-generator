@@ -143,9 +143,11 @@ function selectRandomEffects(potionBlueprint, possibleEffects, possibleSideEffec
 
         //Get a random effect
         let effectData = getRandomFromArray(filteredPossibleEffects);
+        // console.log("effectData", effectData)
 
         //Add the effect to the array
-        effects.push(new PotionEffect(effectData));
+        // effects.push(new PotionEffect(effectData));
+        effects.push(effectData);
     });
 
     return effects;
