@@ -29,6 +29,19 @@ function renderMainEffectsTable(effects, onChange) {
       accessor: 'name',
       sortType: 'basic',
       filter: 'fuzzyText',
+      Cell: ({value, row}) => {
+        if (row.original.reference){
+          return (
+            <div><a href={row.original.reference} target="_blank" rel="noreferrer">{value}</a></div>
+            // <div>{value}</div>
+          )
+        }
+        else {
+          return (
+            <div>{value}</div>
+          )
+        }
+      }
     },
     {
       Header: 'Level',

@@ -74,98 +74,112 @@
         "level": 1,
         "name": "Armadura de Agathys",
         "description": "Você ganha 5 pontos de vida temporários por 1 hora. Se uma criatura atingir você com um ataque corpo a corpo enquanto você tiver esses pontos de vida, a criatura sofrerá 5 de dano de frio.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:armor-of-agathys"
     },
     {
         "id": "comprehend_languages",
         "level": 1,
         "name": "Compreender idiomas",
         "description": "Por 1 hora, você entende o significado literal de qualquer idioma falado que você ouve. Você também entende qualquer linguagem escrita que vê, mas deve estar tocando a superfície na qual as palavras estão escritas. Demora cerca de 1 minuto para ler uma página de texto.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:comprehend-languages"
     },
     {
         "id": "disguise_self",
         "level": 1,
         "name": "Disfarçar-se",
         "description": "Você muda a sua aparência, incluindo suas roupas, armaduras, armas e outros pertences pessoais por 1 hora. Você pode mudar até 1 pé de altura. Você não pode mudar seu tipo de corpo. As mudanças não resistem a inspeção física.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:disguise-self"
     },
     {
         "id": "detect_poison_and_disease",
         "level": 1,
         "name": "Detectar veneno e doença",
         "description": "Por 10 minutos, você pode sentir a presença e localização de venenos, criaturas venenosas e doenças a até 9 metros de você. Você também identifica o tipo de veneno, criatura venenosa ou doença em cada caso. O efeito pode penetrar a maioria das barreiras, mas é bloqueada por 30 cm de pedra, 2,5 cm de metal comum, uma folha fina de chumbo ou 90 cm de madeira ou terra.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:detect-poison-and-disease"
     },
     {
         "id": "detect_magic",
         "level": 1,
         "name": "Detectar Magia",
         "description": "Por 10 minutos, você sente a presença de magia a até 9 metros de você. Se você sentir magia desta forma, você pode usar sua ação para ver uma aura fraca ao redor de qualquer criatura visível ou objeto na área que carrega magia, e você aprende sua escola de magia, se houver. O efeito pode penetrar a maioria das barreiras, mas é bloqueada por 30 cm de pedra, 2,5 cm de metal comum, uma folha fina de chumbo ou 90 cm de madeira ou terra.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:detect-magic"
     },
     {
         "id": "detect_evil_and_good",
         "level": 1,
         "name": "Detectar o bem e o mal",
         "description": "Por 10 minutos, você sabe se há uma aberração, celestial, elemental, feérica, demoníaca ou morta-viva a até 9 metros de você, bem como onde a criatura está localizada. Da mesma forma, você sabe se há um lugar ou objeto a até 9 metros de você que foi consagrado ou profanado magicamente.. O efeito pode penetrar a maioria das barreiras, mas é bloqueada por 30 cm de pedra, 2,5 cm de metal comum, uma folha fina de chumbo ou 90 cm de madeira ou terra.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:detect-evil-and-good"
     },
     {
         "id": "speak_with_animals",
         "level": 1,
         "name": "Falar com Animais",
         "description": "Você ganha a habilidade de compreender e se comunicar verbalmente com feras por 10 minutos. No mínimo, as feras podem fornecer informações sobre locais e monstros próximos, incluindo tudo o que eles podem perceber ou perceberam no dia anterior. Você pode persuadir uma fera a fazer um pequeno favor para você.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:speak-with-animals"
     },
     {
         "id": "protection_from_evil_and_good",
         "level": 1,
         "name": "Proteção contra o bem e o mal",
         "description": "Por 10 minutos você estará protegida contra certos tipos de criaturas: aberrações, celestiais, elementais, feéricos, demônios e mortos-vivos. Criaturas desses tipos têm desvantagem nas jogadas de ataque contra você e não podem te enfeitiçar, amedrontar ou possuir. Você tem vantagem em novos testes de resistência caso já esteja sobre um desdes efeitos.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:protection-from-evil-and-good"
     },
     {
         "id": "mage_armor",
         "level": 1,
         "name": "Armadura Arcana",
         "description": "Se você não estiver usando armadura, sua CA base se torna 13 + seu modificador de Destreza pelas próximas 8 horas.",
-        "duration": "8 Horas"
+        "duration": "8 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:mage-armor"
     },
     {
         "id": "jump",
         "level": 1,
         "name": "Pular",
         "description": "A distância do seu salto é triplicada por 1 minuto.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:jump"
     },
     {
         "id": "gift_of_alacrity",
         "level": 1,
         "name": "Dádiva da Alacridade",
         "description": "Você pode adicionar 1d8 às suas jogadas de iniciativa por 8 horas.",
-        "duration": "8 Horas"
+        "duration": "8 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:gift-of-alacrity"
     },
     {
         "id": "false_life",
         "level": 1,
         "name": "Falso Vigor",
         "description": "Você ganha 1d4 + 4 pontos de vida temporários por 1 hora.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:false-life"
     },
     {
         "id": "longstrider",
         "level": 1,
         "name": "Passos Largos",
         "description": "Seu deslocamento aumenta em 3 metros por 1 hora.",
-        "duration": "1 Horas"
+        "duration": "1 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:longstrider"
     },
     {
         "id": "heroism",
         "level": 1,
         "name": "Heroísmo",
         "description": "Você fica imune a ser amedrontada e ganha 1d4 pontos de vida temporários no início de cada um de seus turnos que desaparecem quando o efeito termina.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:heroism"
     },
     {
         "id": "healing",
@@ -200,28 +214,32 @@
         "level": 2,
         "name": "Invisibilidade",
         "description": "Você e tudo que você carrega fica invisível por 1 hora. O efeito acaba se você atacar ou conjurar uma magia.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:invisibility"
     },
     {
         "id": "alter_self_aquatic_adaptation",
         "level": 2,
         "name": "Adaptação Aquática",
         "description": "Por 1 hora, você pode respirar embaixo d’água e ganha deslocamento de natação igual a seu deslocamento terrestre.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:alter-self"
     },
     {
         "id": "alter_self_change_appearance",
         "level": 2,
         "name": "Mudar Aparência",
         "description": "Por 1 hora, você transforam sua aparência, incluindo altura, peso, traços faciais, timbre da sua voz, comprimento do cabelo, coloração e características distintas. Suas estatísticas não mudam e você também não pode parecer com uma criatura de um tamanho diferente do seu nem mudar seu formato básico. A qualquer momento da duração, você pode usar sua ação para mudar sua aparência novamente.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:alter-self"
     },
     {
         "id": "alter_self_natural_weapons",
         "level": 2,
         "name": "Armas Naturais",
         "description": "Crescerem garras, presas, espinhos, chifres ou armas naturais diferentes em você. Você é proficiente com essas armas naturais e elas causam 1d6 de dano de concussão, perfurante ou cortante. Além disso, elas são mágicas e você tem +1 de bônus nas jogadas de ataque e dano que você fizer com elas. Elas duram 1 hora.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:alter-self"
     },
     {
         "id": "borrowed_knowledge",
@@ -229,217 +247,248 @@
         "name": "Conhecimento Emprestado",
         "description": "Você ganha proficiência em uma perícia da sua escolha na qual você não tenha proficiência por 1 hora.",
         "duration": "1 Hora",
-        "component_constant_cost": 25
+        "component_constant_cost": 25,
+        "reference": "http://dnd5e.wikidot.com/spell:borrowed-knowledge"
     },
     {
         "id": "blur",
         "level": 2,
         "name": "Nublar",
         "description": "Por 1 minuto, criaturas têm desvantagem nas jogadas de ataque contra você. Um atacante é imune a esse efeito se não depender de visão, ou se puder ver através de ilusões.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:blur"
     },
     {
         "id": "barkskin",
         "level": 2,
         "name": "Pele de Árvore",
         "description": "Sua CA não pode ser menor do que 16 por 1 hora.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:barkskin"
     },
     {
         "id": "darkvision",
         "level": 2,
         "name": "Enxergar no Escuro",
         "description": "Por 8 horas, você terá visão no escuro com alcance de 18 metros [60 ft].",
-        "duration": "8 Horas"
+        "duration": "8 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:darkvision"
     },
     {
         "id": "locate_object",
         "level": 2,
         "name": "Localizar Objeto",
         "description": "Descreva ou nomeie um objeto que lhe seja familiar. Você sente a sua direção e a direção de seu movimento se ele estiver até 300 metros [1000 ft] de você. Você pode localizar um objeto específico que você já tenha visto de perto ou o objeto mais próximo de um tipo específico. O efeito dura 10 minutos e é barrado por qualquer espessura de chumbo, mesmo uma folha fina.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:locate-object"
     },
     {
         "id": "locate_animals_or_plants",
         "level": 2,
         "name": "Localize Animais ou Plantas",
         "description": "Descreva ou nomeie um tipo especifico de besta ou planta. Você descobre a direção e distância da criatura ou planta mais próxima desse tipo dentro de 7,5 quilômetros [5 milhas], se houver alguma presente.",
-        "duration": "-"
+        "duration": "-",
+        "reference": "http://dnd5e.wikidot.com/spell:locate-animals-or-plants"
     },
     {
         "id": "levitate",
         "level": 2,
         "name": "Levitar",
         "description": "Você se ergue verticalmente, até 6 metros [20 ft] e permanece suspenso lá pela duração. Você pode se mover puxando ou empurrarand um objeto fixo ou superfície ao seu alcance ou mudando sua altitude em até 6 metros [20 ft] como parte do seu movimento. Após 10 minutos o efeito acaba e você flutua suavemente até o chão.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:levitate"
     },
     {
         "id": "lesser_restoration",
         "level": 2,
         "name": "Restauração Menor",
         "description": "Você acabar com uma doença ou condição que esteja te aflingido. A condição pode ser: cegueira, surdez, paralisia ou envenenamento. Além disso, você perde 1 nível de exaustão.",
-        "duration": "-"
+        "duration": "-",
+        "reference": "http://dnd5e.wikidot.com/spell:lesser-restoration"
     },
     {
         "id": "find_traps",
         "level": 2,
         "name": "Encontrar Armadilhas",
         "description": "Você sente a presença de qualquer armadilha (física ou mágica) a 36 metros [120 ft] que esteja na sua linha de visão. Você sabe da presença de armadilhas e a natureza geral do perigo que elas representam, mas não aprende a localização exata de cada armadilha.",
-        "duration": "-"
+        "duration": "-",
+        "reference": "http://dnd5e.wikidot.com/spell:find-traps"
     },
     {
         "id": "enlarge",
         "level": 2,
         "name": "Aumentar",
         "description": "Seu tamanho dobra em todas as dimensões e seu peso é multiplicado por oito elevando sua categoria de tamanho para o próximo nível. Se não houver espaço suficiente você alcança o tamanho máximo possível no espaço disponível. Por 1 minuto, você também tem vantagem em testes de Força e testes de resistência de Força. Suas armar também dobram de tamanho e causam 1d4 de dano extra.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:enlarge"
     },
     {
         "id": "reduce",
         "level": 2,
         "name": "Reduzir",
         "description": "Seu tamanho é reduzido à metade em todas as dimensões e seu peso é reduzido a um oitavo do normal, reduzindo sua categoria de tamanho para o nível anterior. Por 1 minuto, você também tem desvantagem em testes de Força e testes de resistência de Força. Suas armar também encolhem e causam 1d4 de dano extra a menos.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:reduce"
     },
     {
         "id": "spider_climb",
         "level": 2,
         "name": "Patas de Aranha",
         "description": "Por 1 hora, você ganha deslocamento de escalada igual a seu deslocamento e pode se mover para cima, para baixo, através de superfícies verticais e de cabeça para baixo pelos tetos, enquanto deixa suas mãos livres.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:spider-climb"
     },
     {
         "id": "see_invisibility",
         "level": 2,
         "name": "Ver o Invisível",
         "description": "Por 1 Hora, você vê criaturas e objetos invisíveis como se eles fossem visíveis e pode ver no Plano Etéreo. Criaturas e objetos etéreos parecem espectrais e translúcidos.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:see-invisibility"
     },
     {
         "id": "protection_from_poison",
         "level": 2,
         "name": "Proteção Contra Venenos",
         "description": "Você neutraliza um veneno aleatório que estiver te afligindo. Por 1 hora, você tem vantagem em testes de resistência para não envenenado e resistência a dano de veneno.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:protection-from-poison"
     },
     {
         "id": "pass_without_trace",
         "level": 2,
         "name": "Passos sem Pegadas",
         "description": "Por 1 hora, você recebe +10 de bônus em testes de Destreza (Furtividade) e não pode ser rastreada, exceto por meios mágicos. Além disso, você não deixa quaisquer pegadas ou outros vestígios da sua passagem.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:pass-without-trace"
     },
     {
         "id": "warding_wind",
         "level": 2,
         "name": "Vento Protetor",
         "description": "Por 10 minutos, um vento forte sopra ao seu redor em um raio de 3 metros [10ft] e se mantém centrado em você. O vento tem os seguintes efeitos:\nEle ensurdece você e outras criaturas em sua área.\nEle extingue chamas desprotegidas em sua área que são do tamanho de tochas ou menores.\nA área é um terreno difícil para outras criaturas além de você.\nAs jogadas de ataque de ataques à distância com armas têm desvantagem se passarem pelo vento.\nEle dispersa vapor, gás e névoa.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:warding-wind"
     },
     {
         "id": "enhance_ability_bull_strength",
         "level": 2,
         "name": "Força de Touro",
         "description": "Por 1 hora, você tem vantagem em testes de Força e sua capacidade de carga dobra.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:enhance-ability"
     },
     {
         "id": "enhance_ability_cat_grace",
         "level": 2,
         "name": "Graça do Gato",
         "description": "Por 1 hora, você tem vantagem em testes de Destreza e não sofre dano por cair 6 metros ou menos se não estiver incapacitado.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:enhance-ability"
     },
     {
         "id": "enhance_ability_bear_endurance",
         "level": 2,
         "name": "Resistência do Urso",
         "description": "Por 1 hora, você tem vantagem em testes de Constituição e ganha 2d6 pontos de vida temporários, que são perdidos quando o efeito termina.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:enhance-ability"
     },
     {
         "id": "enhance_ability_fox_cunning",
         "level": 2,
         "name": "Astúcia da Raposa",
         "description": "Por 1 hora, você tem vantagem em testes de Inteligência.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:enhance-ability"
     },
     {
         "id": "enhance_ability_owl_wisdom",
         "level": 2,
         "name": "Sabedoria da Coruja",
         "description": "Por 1 hora, você tem vantagem em testes de Sabedoria.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:enhance-ability"
     },
     {
         "id": "enhance_ability_eagle_splendor",
         "level": 2,
         "name": "Esplendor da Águia",
         "description": "Por 1 hora, você tem vantagem em testes de Carisma.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:enhance-ability"
     },
     {
         "id": "blink",
         "level": 3,
         "name": "Piscar",
         "description": "Role um d20 no final de cada um dos seus turnos. Em um 11 ou mais, você aparece no Plano Etéreo (sem efeito se você já estiver nesse plano). No início do seu próximo turno você retorna a um espaço desocupado de sua escolha que você possa ver a até 3 m [10 ft] do espaço em que você desapareceu. Se não houver um espaço disponível dentro do alcance, você reaparece no espaço desocupado mais próximo.\\nQuando estiver no Plano Etéreo, você pode ver e ouvir o plano de onde você veio, que aparece em tons de cinza, e você não pode ver nada além de 18 m [60 ft]. Você só pode afetar ou ser afetado por outras criaturas no Plano Etéreo. As criaturas que não estiverem lá não podem notar você nem interagir com você, a não ser que elas tenham uma habilidade que as permita.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:blink"
     },
     {
         "id": "fly_3",
         "level": 3,
         "name": "Voar",
         "description": "Você ganha velocidade de vôo igual a 18 m [60 ft] por 10 minutos. Você cairá uma vez que o efeito passe.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:fly"
     },
     {
         "id": "feign_death",
         "level": 3,
         "name": "Forjar a Morte",
         "description": "Por 1 hora, você entra em um estado catatônico que é indistinguível da morte e aparenta estar morto para todas as inspeções externas e para magias usadas para determinar a sua condição. Você estará cego e incapacitado e seu deslocamento cai para 0. Você terá resistência a todos os danos, exceto dano psíquico. Qualquer magia ou veneno que te aflija não terá qualquer efeito até a magia terminar.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:feign-death"
     },
     {
         "id": "gaseous_form",
         "level": 3,
         "name": "Forma Gasosa",
         "description": "Você se transforma em uma nuvem gasosa por 1 hora. Durante esse tempo: seu único meio de movimentação é 3 metros de deslocamento de voo, você pode ocupar o espaço de outra criatura e pode passar através de pequenos buracos, mas líquidos barram a sua passagem; você tem resistência a dano não-mágico e vantagem em testes de resistência de Força, Destreza e Constituição; você não pode cair e se mantem flutuando no ar, mesmo se estiver atordoado ou incapacitado; você não pode falar, manipular objetos, atacar ou conjurar magias e ninguém pode interagir com os objetos que você estava carregando. O efeito termina se você cair a 0 ponto de vida.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:gaseous-form"
     },
     {
         "id": "haste",
         "level": 3,
         "name": "Velocidade",
         "description": "Por 1 minuto, seu deslocamento é dobrado, você ganha +2 de bônus na CA, tem vantagem em testes de resistência de Destreza e ganha uma ação adicional em cada um dos seus turnos que pode ser usada apenas para Atacar (somente com arma), Correr, Desengajar, Esconder-se ou Usar um Objeto. Quando o efeito acabar, você não poderá se mover ou realizar ações até depois do seu próximo turno.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:haste"
     },
     {
         "id": "intellect_fortress",
         "level": 3,
         "name": "Fortaleza do Intelecto",
         "description": "Por 1 hora, você tem resistência a dano psíquico e vantagem em testes de resistência de Inteligência, Sabedoria e Carisma.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:intellect-fortress"
     },
     {
         "id": "meld_into_stone",
         "level": 3,
         "name": "Mesclar à Pedra",
         "description": "Você entra em um objeto ou superfície rochoso, grande o suficiente para comportar seu corpo inteiro, mesclando-se, junto com todo o equipamento que você esteja carregando, com a rocha por 8 horas. Usando seu movimento, você entra na rocha num ponto que você possa tocar. Sua presença ficará indetectável por sentidos não-mágicos.\nVocê não pode ver o que está ocorrendo do lado de fora e, qualquer teste de Sabedoria (Percepção) que você fizer para ouvir os sons são feitos com desvantagem. Você continua consciente do tempo transcorrido e pode conjurar magias em você enquanto estiver imerso na rocha. Você pode usar seu movimento para sair da rocha onde você entrou, o que termina o efeito. Do contrário, você não pode se mover.\nPequenos danos físicos a rocha não te ferem, mas destruição parcial ou uma mudança no formato (fazendo que você já não caiba mais dentro dela) expelirá você causando-lhe 6d6 de dano de concussão. A destruição completa da rocha (ou transmutação em uma substância diferente) expelirá você causando-lhe 50 de dano de concussão. Se você for expelido, você ficará caído no chão em um espaço desocupado perto de onde você entrou da primeira vez.",
-        "duration": "8 Horas"
+        "duration": "8 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:meld-into-stone"
     },
     {
         "id": "protection_from_energy",
         "level": 3,
         "name": "Proteção contra Energia",
         "description": "Por 1 hora, você terá resistência a um tipo de dano de sua escolha entre: ácido, elétrico, fogo, frio ou trovejante.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:protection-from-energy"
     },
     {
         "id": "remove_curse",
         "level": 3,
         "name": "Remover Maldição",
         "description": "Todas as maldições afetando você terminam. À discrição do mestre, você pode derramar a poção sobre um objeto para terminar as maldições afetando ele. Se o objeto for um item mágico amaldiçoado, sua maldição persiste, mas a magia rompe a sintonia do portador com o objeto, então permitindo que ele o remova.",
-        "duration": "-"
+        "duration": "-",
+        "reference": "http://dnd5e.wikidot.com/spell:remove-curse"
     },
     {
         "id": "revivify",
@@ -447,49 +496,56 @@
         "name": "Revivificar",
         "description": "Você volta a vida com 1 ponto de vida. Essa poção não pode trazer de volta a vida criaturas que tenham morrido de velhice nem pode restaurar quaisquer partes do corpo perdidas.",
         "duration": "-",
-        "component_consumed_cost": 300
+        "component_consumed_cost": 300,
+        "reference": "http://dnd5e.wikidot.com/spell:revivify"
     },
     {
         "id": "tongues",
         "level": 3,
         "name": "Idiomas",
         "description": "Por 1 hora, você pode compreender e falar qualquer idioma ouvir. Além disso, quando você falar, você é compreendido por qualquer criatura que saiba pelo menos um idioma e possa te ouvir.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:tongues"
     },
     {
         "id": "water_breathing",
         "level": 3,
         "name": "Respirar na Água",
         "description": "Você ganha a habilidade de respirar embaixo d'água por 24 horas e também mantém sua forma natural de respiração.",
-        "duration": "24 Horas"
+        "duration": "24 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:water-breathing"
     },
     {
         "id": "water_walk",
         "level": 3,
         "name": "Caminhar na Água",
         "description": "Você ganha a habilidade de se mover através de qualquer superfície líquida como se fosse chão sólido (apesar de que lava, por exemplo, ainda pode causar dano de calor) por 1 hora. Se você já estiver submersa, você flutua para a superfície do líquido a uma taxa de 18 metros [60 ft] por rodada.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:water-walk"
     },
     {
         "id": "aura_of_purity_4",
         "level": 4,
         "name": "Aura de Pureza",
         "description": "Durante 10 minutos, você irradia uma aura de 9 metros [30 ft] que se move com você. Todas as criaturas vivas não-hostis na aura (incluindo você) não podem ficar doentes, tem resistência a dano de veneno e tem vantagem em testes de resistência contra efeitos que deixem ela com alguma destas condições: amedrontado, atordoado, cego, enfeitiçado, envenenado, paralisado ou surdo.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:aura-of-purity"
     },
     {
         "id": "aura_of_life_4",
         "level": 4,
         "name": "Aura da Vida",
         "description": "Durante 10 minutos, você irradia uma aura de 9 metros [30 ft] que se move com você. Todas as criaturas vivas não-hostis na aura (incluindo você) tem resistência a dano necrótico, seu máximo de pontos de vida não pode ser reduzido e recupera 1 ponto de vida quando começa seu turno na aura com 0 pontos de vida.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:aura-of-life"
     },
     {
         "id": "death_ward_4",
         "level": 4,
         "name": "Proteção contra Morte",
         "description": "A primeira vez que você cair a 0 ponto de vida dentro de 8 horas como resultado de ter sofrido dano, você fica com 1 ponto de vida e o efeito da poção termina. Alternativamente, se você for afetada por um efeito que te mataria instantaneamente sem causar dano, esse efeito é negado para você e o efeito da poção termina.",
-        "duration": "8 Horas"
+        "duration": "8 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:death-ward"
     },
     {
         "id": "divination_4",
@@ -497,56 +553,64 @@
         "name": "Adivinhação",
         "description": "Você faz uma única pergunta a respeito de um objetivo, evento ou atividade específica que irá ocorrer dentro de 7 dias. O Mestre oferece uma resposta confiável. A resposta deve ser uma frase curta, uma rima enigmática ou um presságio. A poção não leva em consideração qualquer possível circunstância que possa mudar o que está por vir. Se você usar este efeito duas ou mais vezes antes de completar seu próximo descanso longo, existe uma chance de 25 por cento a cada conjuração ter um resultado aleatório feito secretamente pelo mestre.",
         "duration": "-",
-        "component_consumed_cost": 25
+        "component_consumed_cost": 25,
+        "reference": "http://dnd5e.wikidot.com/spell:divination"
     },
     {
         "id": "fire_shield_fire_4",
         "level": 4,
         "name": "Escudo de Fogo",
         "description": "Durante 10 minutos você fica rodeado por chamas que lhe garantem resistência a dano de Frio, emitem luz plena a 3 [10 ft] metros e penumbra a 3 [10 ft] metros adicionais. Além disso, sempre que uma criatura a 1,5 metro [5 ft] de você lhe atingir com um ataque corpo-a-corpo, o atacante sofre 2d8 de dano de Fogo.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:fire-shield"
     },
     {
         "id": "fire_shield_cold_4",
         "level": 4,
         "name": "Escudo de Frio",
         "description": "Durante 10 minutos você fica rodeado por chamas frias que lhe garantem resistência a dano de Fogo, emitem luz plena a 3 [10 ft] metros e penumbra a 3 [10 ft] metros adicionais. Além disso, sempre que uma criatura a 1,5 metro [5 ft] de você lhe atingir com um ataque corpo-a-corpo, o atacante sofre 2d8 de dano de Frio.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:fire-shield"
     },
     {
         "id": "freedom_of_movement_4",
         "level": 4,
         "name": "Liberdade de Movimento",
         "description": "Por 1 hora, seus movimentos não são afetados por terreno difícil. Magias ou outros efeitos mágicos não podem reduzir seu deslocamento, lhe impedir ou lhe paralisar. Você também pode gastar 1,5 metro [5 ft] de deslocamento para escapar automaticamente de impedimentos não-mágicos. Finalmente, estar submerso não impõe penalidades em seu deslocamento ou ataques.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:freedom-of-movement"
     },
     {
         "id": "greater_invisibility_4",
         "level": 4,
         "name": "Invisibilidade Maior",
         "description": "Você se torna invisível até a magia acabar. Qualquer coisa que você estiver vestindo ou carregando fica invisível enquanto estiver em sua posse.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:greater-invisibility"
     },
     {
         "id": "locate_creature_4",
         "level": 4,
         "name": "Localizar Criatura",
         "description": "Descreva ou nomeie uma criatura que lhe seja familiar. Você sente a sua direção e seu movimento se ela estiver até 300 metros [1000 ft] de você. Você pode localizar uma criatura específica que você já tenha visto de perto ou ou a criatura mais próxima de um tipo especifico. Se a criatura que você descreveu ou nomeou estiver em uma forma diferente, como um efeito de metamorfose, essa magia não localizará a criatura. O efeito dura 10 minutos e é barrado se água corrente de, pelo menos 3 metros de largura, bloquear o caminho direito entre você e a criatura.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:locate-creature"
     },
     {
         "id": "otiluke_s_resilient_sphere_4",
         "level": 4,
         "name": "Esfera Resiliente de Otiluke",
         "description": "Você é englobado por uma esfera de energia por 1 minuto. Nada – nem objetos físicos, energia ou outros efeitos mágicos – pode atravessar a barreira, para dentro ou para fora, mas você pode respirar lá dentro. A esfera é imune a todos os danos e impede que você sofa ou cause dano a criaturas de fora. A esfera não tem peso e é grande o suficiente apenas para lhe conter. Você pode usar sua ação para empurrar a parede da esfera e rolar a esfera a metade do seu deslocamento. Outras criaturas podem mover e erguer a esfera. A magia Desintegrar pode destruir a esfera e não causará dano a você.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:otiluke-s-resilient-sphere"
     },
     {
         "id": "polymorph_4",
         "level": 4,
         "name": "Polimorfia",
         "description": "Por 1 hora ou até você cair a 0 ponto de vida, você é transformado em qualquer besta cujo nível do desafio seja igual ou inferior ao seu nível. Todas as suas estatísticas de jogo são substituídas pelas estatísticas da besta escolhida, mas você mantém sua tendência e personalidade. Quando você reverter à sua forma normal, você retorna à quantidade de pontos de vida que tinha antes da transformação, qualquer dano excedente é recebido pela sua forma normal. Essa poção não afeta um alvo com 0 pontos de vida. A criatura é limitada em suas ações pela natureza da sua nova forma e ela não pode falar, conjurar magias ou realizar qualquer outra ação que precise de mãos ou de vocalização. Seu equipamento se mescla à sua nova forma e você não pode ativar, empunhar ou, de outra forma, se beneficiar de qualquer de seus equipamentos.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:polymorph"
     },
     {
         "id": "shadow_of_moil_4",
@@ -554,21 +618,24 @@
         "name": "Sombra de Moil",
         "description": "Sombras em forma de chamas envolvem seu corpo por 1 minuto. Você fica obscurecido para outras criaturas. A 3 metros [10 ft] de você, penumbra se torna escuridão e luz se torna penumbra. As sombras lhe concedem resistência a dano Radiante e sempre que uma criatura a até 3 metros de você lhe atingir com um ataque, as sombras causam 2d8 de dano necrótico.",
         "duration": "1 Minuto",
-        "component_constant_cost": 150
+        "component_constant_cost": 150,
+        "reference": "http://dnd5e.wikidot.com/spell:shadow-of-moil"
     },
     {
         "id": "antilife_shell",
         "level": 5,
         "name": "Cúpula Antivida",
         "description": "Durante 1 hora, você irradia uma barreira de 3 metros [10 ft] de raio que se move com você. A barreira impede a passagem de qualquer criatura que não seja um constructo ou morto-vivo. Uma criatura afetada pode conjurar magias ou realizar ataques à distância ou com alcance através da barreira. Se você se mover forçando uma criatura afetada a atravessar a barreira, o efeito termina.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:antilife-shell"
     },
     {
         "id": "circle_of_power",
         "level": 5,
         "name": "Círculo de Poder",
         "description": "Durante 10 minutos, você irradia energia divina em uma esfera de 9 metros [30 ft] que se move com você. Cada criatura amigável na área (incluindo você) tem vantagem em testes de resistência contra magias e outros efeitos mágicos. Além disso, quando uma criatura afetada for bem sucedida num teste de resistência contra uma magia ou efeito mágico realizado para sofrer apenas metade do dano, ela não sofrerá dano nenhum se passar no teste.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:circle-of-power"
     },
     {
         "id": "greater_restoration",
@@ -576,77 +643,88 @@
         "name": "Restauração Maior",
         "description": "A poção remove um dos seguintes efeitos que esteja te afligindo: Enfeitiçado, petrificação, maldição (incluindo sintonização com um item amaldiçoado), redução de pontos de habilidade, redução de pontos de vida máximo ou até 3 níveis de exaustão.",
         "duration": "-",
-        "component_consumed_cost": 100
+        "component_consumed_cost": 100,
+        "reference": "http://dnd5e.wikidot.com/spell:greater-restoration"
     },
     {
         "id": "mislead",
         "level": 5,
         "name": "Despistar",
         "description": "Você fica invisível ao mesmo tempo que uma cópia ilusória sua aparece onde você estava. A cópia permanece por 1 hora, mas a invisibilidade acaba se você atacar ou conjurar uma magia ou após 1 hora. Você pode usar sua ação para mover a cópia ilusória até o dobro do seu deslocamento e fazê-la se comportar da forma que você quiser. Você pode ver através dos olhos e ouvir através dos ouvidos da cópia. Com uma ação bônus, você pode trocar o uso dos sentidos dela pelo seu ou vice-versa. Enquanto você está usando os sentidos dela, você fica cego e surdo ao que está a sua volta.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:mislead"
     },
     {
         "id": "skill_empowerment",
         "level": 5,
         "name": "Conhecimento Aprimorado",
         "description": "Por 1 hora, você dobra seu bônus de proficiência para testes de habilidade que fizer usando uma habilidade a sua escolha. Você deve escolher uma habilidade na qual seja proficiente e que não se beneficie de um efeito que dobre seu bônus de proficiência.",
-        "duration": "1 hora"
+        "duration": "1 hora",
+        "reference": "http://dnd5e.wikidot.com/spell:skill-empowerment"
     },
     {
         "id": "tree_stride",
         "level": 5,
         "name": "Caminhar pelas Árvores",
         "description": "Por 1 minuto, você pode usar 3 metros [10 ft] de deslocamento para entrar numa árvore e sair em outra árvore do mesmo tipo a até 150 metros [500 ft]. Enquanto estiver dentro da árvore, você sabe a localização de todas as árvores do mesmo tipo a 150 metros [500 ft]. Ambas as árvores devem estar vivas e ter, pelo menos, o mesmo tamanho que você. Você só pode usar essa habilidade de transporte uma vez por rodada e deve terminar cada um de seus turnos fora da árvore.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:tree-stride"
     },
     {
         "id": "globe_of_invulnerability",
         "level": 6,
         "name": "Globo da Invulnerabilidade",
         "description": "Por 1 minuto, uma barreira imóvel e cintilante de 3 metros [10 ft] centrada em você impede que qualquer magia de 5° nível ou inferior, conjurada de fora da barreira, afete criaturas ou objetos dentro dela, mesmo que a magia seja conjurada usando um espaço de magia de nível superior. Tais magias podem ter como alvo criaturas e objetos dentro da barreira, mas a magia não produz nenhum efeito neles. Similarmente, a área dentro da barreira é excluída das áreas afetadas por essas magias.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:globe-of-invulnerability"
     },
     {
         "id": "heal",
         "level": 6,
         "name": "Cura Restauradora",
         "description": "Você recupera 70 pontos de vida e efeitos de cegueira, surdez ou doença acabam. Essa poção não tem efeito em constructos ou mortos-vivos.",
-        "duration": "-"
+        "duration": "-",
+        "reference": "http://dnd5e.wikidot.com/spell:heal"
     },
     {
         "id": "investiture_of_flame",
         "level": 6,
         "name": "Investidura de Chamas",
         "description": "Por 10 minutos, você tem os seguintes benefícios: Você irradia luz plena em um raio de 9 metros [30 ft] e penumbra por mais 9 metros [30 ft]; Você é imune a dano de Fogo e tem resistência a dano de Frio; Uma criatura que se mova a até 1,5 metros [5 ft] de você pela primeira vez no turno ou termine seu turno nesse local recebe 1d10 de dano de Fogo; Você pode usar sua ação para criar uma linha de fogo de 4,5 metros [15 ft] de comprimento e 1,5 metros [5 ft] de largura estendendo-se de você na direção que você escolher, cada criatura na linha deve fazer um teste de resistência de Destreza (CD 15?) sofrendo 4d8 de dano de Fogo se falhar na resistência, ou metade desse dano se obtiver sucesso.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:investiture-of-flame"
     },
     {
         "id": "investiture_of_ice",
         "level": 6,
         "name": "Investidura de Gelo",
         "description": "Por 10 minutos, você tem os seguintes benefícios: Você é imune a dano de Frio e tem resistência a dano de Fogo; Você pode se mover em terreno difícil criado por gelo ou neve sem gastar movimento extra; O solo a 3 metros [10 ft] ao seu redor é terreno difícil para outras criaturas; Você pode usar sua ação para criar uma cone de 4,5 metros [15 ft] na direção que você escolher, cada criatura no cone deve fazer um teste de resistência de Constituição (CD 15?) sofrendo 4d6 de dano de Frio e reduzindo seu deslocamento pela metade até o início do seu próximo turno se falhar, ou metade desse dano se obtiver sucesso.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:investiture-of-ice"
     },
     {
         "id": "investiture_of_stone",
         "level": 6,
         "name": "Investidura de Pedra",
         "description": "Por 10 minutos, você tem os seguintes benefícios: Você tem resistência a dano de Concussão, Perfuração e Cortante de armas não mágicas; Você pode se mover por terreno difícil feito de terra ou pedra sem gastar movimento extra e pode se mover através de terra sólida ou pedra como se fosse ar sem desestabilizá-la, mas não pode terminar seu movimento ali (Se fizer isso, você será ejetado para o espaço desocupado mais próximo atordoado até o final do seu próximo turno e o efeito acabará); Você pode usar sua ação para criar um pequeno terremoto no chão em um raio de 4,5 metros [15 ft] centrado em você, outras criaturas naquele terreno devem ser bem sucedidas em um teste de resistência de Destreza (CD 15?) ou serão derrubadas no chão.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:investiture-of-stone"
     },
     {
         "id": "investiture_of_wind",
         "level": 6,
         "name": "Investidura de Vento",
         "description": "Por 10 minutos, você tem os seguintes benefícios: Ataques com armas à distância feitos contra você têm desvantagem na jogada de ataque; Você ganha deslocamento de voo de 18 metros [60 ft], mas se ainda estiver voando quando o efeito terminar, você cairá; Você pode usar sua ação para criar um cubo de 4,5 metros [15 ft] em um ponto que você possa ver a até 18 metros [60ft], cada criatura na área deve fazer um teste de resistência de Constituição (CD 15?) sofrendo 2d10 de dano de Concussão em caso de falha, ou metade em caso de sucesso. Se uma criatura Grande ou menor falhar no teste de resistência, ela também é empurrada até 3 metros do centro do cubo.",
-        "duration": "10 Minutos"
+        "duration": "10 Minutos",
+        "reference": "http://dnd5e.wikidot.com/spell:investiture-of-wind"
     },
     {
         "id": "primordial_ward",
         "level": 6,
         "name": "Proteção Primordial",
         "description": "Você tem resistência a dano de Ácido, Frio, Fogo, Elétrico e Sonoro por 1 minuto. Ao receber dano de um desses tipos, você pode usar sua reação para ganhar imunidade contra esse tipo de dano, inclusive contra o dano desencadeador. Se você fizer isso, as resistências terminam e você tem imunidade até o final do seu próximo turno, quando o efeito termina.",
-        "duration": "1 Minuto"
+        "duration": "1 Minuto",
+        "reference": "http://dnd5e.wikidot.com/spell:primordial-ward"
     },
     {
         "id": "true_seeing",
@@ -654,21 +732,24 @@
         "name": "Visão Verdadeira",
         "description": "Por 1 hora e num alcance de até 36 metros, você tem visão verdadeira, pode perceber portas secretas escondidas por magia e pode ver no Plano Etéreo.",
         "duration": "1 Hora",
-        "component_consumed_cost": 25
+        "component_consumed_cost": 25,
+        "reference": "http://dnd5e.wikidot.com/spell:true-seeing"
     },
     {
         "id": "teleport_7",
         "level": 7,
         "name": "Teleporte",
         "description": "Você teleporta-se instantanemente com todas as suas coisas para alguma localidade escolhida por você. Quanto mais você conhecer o lugar maior a probabilidade de ir parar no lugar correto. Caso o lugar seja muito familiar há 75% de chance de acerto, conhecimento casula 50%, visto apenas uma vez ou descrito para você 25% de chance. Fica a critério do mestre indicar o tamanho do erro e onde você irá parar ao tomar a poção caso não acerte o alvo.",
-        "duration": "Instantâneo"
+        "duration": "Instantâneo",
+        "reference": "http://dnd5e.wikidot.com/spell:teleport"
     },
     {
         "id": "crown_of_stars",
         "level": 7,
         "name": "Coroa de Estrelas",
         "description": "Sete esferas de luz orbitam sua cabeça por 1 hora. Você pode usar uma ação bônus e gastar uma esfera para fazer um ataque de magia à distância contra um alvo a 36 metros [120 ft] que causa 4d12 de dano Radiante. Quatro ou mais esferas emitem luz plena em um raio de 9 metros [30 ft] e penumbra por mais 9 metros [30 ft]. Menos de três esferas emitem penumbra em um raio de 9 metros [30 ft].",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:crown-of-stars"
     },
     {
         "id": "draconic_transformation",
@@ -676,14 +757,16 @@
         "name": "Transformação Dracônica",
         "description": "Você ganhas os seguintes benefícios por 1 minuto: Você ganha deslocamento de voo de 18 metros [60 ft]; Você tem visão às cegas em 9 metros [30 ft]: Dentro desse alcance, você percebe qualquer coisa que não esteja atrás de cobertura total, mesmo se estiver cego ou na escuridão e você enxerga criaturas invisíveis, a menos que ela se esconda de você com sucesso; Quando você conjura esta magia e com uma ação bônus nos turnos subseqüentes, você pode exalar energia em um cone de 18 metros [60 ft] em que cada criatura deve fazer um teste de resistência de Destreza (CD 15?), recebendo 6d8 de dano de Força em uma falha, ou metade do dano em um sucesso.",
         "duration": "1 Minuto",
-        "component_constant_cost": 500
+        "component_constant_cost": 500,
+        "reference": "http://dnd5e.wikidot.com/spell:draconic-transformation"
     },
     {
         "id": "etherealness",
         "level": 7,
         "name": "Forma Etérea",
         "description": "Você entra na fronteira do Plano Etéreo com seu plano atual e pode ficar lá por até 8 horas. Você pode ver e ouvir em ambos os planos, mas tudo parece cinzento e você não vê além de 18 metros [60 ft] no seu plano original. Você pode se mover para qualquer direção, mas cada metro que você se mover para cima ou para baixo custa dois metros de deslocamento. Você pode afetar e ser afetado apenas por criaturas e objetos no Plano Etéreo, permitindo que você se mova através de objetos no seu plano original. As criaturas que não estiverem no Plano Etéreo não notam sua presença e não podem normalmente interagir com você. Quando o efeito acaba você retorna para o espaço desocupado mais próximo que você puder ocupar no seu plano original, se você não estiver ocupando esse espaço e tiver que ser movido, você sofrerá 10 pontos de dano de Força para cada 1,5 metros [5 ft] que você foi movido. A poção não tem efeito se você já estiver no Plano Etéreo ou em algum plano que não faça fronteira com ele.",
-        "duration": "8 Horas"
+        "duration": "8 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:etherealness"
     },
     {
         "id": "sequester",
@@ -691,35 +774,40 @@
         "name": "Isolamento",
         "description": "Você fica invisível e não pode ser percebido através de magias ou efeitos de adivinhação. Durante a duração, você fica num estado de animação suspensa, o tempo para de fluir para você e você não envelhece. O efeito acaba se você sofrer algum dano ou por alguma condição determinada pelo mestre, como por exemplo \"depois de 1.000 anos\" ou \"quando a profecia se concretizar\".",
         "duration": "Até ser dissipado",
-        "component_consumed_cost": 5000
+        "component_consumed_cost": 5000,
+        "reference": "http://dnd5e.wikidot.com/spell:sequester"
     },
     {
         "id": "antimagic_field",
         "level": 8,
         "name": "Campo Antimagia",
         "description": "Por 1 hora, você irradia uma esfera de antimagia com 3 metros [10 ft] de raio, que se move com você. Magias e outros efeitos mágicos que forem usados em uma criatura ou objeto dentro da esfera não surtem efeito no alvo. A área de outra magia ou efeito mágico não se estende para dentro da esfera. Se a esfera sobrepor um área mágica, a parte da área que for coberta pela espera é suprimida. Qualquer magia ativa ou efeito mágico em uma criatura ou objeto dentro da esfera é suprimido enquanto permanecer dentro da esfera. As propriedades e poderes de itens mágicos são suprimidas dentro da esfera e não podem alvejar um alvo dentro da esfera. Se uma arma mágica ou munição mágica deixar a esfera completamente, a magia do item deixa de ser suprimida tão logo ele deixe a esfera. Teletransporte e viagem planar não funciona dentro da esfera, tanto se a esfera for o destino quando o ponto de partida para tais viagens mágicas. Um portal ou espaço extradimensional aberto é temporariamente fechado enquanto estiver dentro da esfera. Uma criatura ou objeto invocado ou criado através de magia desaparece temporariamente dentro da esfera e reaparece quando o espaço que ele ocupa não estiver mais dentro da esfera. Magias e efeitos que dissipam magias não surtem efeito sob esfera. Esferas criadas por magias ou poções de Campo Antimagia diferentes não se anulam. Um espaço gasto para conjurar uma magia suprimida é consumido e o tempo que ela estiver suprimida é descontado da sua duração. A critério do mestre, efeitos mágicos criados por Artefatos ou Divindades sõa imunes a estes efeitos.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:antimagic-field"
     },
     {
         "id": "glibness",
         "level": 8,
         "name": "Loquacidade",
         "description": "Por 1 hora, quando você realizar um teste de Carisma você pode substituir o número rolado por 15. Além disso, não importa o que você diga, magias que determinam se você está dizendo a verdade indicarão que você está sendo sincero.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:glibness"
     },
     {
         "id": "mind_blank",
         "level": 8,
         "name": "Limpar a Mente",
         "description": "Por 24 horas, você fica imune a dano Psíquico, a qualquer efeito que poderia sentir suas emoções ou ler seus pensamentos, a magias de adivinhação e a condição enfeitiçado. A magia pode até mesmo evitar a magia desejo e magias ou efeitos de poder similar usados para afetar sua mente ou para adquirir informações sobre você.",
-        "duration": "24 Horas"
+        "duration": "24 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:mind-blank"
     },
     {
         "id": "telepathy",
         "level": 8,
         "name": "Telepatia",
         "description": "Você cria uma ligação telepática com uma criatura voluntária com a qual você seja familiarizado. O alvo reconhece que você é a criatura que está se comunicando com ele. A criatura pode estar em qualquer lugar no mesmo plano de existência que você, mas o efeito termina se vocês não estiverem mais no mesmo plano. Por 24 horas você e o alvo podem compartilhar palavras, imagens, sons e outras mensagens sensoriais um com o outro. A poção permite que uma criatura com valor de Inteligência de pelo menos 1 compreenda o sentido das suas palavras e capta o sentido geral de qualquer mensagem sensorial que você enviar.",
-        "duration": "24 Horas"
+        "duration": "24 Horas",
+        "reference": "http://dnd5e.wikidot.com/spell:telepathy"
     },
     {
         "id": "shapechange",
@@ -727,13 +815,15 @@
         "name": "Metamorfose",
         "description": "Por 1 hora, você assume a forma de qualquer criatura com um nível de desafio igual ao seu nível ou menor. A criatura não pode ser nem um constructo nem um morto-vivo e você deve ter visto esse tipo de criatura pelo menos uma vez. Você se transforma num exemplar médio da criatura, sem quaisquer níveis de classe nem ou a característica Conjuração. Suas estatísticas de jogo são substituídas pelas estatísticas da forma escolhida. Você mantem sua tendência, Inteligência, Sabedoria, Carisma, e proficiências (em habilidades e resistências) além de ganhar as proficiências da nova criatura. Use o maior bônus de proficiência entre o seu e o da nova criatura. Você não pode usar qualquer ação lendária ou de covil da nova forma. Você assume os pontos de vida da nova forma. Quando você reverter a sua forma normal, você retorna à quantidade de pontos de vida que tinha antes da transformação. Se você reverter como resultado de ter caído a 0 pontos de vida, qualquer dano excedente é recebido pela sua forma normal. Você mantem os benefícios de qualquer característica da sua classe, raça ou outra fonte e pode usa-las, considerando que sua nova forma é fisicamente capaz de fazê-lo. Você não pode usar quaisquer sentidos especiais que você possua a não ser que a nova forma também possua o sentido. Você só poderá falar se a nova forma, normalmente, puder falar. Quando você se transforma, você pode escolher se o seu equipamento cai no chão, é assimilado a sua nova forma ou é usado por ela. O Mestre decide qual equipamento é viável para a nova forma. O seu equipamento não muda de forma ou tamanho para se adaptar à nova forma e, qualquer equipamento que a nova forma não possa vestir deve, ou cair no chão ou ser assimilado por ela. Equipamentos assimilados não terão efeito nesse estado. Pela duração da magia, você pode usar sua ação para assumir uma forma diferente, seguindo as mesmas restrições e regras da forma anterior, com uma exceção: se sua nova forma tiver mais pontos de vida que sua forma atual, seus pontos de vida mantem o valor atual.",
         "duration": "1 Hora",
-        "component_constant_cost": 1500
+        "component_constant_cost": 1500,
+        "reference": "http://dnd5e.wikidot.com/spell:shapechange"
     },
     {
         "id": "power_word_heal",
         "level": 9,
         "name": "Palavra de Poder: Curar",
-        "description": "Você recupera todos os seus pontos de vida. Se você estiver enfeitiçada, amedrontada, paralisada ou atordoada, a condição termina. Se você estiver caída, você pode usar a sua reação para se levantar. Esta poção não afeta mortos-vivos ou constructos."
+        "description": "Você recupera todos os seus pontos de vida. Se você estiver enfeitiçada, amedrontada, paralisada ou atordoada, a condição termina. Se você estiver caída, você pode usar a sua reação para se levantar. Esta poção não afeta mortos-vivos ou constructos.",
+        "reference": "http://dnd5e.wikidot.com/spell:power-word-heal"
     },
     {
         "id": "invulnerability",
@@ -741,20 +831,23 @@
         "name": "Invulnerabilidade",
         "description": "Por 10 minutos você é imune a todo tipo de dano.",
         "duration": "10 Minuto",
-        "component_consumed_cost": 500
+        "component_consumed_cost": 500,
+        "reference": "http://dnd5e.wikidot.com/spell:invulnerability"
     },
     {
         "id": "true_polymorph",
         "level": 9,
         "name": "Polimorfia Verdadeira",
         "description": "Você se transforma em uma criatura cujo nível de desafio seja igual ou menor ao seu nível. As suas estatísticas são substituídas pelas da nova forma. Você mantem sua tendência e personalidade. Você assume os pontos de vida da sua nova forma e retorna à quantidade de pontos de vida que tinha antes da transformação quando o efeito acaba. Qualquer dano excedente é recebido pela sua forma original. Você é limitada em suas ações pela natureza da sua nova forma e só pode realizar ações que a nova forma seja capaz de realizar, inclusive conjurar magias. Seu equipamento se mescla à sua nova forma e você não pode mais interagir com ele. Metamorfos ou criaturas com 0 pontos de vida não são afetados por esta poção. A transformação permanece por 1 hora, até cair a 0 ponto de vida ou até morrer. Se a transformação se mantiver por 1 hora, ela será permanente.",
-        "duration": "1 Hora"
+        "duration": "1 Hora",
+        "reference": "http://dnd5e.wikidot.com/spell:true-polymorph"
     },
     {
         "id": "time_stop",
         "level": 9,
         "name": "Parar o Tempo",
         "description": "O fluxo do tempo congela para tudo e todos exceto para você por 1d4+1 Rodadas durante as quais você pode agir livremente. O efeito acaba se você ou qualquer efeito que você criar interagir com outra criatura ou objeto carregado por outra criatura. O efeito acaba se você se mover mais de 300 m [1000 ft].",
-        "duration": "1d4+1 Rodadas"
+        "duration": "1d4+1 Rodadas",
+        "reference": "http://dnd5e.wikidot.com/spell:time-stop"
     }
 ]

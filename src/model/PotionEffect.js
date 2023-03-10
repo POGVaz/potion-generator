@@ -3,13 +3,14 @@
 class PotionEffect {
     static effectsCost;
 
-    constructor({id, level, name, description, component_constant_cost = 0, component_consumed_cost = 0}) {
+    constructor({id, level, name, description, component_constant_cost = 0, component_consumed_cost = 0, reference = null}) {
         this.id = id;
         this.level = level;
         this.name = name;
         this.description = description;
         this.componentConstantCost = component_constant_cost;
         this.componentConsumedCost = component_consumed_cost;
+        this.reference = reference;
     }
     
     get basePrice() {

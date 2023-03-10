@@ -8,6 +8,7 @@ class PotionViewer extends React.Component {
       <EffectViewer
         name = {effect.name}
         description = {effect.description}
+        reference = {effect.reference}
       />
     )
   }
@@ -87,11 +88,20 @@ class PotionViewer extends React.Component {
 }
 
 function EffectViewer(props) {
-  return (
-    <div>
-      <b>{props.name}: </b> {props.description}
-    </div>
-  );
+  if (props.reference){
+    return (
+      <div>
+        <b><a href={props.reference} target="_blank" rel="noreferrer">{props.name}</a>: </b> {props.description}
+      </div>
+    );
+  }
+  else {
+    return (
+      <div>
+        <b>{props.name}: </b> {props.description}
+      </div>
+    );
+  }
 }
 
 export default PotionViewer;
