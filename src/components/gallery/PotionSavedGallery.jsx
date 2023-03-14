@@ -1,38 +1,34 @@
 import React from "react";
 import PotionGalleryItem from "./PotionGalleryItem";
 
-class PotionGallery extends React.Component {
+function PotionGallery({ potions, onSelect, onDelete }) {
 
-  render() {
-    
-    const potions = this.props.potions? this.props.potions.map((potion) => {
-      return (
-        <div>
-          <button
-            className="potion-gallery-item"
-            onClick={() => { this.props.onSelect(potion) }}
-          >
-            <PotionGalleryItem
-              potion={potion}
-              key={potion.name}
-            />
-          </button>
-          <button
-            onClick={() => { this.props.onDelete(potion) }}
-          >
-            Delete
-          </button>
-        </div>
-      );
-    }) : null;
-    
+  const potionItems = potions? potions.map((potion) => {
     return (
-      <div style={{ "textAlign": "center", "display": "flex"}}>
-        {potions}
+      <div>
+        <button
+          className="potion-gallery-item"
+          onClick={() => { onSelect(potion) }}
+        >
+          <PotionGalleryItem
+            potion={potion}
+            key={potion.name}
+          />
+        </button>
+        <button
+          onClick={() => { onDelete(potion) }}
+        >
+          Delete
+        </button>
       </div>
     );
-    
-  }
+  }) : null;
+  
+  return (
+    <div style={{ "textAlign": "center", "display": "flex"}}>
+      {potionItems}
+    </div>
+  );
 }
 
 export default PotionGallery;

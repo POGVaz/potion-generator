@@ -1,16 +1,14 @@
 import React from "react";
 import PotionGalleryItem from "./PotionGalleryItem";
 
-class PotionGallery extends React.Component {
-
-  render() {
+function PotionGallery({ potions, onSelect, onSave }) {
     
-    const potions = this.props.potions? this.props.potions.map((potion) => {
+    const potionItems = potions? potions.map((potion) => {
       return (
         <div>
           <button
             className="potion-gallery-item"
-            onClick={() => { this.props.onSelect(potion) }}
+            onClick={() => { onSelect(potion) }}
           >
             <PotionGalleryItem
               potion={potion}
@@ -18,7 +16,7 @@ class PotionGallery extends React.Component {
             />
           </button>
           <button
-            onClick={() => { this.props.onSave(potion) }}
+            onClick={() => { onSave(potion) }}
           >
             Save
           </button>
@@ -28,11 +26,10 @@ class PotionGallery extends React.Component {
     
     return (
       <div style={{ "textAlign": "center", "display": "flex"}}>
-        {potions}
+        {potionItems}
       </div>
     );
     
-  }
 }
 
 export default PotionGallery;

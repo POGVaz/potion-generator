@@ -6,7 +6,7 @@ const initialValues = {
   minEffects: 1,
   maxEffects: 1,
   minSideEffects: 0,
-  maxSideEffects: 2,
+  maxSideEffects: 1,
 }
 
 const PotionMakerForm = ({ onSubmit }) => {
