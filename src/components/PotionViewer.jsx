@@ -9,7 +9,11 @@ function PotionViewer({ potion, error }) {
     ].map((effect) => {
       return (
         <li key={effect.id}>
-          <EffectViewer effect={effect} />
+          <EffectViewer
+            reference={effect.reference}
+            name={effect.name}
+            description={effect.description}
+          />
         </li>
       );
     });

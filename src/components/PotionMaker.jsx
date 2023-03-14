@@ -50,7 +50,7 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
   }
 
   const handleGalleryItemSave = (potion) => {
-    setSavedPotions([...savedPotions, potion]);
+    setSavedPotions([...savedPotions, potion.clone()]);
   }
 
   const handleSavedGalleryItemDelete = (potion) => {

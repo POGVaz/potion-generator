@@ -7,6 +7,8 @@ import { potionImages } from '../builder/ImageBuilder';
 import { convertArrayToText, getRandomFromArray } from '../functions/utils';
 import { PotionEffect, PotionSideEffect } from './PotionEffect';
 
+import { v4 as uuid } from "uuid";
+
 const EFFECTS_MULTIPLIER = 1.5;
 
 class PotionFactory {
@@ -25,14 +27,18 @@ class Potion {
     #description;
 
     constructor(
-        { blueprint, name, image, description, effects = [], sideEffects = []}
+        { id, blueprint, name, image, description, effects = [], sideEffects = []}
     ) {
-        this.#name = name;
-        this.#image = image;
-        this.#description = description;
+        //Uses the passed id or generates a new one
+        this.id = id || uuid();
+
         this.effects = effects;
         this.sideEffects = sideEffects;
         this.blueprint = blueprint;
+
+        this.#name = name;
+        this.#image = image;
+        this.#description = description;
     }
 
     get value() {
@@ -181,6 +187,18 @@ class Potion {
             liquidDetail,
             containerDetail,
         });
+    }
+
+    clone() {
+        return new Potion(
+            {
+                ...this,
+                id: null,
+                name: this.name,
+                image: this.image,
+                description: this.description,
+            }
+        );
     }
 
     stringify() {

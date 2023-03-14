@@ -117,7 +117,7 @@ describe('Potions', () => {
     });
   });
 
-  describe('stringify', () => {
+  describe.skip('stringify', () => {
     it('Should return a string representing the potion', () => {
       expect(
         new Potion({

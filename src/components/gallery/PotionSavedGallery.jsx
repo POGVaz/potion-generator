@@ -5,7 +5,7 @@ function PotionGallery({ potions, onSelect, onDelete }) {
 
   const potionItems = potions? potions.map((potion) => {
     return (
-      <div>
+      <div key={potion.id}>
         <button
           className="potion-gallery-item"
           onClick={() => { onSelect(potion) }}
