@@ -4,6 +4,8 @@ A React App for generating potions and calculating their costs.
 Potion Effects are based on D&D spells (their cost is recalculated to fit my campaign) while Side Effects are custom made.
 Ultimately, the objective is to make more diverse and present potions in our games by making them cheaper with adverse effects.
 
+[Check it here!](https://pogvaz.github.io/potion-generator/) 
+
 ## Usage
 
 Select witch effects and side effects should be available to your potion from the tables, fill the generator options (price range, max effects, etc.) and hit the generate button to get a new potion.
