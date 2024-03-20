@@ -1,8 +1,28 @@
 'use-strict'
 
-import { getCombinationsWithRepetition, getRandomFromArray, shuffleArray } from './utils';
+import { getAllCombinations, getRandomFromArray, shuffleArray } from './utils';
 import { PotionBlueprint, PotionFactory } from '../model/Potion';
 import { PotionSideEffect } from '../model/PotionEffect';
+
+/**
+* Generates a new potion object with random effects and side effects, within the specified parameters.
+* @param {Object} options - An object containing the options for generating the potion.
+* @param {number} [options.minEffects=1] - The minimum number of effects for the potion.
+* @param {number} [options.maxEffects=2] - The maximum number of effects for the potion.
+* @param {Array} [options.possibleEffects=[]] - An array of possible PotionEffects for the potion.
+* @param {number} [options.minSideEffects=0] - The minimum number of side effects for the potion.
+* @param {number} [options.maxSideEffects=5] - The maximum number of side effects for the potion.
+* @param {Array} [options.possibleSideEffects=[]] - An array of possible PotionSideEffects for the potion.
+* @param {number} [options.minPrice=0] - The minimum price for the potion.
+* @param {number} [options.maxPrice=Infinity] - The maximum price for the potion.
+* @param {number} [options.price=null] - The desired price for the potion (if specified, overrides minPrice and maxPrice).
+
+* @throws {Error} Not enough effects to generate potion.
+* @throws {Error} Not enough side effects to generate potion.
+* @throws {Error} Could not generate potion with the given parameters.
+
+* @returns {Object} A new potion object with random effects and side effects.
+*/
 
 function generatePotion({
     minEffects = 1, maxEffects = 2, possibleEffects = [],
@@ -19,40 +39,19 @@ function generatePotion({
         throw new Error("Not enough side effects to generate potion");
     }
 
-    //Get available levels from possible effects
-    const possibleLevels = possibleEffects.reduce(
-        (levels, effect) => {
-            return levels.includes(effect.level) ?
-                levels :
-                [...levels, effect.level];
-        },
-        []
-    );
+    //Get array of available levels from possible effects
+    const possibleLevels = getLevelArrayFromEffects(possibleEffects);
 
-    //Get available categories from possible side effects
-    const possibleSideEffectsCategories = possibleSideEffects.reduce(
-        (categories, sideEffects) => {
-            return categories.includes(sideEffects.category) ?
-                categories :
-                [...categories, sideEffects.category];
-        },
-        []
-    );
+    //Get array of available categories from possible side effects
+    const possibleSideEffectsCategories = getCategoryArrayFromSideEffects(possibleSideEffects);
 
     //Generate all possible potion blueprints with the parameters
     const allLevelsCombinations = getAllCombinations(possibleLevels, minEffects, maxEffects);
     const allCategoriesCombinations = getAllCombinations(possibleSideEffectsCategories, minSideEffects, maxSideEffects);
 
-    let allBlueprints = [];
-    allLevelsCombinations.forEach((levels) => {
-        allCategoriesCombinations.forEach((categories) => {
-            allBlueprints = [...allBlueprints,
-            new PotionBlueprint(
-                { effectLevels: levels, sideEffectCategories: categories }
-            )
-            ];
-        });
-    });
+    const allBlueprints = generateBlueprints(
+        allLevelsCombinations, allCategoriesCombinations
+    );
 
     //Filter all blueprints to get only those within the price range
     if (price !== null) {
@@ -79,29 +78,46 @@ function generatePotion({
         }
     });
 
-    // const potionArray = shuffledBlueprints.reduce((potions, blueprint) => {
-    //     try {
-    //         let newPotion = createPotionFromBlueprint(blueprint, possibleEffects, possibleSideEffects);
-    //         potions.push(newPotion);
-    //     } catch (error) {
-    //         // console.log(error);
-    //         // return false;
-    //     }
-    //     return potions;
-    // }, []);
-
     if (newPotion)
         return newPotion;
     else
         throw new Error("Could not generate potion with the given parameters");
 }
 
-function getAllCombinations(array, min, max) {
-    let returnArray = [];
-    for (let index = min; index <= max; index++) {
-        returnArray = [...returnArray, ...getCombinationsWithRepetition(array, index)];
-    }
-    return returnArray;
+function getLevelArrayFromEffects(effects) {
+    return effects.reduce(
+        (levels, effect) => {
+            return levels.includes(effect.level) ?
+                levels :
+                [...levels, effect.level];
+        },
+        []
+    );
+}
+
+function getCategoryArrayFromSideEffects(sideEffects) {
+    return sideEffects.reduce(
+        (categories, sideEffects) => {
+            return categories.includes(sideEffects.category) ?
+                categories :
+                [...categories, sideEffects.category];
+        },
+        []
+    );
+}
+
+function generateBlueprints(levelsCombinations, categoriesCombinations) {
+    let allBlueprints = [];
+    levelsCombinations.forEach((levels) => {
+        categoriesCombinations.forEach((categories) => {
+            allBlueprints = [...allBlueprints,
+            new PotionBlueprint(
+                { effectLevels: levels, sideEffectCategories: categories }
+            )
+            ];
+        });
+    });
+    return allBlueprints;
 }
 
 function createPotionFromBlueprint(potionBlueprint, possibleEffects, possibleSideEffects) {
@@ -117,7 +133,7 @@ function createPotionFromBlueprint(potionBlueprint, possibleEffects, possibleSid
 
 function selectRandomEffects(potionBlueprint, possibleEffects, possibleSideEffects = []) {
     const effects = [];
-
+    
     potionBlueprint.effectLevels.forEach((level) => {
 
         //Filter the possible effects
@@ -195,4 +211,14 @@ function selectRandomSideEffects(potionBlueprint, possibleSideEffects, usedEffec
     return sideEffects;
 }
 
-export { generatePotion }
+export default generatePotion
+export {
+    generatePotion,
+    getAllCombinations,
+    getLevelArrayFromEffects,
+    getCategoryArrayFromSideEffects,
+    generateBlueprints,
+    createPotionFromBlueprint,
+    selectRandomEffects,
+    selectRandomSideEffects,
+}

@@ -20,6 +20,32 @@ function convertArrayToText(arr) {
     return returnText;
 }
 
+/**
+* Returns an array of all possible combinations of elements from the given array
+* with a minimum length of min and a maximum length of max, including both extremes.
+* @param {Array} array - The array to get the combinations from
+* @param {Number} min - The minimum length of combinations to return
+* @param {Number} max - The maximum length of combinations to return
+* 
+* @returns {Array} An array containing all possible combinations
+*/
+function getAllCombinations(array, min, max) {
+    let returnArray = [];
+    for (let index = min; index <= max; index++) {
+        returnArray = [...returnArray, ...getCombinationsWithRepetition(array, index)];
+    }
+    return returnArray;
+}
+
+/**
+* getCombinationsWithRepetition - generates all combinations of a given length from an array, allowing for repetition
+
+* @param {Array} arr - the input array to generate combinations from
+* @param {number} combLen - the length of the combinations to generate (optional, default is the length of the input array)
+* 
+* @throws {TypeError} if combLen is not a number
+* @returns {Array} an array of all combinations of the given length, with repetition allowed
+*/
 function getCombinationsWithRepetition(arr, combLen) {
     combLen = Number(combLen);
 
@@ -64,6 +90,7 @@ function shuffleArray(array) {
 
 export {
     convertArrayToText,
+    getAllCombinations,
     getCombinationsWithRepetition,
     getRandomFromArray,
     shuffleArray
