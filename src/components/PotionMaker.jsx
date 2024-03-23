@@ -26,12 +26,12 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
 
   const handleGenerate = (formData) => {
     try {
-      const potions = [...new Array(5)].map(() => {
+      const potions = [...new Array(6)].map(() => {
         return generatePotion({
           ...formData,
           possibleEffects: effectsRef.current,
           possibleSideEffects: sideEffectsRef.current,
-          amount: 5,
+          amount: 6,
         });
       });
       setGeneratedPotions(potions);
@@ -62,6 +62,10 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
     )
   }
 
+  const handleDeleteAllSavedItems = () => {
+    setSavedPotions([]);
+  }
+
   const handleEffectsSelectionChange = (effectRows) => {
       effectsRef.current = effectRows.map((rowData) => {
         return rowData.original;
@@ -89,6 +93,7 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
         potions={savedPotions}
         onSelect={handleGalleryItemSelection}
         onDelete={handleSavedGalleryItemDelete}
+        onDeleteAll={handleDeleteAllSavedItems}
       />
 
       <div style={{ "display": "flex" }}>

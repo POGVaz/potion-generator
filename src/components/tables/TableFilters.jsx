@@ -30,13 +30,12 @@ function GlobalFilter({
 
 // Filters columns by a string input
 function TextColumnFilter({
-  column: { filterValue, preFilteredRows, setFilter },
+  column: { filterValue, preFilteredRows, setFilter }
 }) {
   const count = preFilteredRows.length
 
   return (
     <TextField
-      id="standard-basic"
       variant="standard"
       value={filterValue || ''}
       onChange={e => {

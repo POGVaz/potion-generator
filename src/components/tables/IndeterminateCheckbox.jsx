@@ -7,11 +7,11 @@ const IndeterminateCheckbox = React.forwardRef(
 
     React.useEffect(() => {
       resolvedRef.current.indeterminate = indeterminate
-    }, [resolvedRef, indeterminate])
+    }, [resolvedRef, indeterminate]);
 
     return (
       <>
-        <input type="checkbox" ref={resolvedRef} {...rest} />
+        <input id={"row-checkbox-" +rest.id} type="checkbox" ref={resolvedRef} {...rest} />
       </>
     )
   }
