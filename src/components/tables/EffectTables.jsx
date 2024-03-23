@@ -1,22 +1,25 @@
 import React from "react";
 import EnhancedTable from "./EnhancedTable";
-import { SelectColumnFilter, NumberRangeColumnFilter } from "./TableFilters";
+import { SelectColumnFilter } from "./TableFilters";
+import { Box, Grid, Link, Paper, Typography } from "@mui/material";
 
 
 function EffectTables({effectsList, sideEffectsList, onEffectsChange, onSideEffectsChange}) {
   return (
-    <div>
-      <div>
-        {
-          renderMainEffectsTable(effectsList, onEffectsChange)
-        }
-      </div>
-      <div>
-        {
-          renderSideEffectsTable(sideEffectsList, onSideEffectsChange)
-        }
-      </div>
-    </div>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid item xs={6}>
+          <Paper>
+            {renderMainEffectsTable(effectsList.sort((a, b) => { return a.level - b.level }), onEffectsChange)}
+          </Paper>
+        </Grid>
+        <Grid item xs={6}>
+          <Paper>
+            {renderSideEffectsTable(sideEffectsList, onSideEffectsChange)}
+          </Paper>
+        </Grid>
+      </Grid>
+    </Box>
   )
 }
 
@@ -29,31 +32,19 @@ function renderMainEffectsTable(effects, onChange) {
       accessor: 'name',
       sortType: 'basic',
       filter: 'fuzzyText',
+      width: 50,
       Cell: ({value, row}) => {
-        if (row.original.reference){
-          return (
-            <div><a href={row.original.reference} target="_blank" rel="noreferrer">{value}</a></div>
-            // <div>{value}</div>
-          )
-        }
-        else {
-          return (
-            <div>{value}</div>
-          )
-        }
+        return (row.original.reference)?
+          <Link href={row.original.reference}>{value}</Link> :
+          <Typography>{value}</Typography>
       }
     },
     {
-      Header: 'Level',
+      Header: "Level",
       accessor: 'level',
       Filter: SelectColumnFilter,
       filter: 'equal',
-    },
-    {
-      Header: 'Price',
-      accessor: 'basePrice',
-      Filter: NumberRangeColumnFilter,
-      filter: 'between',
+      Cell: ({ value }) => <Typography align="center" >{value}</Typography>
     },
     {
       Header: 'Description',
@@ -78,6 +69,16 @@ function renderMainEffectsTable(effects, onChange) {
 
 function renderSideEffectsTable(effects, onChange) {
 
+  effects.forEach((effect) => {
+    effect["category_alias"] = {
+      "very_weak": "Muito Fraco",
+      "weak": "Fraco",
+      "medium": "Médio",
+      "strong": "Forte",
+      "very_strong": "Muito Forte",
+    }[effect["category"]];
+  });
+
   //Define columns for the table
   const columns = [
     {
@@ -85,31 +86,14 @@ function renderSideEffectsTable(effects, onChange) {
       accessor: 'name',
       sortType: 'basic',
       filter: 'fuzzyText',
+      width: 200,
     },
     {
       Header: 'Category',
-      accessor: 'category',
+      accessor: 'category_alias',
       Filter: SelectColumnFilter,
       disableSortBy: true,
       filter: 'equal',
-      Cell: ({ value }) => {
-        return {
-          "very_weak": "Muito Fraco",
-          "weak": "Fraco",
-          "medium": "Médio",
-          "strong": "Forte",
-          "very_strong": "Muito Forte",
-        }[value];
-      },
-    },
-    {
-      Header: 'Modifier',
-      accessor: 'costModifier',
-      Filter: SelectColumnFilter,
-      filter: 'equal',
-      Cell: ({ value }) => {
-        return String(value < 1 ? Math.floor((1 - value) * 100)*(-1) : Math.floor(value * 100)) + '%'
-      }
     },
     {
       Header: 'Description',

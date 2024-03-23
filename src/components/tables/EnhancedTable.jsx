@@ -68,6 +68,7 @@ function EnhancedTable({ tableData, tableColumns, onRowSelect, startSelected = t
         // Let's make a column for selection
         {
           id: 'selection',
+          disableGlobalFilter: true,
           // The header can use the table's getToggleAllRowsSelectedProps method
           // to render a checkbox
           Header: ({ getToggleAllRowsSelectedProps }) => (
@@ -116,6 +117,20 @@ function EnhancedTable({ tableData, tableColumns, onRowSelect, startSelected = t
     // apply the table props
     <table {...getTableProps()}>
       <thead>
+        <tr>
+          <th
+            colSpan={visibleColumns.length}
+            style={{
+              textAlign: 'left',
+            }}
+          >
+            <GlobalFilter
+              preGlobalFilteredRows={preGlobalFilteredRows}
+              globalFilter={state.globalFilter}
+              setGlobalFilter={setGlobalFilter}
+            />
+          </th>
+        </tr>
         {// Loop over the header rows
           headerGroups.map(headerGroup => (
             // Apply the header row props
@@ -150,20 +165,6 @@ function EnhancedTable({ tableData, tableColumns, onRowSelect, startSelected = t
                 ))}
             </tr>
           ))}
-        <tr>
-          <th
-            colSpan={visibleColumns.length}
-            style={{
-              textAlign: 'left',
-            }}
-          >
-            <GlobalFilter
-              preGlobalFilteredRows={preGlobalFilteredRows}
-              globalFilter={state.globalFilter}
-              setGlobalFilter={setGlobalFilter}
-            />
-          </th>
-        </tr>
       </thead>
       {/* Apply the table body props */}
       <tbody {...getTableBodyProps()}>

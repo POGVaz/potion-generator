@@ -1,5 +1,6 @@
 import React from "react";
 import { useAsyncDebounce } from "react-table";
+import { Select, MenuItem, TextField } from "@mui/material"
 
 // Filter on all fields of the table
 function GlobalFilter({
@@ -14,21 +15,16 @@ function GlobalFilter({
   }, 200)
 
   return (
-    <span>
-      Search:{' '}
-      <input
-        value={value || ""}
-        onChange={e => {
-          setValue(e.target.value);
-          onChange(e.target.value);
-        }}
-        placeholder={`${count} effects...`}
-        style={{
-          fontSize: '1.1rem',
-          border: '0',
-        }}
+    <TextField
+      variant="standard"
+      value={value || ""}
+      onChange={e => {
+        setValue(e.target.value);
+        onChange(e.target.value);
+      }}
+      placeholder={`Search ${count} effects...`}
+      fullWidth
       />
-    </span>
   )
 }
 
@@ -39,13 +35,16 @@ function TextColumnFilter({
   const count = preFilteredRows.length
 
   return (
-    <input
+    <TextField
+      id="standard-basic"
+      variant="standard"
       value={filterValue || ''}
       onChange={e => {
         setFilter(e.target.value || undefined) // Set undefined to remove the filter entirely
       }}
       placeholder={`Search ${count} records...`}
-    />
+      style={{minWidth: 200}}
+      />
   )
 }
 
@@ -65,19 +64,23 @@ function SelectColumnFilter({
 
   // Render a multi-select box
   return (
-    <select
+    <Select
+      variant="standard"
       value={filterValue}
       onChange={e => {
         setFilter(e.target.value || undefined)
       }}
+      displayEmpty
+      defaultValue={""}
+      style={{minWidth: 75}}
     >
-      <option value="">All</option>
-      {options.map((option, i) => (
-        <option key={i} value={option}>
+      <MenuItem value=""><em>Todos</em></MenuItem>
+      {options.map((option) => (
+        <MenuItem value={option}>
           {option}
-        </option>
+        </MenuItem>
       ))}
-    </select>
+    </Select>
   )
 }
 
