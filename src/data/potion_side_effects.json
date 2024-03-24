@@ -405,7 +405,7 @@
         "category": "very_weak",
         "type": "reduction_charisma",
         "name": "Redução de Carisma Mínima",
-        "description": "Você tem sua carisma reduzida em -1d4.",
+        "description": "Você tem seu carisma reduzido em -1d4.",
         "adjective": "desvirtuante mínima",
         "incompatible_with": [
             "enhance_ability_eagle_splendor"
@@ -416,7 +416,7 @@
         "category": "weak",
         "type": "reduction_charisma",
         "name": "Redução de Carisma Menor",
-        "description": "Você tem sua carisma reduzida em -1d6.",
+        "description": "Você tem seu carisma reduzido em -1d6.",
         "adjective": "desvirtuante menor",
         "incompatible_with": [
             "enhance_ability_eagle_splendor"
@@ -427,7 +427,7 @@
         "category": "medium",
         "type": "reduction_charisma",
         "name": "Redução de Carisma",
-        "description": "Você tem sua carisma reduzida em -2d4.",
+        "description": "Você tem seu carisma reduzido em -2d4.",
         "adjective": "desvirtuante",
         "incompatible_with": [
             "enhance_ability_eagle_splendor"
@@ -438,7 +438,7 @@
         "category": "strong",
         "type": "reduction_charisma",
         "name": "Redução de Carisma Maior",
-        "description": "Você tem sua carisma reduzida em -1d6.",
+        "description": "Você tem seu carisma reduzido em -1d6.",
         "adjective": "desvirtuante maior",
         "incompatible_with": [
             "enhance_ability_eagle_splendor"
@@ -449,10 +449,795 @@
         "category": "very_strong",
         "type": "reduction_charisma",
         "name": "Redução de Carisma Máxima",
-        "description": "Você tem sua carisma reduzida em -2d8.",
+        "description": "Você tem seu carisma reduzido em -2d8.",
         "adjective": "desvirtuante máxima",
         "incompatible_with": [
             "enhance_ability_eagle_splendor"
+        ]
+    },
+    {
+        "id": "disadvantage_check_strength",
+        "category": "weak",
+        "name": "Desvantagem em testes de Força",
+        "description": "Você tem desvantagem em testes de habilidade e resistência de Força",
+        "adjective": "da frauqeza",
+        "incompatible_with": [
+            "enhance_ability_bull_strength",
+            "enlarge",
+            "reduce",
+            "gaseous_form"
+        ]
+    },
+    {
+        "id": "disadvantage_check_dexterity",
+        "category": "weak",
+        "name": "Desvantagem em testes de Destreza",
+        "description": "Você tem desvantagem em testes de habilidade e resistência de Destreza",
+        "adjective": "da lentidão",
+        "incompatible_with": [
+            "enhance_ability_cat_grace",
+            "haste",
+            "gaseous_form"
+        ]
+    },
+    {
+        "id": "disadvantage_check_constitution",
+        "category": "weak",
+        "name": "Desvantagem em testes de Constituição",
+        "description": "Você tem desvantagem em testes de habilidade e resistência de Constituição",
+        "adjective": "da debilidade",
+        "incompatible_with": [
+            "enhance_ability_bear_endurance",
+            "gaseous_form"
+        ]
+    },
+    {
+        "id": "disadvantage_check_intelligence",
+        "category": "weak",
+        "name": "Desvantagem em testes de Inteligência",
+        "description": "Você tem desvantagem em testes de habilidade e resistência de Inteligência",
+        "adjective": "da idiotia",
+        "incompatible_with": [
+            "enhance_ability_fox_cunning",
+            "intellect_fortress"
+        ]
+    },
+    {
+        "id": "disadvantage_check_wisdom",
+        "category": "weak",
+        "name": "Desvantagem em testes de Sabedoria",
+        "description": "Você tem desvantagem em testes de habilidade e resistência de Sabedoria",
+        "adjective": "da estupidez",
+        "incompatible_with": [
+            "enhance_ability_owl_wisdom",
+            "intellect_fortress"
+        ]
+    },
+    {
+        "id": "disadvantage_check_charisma",
+        "category": "weak",
+        "name": "Desvantagem em testes de Carisma",
+        "description": "Você tem desvantagem em testes de habilidade e resistência de Carisma",
+        "adjective": "da estranheza",
+        "incompatible_with": [
+            "enhance_ability_eagle_splendor",
+            "intellect_fortress",
+            "glibness"
+        ]
+    },
+    {
+        "id": "minor_movement_reduction",
+        "category": "very_weak",
+        "type": "movement_reduction",
+        "name": "Redução em movimento mínima",
+        "description": "Você tem seu movimento reduzido em 1,5m",
+        "adjective": "da vagarosidade mínima",
+        "incompatible_with": [
+            "longstrider",
+            "gaseous_form",
+            "haste",
+            "freedom_of_movement_4"
+        ]
+    },
+    {
+        "id": "small_movement_reduction",
+        "category": "weak",
+        "type": "movement_reduction",
+        "name": "Redução em movimento menor",
+        "description": "Você tem seu movimento reduzido em 3m",
+        "adjective": "da vagarosidade menor",
+        "incompatible_with": [
+            "longstrider",
+            "gaseous_form",
+            "haste",
+            "freedom_of_movement_4"
+        ]
+    },
+    {
+        "id": "movement_reduction",
+        "category": "medium",
+        "type": "movement_reduction",
+        "name": "Redução em movimento",
+        "description": "Você tem seu movimento reduzido em 4,5m",
+        "adjective": "da vagarosidade",
+        "incompatible_with": [
+            "longstrider",
+            "gaseous_form",
+            "haste",
+            "freedom_of_movement_4"
+        ]
+    },
+    {
+        "id": "great_movement_reduction",
+        "category": "strong",
+        "type": "movement_reduction",
+        "name": "Redução em movimento maior",
+        "description": "Você tem seu movimento reduzido em 6m",
+        "adjective": "da vagarosidade maior",
+        "incompatible_with": [
+            "longstrider",
+            "gaseous_form",
+            "haste",
+            "freedom_of_movement_4"
+        ]
+    },
+    {
+        "id": "major_movement_reduction",
+        "category": "very_strong",
+        "type": "movement_reduction",
+        "name": "Redução em movimento máxima",
+        "description": "Você tem seu movimento reduzido em 9m",
+        "adjective": "da vagarosidade máxima",
+        "incompatible_with": [
+            "longstrider",
+            "gaseous_form",
+            "haste",
+            "freedom_of_movement_4"
+        ]
+    },
+    {
+        "id": "minor_late_exhaustion",
+        "category": "very_weak",
+        "type": "late_exhaustion",
+        "name": "Exaustão mínima",
+        "description": "Você ganha 1 nível de exaustão após o efeito da poção terminar",
+        "adjective": "cansativa mínima",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "small_late_exhaustion",
+        "category": "weak",
+        "type": "late_exhaustion",
+        "name": "Exaustão menor",
+        "description": "Você ganha 2 nível de exaustão após o efeito da poção terminar",
+        "adjective": "cansativa menor",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "late_exhaustion",
+        "category": "medium",
+        "type": "late_exhaustion",
+        "name": "Exaustão",
+        "description": "Você ganha 3 nível de exaustão após o efeito da poção terminar",
+        "adjective": "cansativa",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "great_late_exhaustion",
+        "category": "strong",
+        "type": "late_exhaustion",
+        "name": "Exaustão maior",
+        "description": "Você ganha 4 nível de exaustão após o efeito da poção terminar",
+        "adjective": "cansativa maior",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "major_late_exhaustion",
+        "category": "very_strong",
+        "type": "late_exhaustion",
+        "name": "Exaustão máxima",
+        "description": "Você ganha 5 nível de exaustão após o efeito da poção terminar",
+        "adjective": "cansativa máxima",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "minor_immediate_exhaustion",
+        "category": "very_weak",
+        "type": "immediate_exhaustion",
+        "name": "Exaustão imediata mínima",
+        "description": "Você ganha 1 nível de exaustão ao ingerir a poção",
+        "adjective": "exaustiva mínima",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "small_immediate_exhaustion",
+        "category": "weak",
+        "type": "immediate_exhaustion",
+        "name": "Exaustão imediata menor",
+        "description": "Você ganha 2 nível de exaustão ao ingerir a poção",
+        "adjective": "exaustiva menor",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "immediate_exhaustion",
+        "category": "medium",
+        "type": "immediate_exhaustion",
+        "name": "Exaustão imediata",
+        "description": "Você ganha 3 nível de exaustão ao ingerir a poção",
+        "adjective": "exaustiva",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "great_immediate_exhaustion",
+        "category": "strong",
+        "type": "immediate_exhaustion",
+        "name": "Exaustão imediata maior",
+        "description": "Você ganha 4 nível de exaustão ao ingerir a poção",
+        "adjective": "exaustiva maior",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "major_immediate_exhaustion",
+        "category": "very_strong",
+        "type": "immediate_exhaustion",
+        "name": "Exaustão imediata máxima",
+        "description": "Você ganha 5 nível de exaustão ao ingerir a poção",
+        "adjective": "exaustiva máxima",
+        "incompatible_with": [
+            "lesser_restoration",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "minor_sleep",
+        "category": "very_weak",
+        "type": "sleep",
+        "name": "Sonolenta mínima",
+        "description": "Você cai no sono por 4 horas após o efeito da poção terminar",
+        "adjective": "sonolenta mínima"
+    },
+    {
+        "id": "small_sleep",
+        "category": "weak",
+        "type": "sleep",
+        "name": "Sonolenta menor",
+        "description": "Você cai no sono por 8 horas após o efeito da poção terminar",
+        "adjective": "sonolenta menor"
+    },
+    {
+        "id": "sleep",
+        "category": "medium",
+        "type": "sleep",
+        "name": "Sonolenta",
+        "description": "Você cai no sono por 16 horas após o efeito da poção terminar",
+        "adjective": "sonolenta"
+    },
+    {
+        "id": "great_sleep",
+        "category": "strong",
+        "type": "sleep",
+        "name": "Sonolenta maior",
+        "description": "Você cai no sono por 32 horas após o efeito da poção terminar",
+        "adjective": "sonolenta maior"
+    },
+    {
+        "id": "major_sleep",
+        "category": "very_strong",
+        "type": "sleep",
+        "name": "Sonolenta máxima",
+        "description": "Você cai no sono por 64 horas após o efeito da poção terminar",
+        "adjective": "sonolenta máxima"
+    },
+    {
+        "id": "minor_max_pv_reduction",
+        "category": "very_weak",
+        "type": "pv_reduction",
+        "name": "Redução de vida mínima",
+        "description": "Você perde 2d4+2 pontos de vida máximos ao ingerir a poção até o próximo descanso longo",
+        "adjective": "vampírica mínima",
+        "incompatible_with": [
+            "aura_of_life_4",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "small_max_pv_reduction",
+        "category": "weak",
+        "type": "pv_reduction",
+        "name": "Redução de vida menor",
+        "description": "Você perde 4d4+4 pontos de vida máximos ao ingerir a poção até o próximo descanso longo",
+        "adjective": "vampírica menor",
+        "incompatible_with": [
+            "aura_of_life_4",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "max_pv_reduction",
+        "category": "medium",
+        "type": "pv_reduction",
+        "name": "Redução de vida",
+        "description": "Você perde 6d4+6 pontos de vida máximos ao ingerir a poção até o próximo descanso longo",
+        "adjective": "vampírica",
+        "incompatible_with": [
+            "aura_of_life_4",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "great_max_pv_reduction",
+        "category": "strong",
+        "type": "pv_reduction",
+        "name": "Redução de vida maior",
+        "description": "Você perde 8d4+8 pontos de vida máximos ao ingerir a poção até o próximo descanso longo",
+        "adjective": "vampírica maior",
+        "incompatible_with": [
+            "aura_of_life_4",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "major_max_pv_reduction",
+        "category": "very_strong",
+        "type": "pv_reduction",
+        "name": "Redução de vida máxima",
+        "description": "Você perde 10d4+10 pontos de vida máximos ao ingerir a poção até o próximo descanso longo",
+        "adjective": "vampírica máxima",
+        "incompatible_with": [
+            "aura_of_life_4",
+            "greater_restoration"
+        ]
+    },
+    {
+        "id": "minor_damage",
+        "category": "very_weak",
+        "type": "damage",
+        "name": "Dano mínimo",
+        "description": "Você perde 2d6+2 pontos de vida ao ingerir a poção",
+        "adjective": "dolorosa mínima",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "small_damage",
+        "category": "weak",
+        "type": "damage",
+        "name": "Dano menor",
+        "description": "Você perde 4d6+4 pontos de vida ao ingerir a poção",
+        "adjective": "dolorosa menor",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "damage",
+        "category": "medium",
+        "type": "damage",
+        "name": "Dano",
+        "description": "Você perde 6d6+6 pontos de vida ao ingerir a poção",
+        "adjective": "dolorosa",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "great_damage",
+        "category": "strong",
+        "type": "damage",
+        "name": "Dano maior",
+        "description": "Você perde 8d6+8 pontos de vida ao ingerir a poção",
+        "adjective": "dolorosa maior",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "major_damage",
+        "category": "very_strong",
+        "type": "damage",
+        "name": "Dano máximo",
+        "description": "Você perde 10d6+10 pontos de vida ao ingerir a poção",
+        "adjective": "dolorosa máxima",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "minor_late_damage",
+        "category": "very_weak",
+        "type": "late_damage",
+        "name": "Dano tardio mínimo",
+        "description": "Você perde 2d6+2 pontos de vida no fim do efeito da poção",
+        "adjective": "da dor mínima",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "small_late_damage",
+        "category": "weak",
+        "type": "late_damage",
+        "name": "Dano tardio menor",
+        "description": "Você perde 4d6+4 pontos de vida no fim do efeito da poção",
+        "adjective": "da dor menor",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "late_damage",
+        "category": "medium",
+        "type": "late_damage",
+        "name": "Dano tardio",
+        "description": "Você perde 6d6+6 pontos de vida no fim do efeito da poção",
+        "adjective": "da dor",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "great_late_damage",
+        "category": "strong",
+        "type": "late_damage",
+        "name": "Dano tardio maior",
+        "description": "Você perde 8d6+8 pontos de vida no fim do efeito da poção",
+        "adjective": "da dor maior",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "major_late_damage",
+        "category": "very_strong",
+        "type": "late_damage",
+        "name": "Dano tardio máximo",
+        "description": "Você perde 10d6+10 pontos de vida no fim do efeito da poção",
+        "adjective": "da dor máxima",
+        "incompatible_with": [
+            "healing",
+            "greater_healing",
+            "superior_healing",
+            "supreme_healing",
+            "heal",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "minor_blindness",
+        "category": "very_weak",
+        "type": "blindness",
+        "name": "Cego mínimo",
+        "description": "Você faz um teste de Constituição CD 8 para evitar a condição cego por 48 horas",
+        "adjective": "da cegueira mínima",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "heal"
+        ]
+    },
+    {
+        "id": "small_blindness",
+        "category": "weak",
+        "type": "blindness",
+        "name": "Cego menor",
+        "description": "Você faz um teste de Constituição CD 12 para evitar a condição cego por 48 horas",
+        "adjective": "da cegueira menor",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "heal"
+        ]
+    },
+    {
+        "id": "blindness",
+        "category": "medium",
+        "type": "blindness",
+        "name": "Cego",
+        "description": "Você faz um teste de Constituição CD 16 para evitar a condição cego por 48 horas",
+        "adjective": "da cegueira",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "heal"
+        ]
+    },
+    {
+        "id": "great_blindness",
+        "category": "strong",
+        "type": "blindness",
+        "name": "Cego maior",
+        "description": "Você faz um teste de Constituição CD 20 para evitar a condição cego por 48 horas",
+        "adjective": "da cegueira maior",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "heal"
+        ]
+    },
+    {
+        "id": "major_blindness",
+        "category": "very_strong",
+        "type": "blindness",
+        "name": "Cego máximo",
+        "description": "Você faz um teste de Constituição CD 24 para evitar a condição cego por 48 horas",
+        "adjective": "da cegueira máxima",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "heal"
+        ]
+    },
+    {
+        "id": "minor_paralysis",
+        "category": "very_weak",
+        "type": "paralyzed",
+        "name": "Paralizado mínimo",
+        "description": "Você faz um teste de Constituição CD 8 para evitar a condição paralizado por 1 hora",
+        "adjective": "paralizadora mínima",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "freedom_of_movement_4",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "small_paralysis",
+        "category": "weak",
+        "type": "paralyzed",
+        "name": "Paralizado menor",
+        "description": "Você faz um teste de Constituição CD 12 para evitar a condição paralizado por 1 hora",
+        "adjective": "paralizadora menor",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "freedom_of_movement_4",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "paralysis",
+        "category": "medium",
+        "type": "paralyzed",
+        "name": "Paralizado",
+        "description": "Você faz um teste de Constituição CD 16 para evitar a condição paralizado por 1 hora",
+        "adjective": "paralizadora",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "freedom_of_movement_4",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "great_paralysis",
+        "category": "strong",
+        "type": "paralyzed",
+        "name": "Paralizado maior",
+        "description": "Você faz um teste de Constituição CD 20 para evitar a condição paralizado por 1 hora",
+        "adjective": "paralizadora maior",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "freedom_of_movement_4",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "major_paralysis",
+        "category": "very_strong",
+        "type": "paralyzed",
+        "name": "Paralizado máximo",
+        "description": "Você faz um teste de Constituição CD 24 para evitar a condição paralizado por 1 hora",
+        "adjective": "paralizadora máxima",
+        "incompatible_with": [
+            "lesser_restoration",
+            "aura_of_purity_4",
+            "freedom_of_movement_4",
+            "power_word_heal"
+        ]
+    },
+    {
+        "id": "minor_metamorphosis",
+        "category": "very_weak",
+        "type": "metamorphosis",
+        "name": "Metamorfose mínimo",
+        "description": "Você faz um teste de Constituição CD 8 para evitar transformar-se em um besta com CR1/2 por 1 hora",
+        "adjective": "metamorfósica mínima",
+        "incompatible_with": [
+            "alter_self_change_appearance",
+            "polymorph_4",
+            "draconic_transformation",
+            "shapechange",
+            "true_polymorph"
+        ]
+    },
+    {
+        "id": "small_metamorphosis",
+        "category": "weak",
+        "type": "metamorphosis",
+        "name": "Metamorfose menor",
+        "description": "Você faz um teste de Constituição CD 12 para evitar transformar-se em um besta com CR1/2 por 1 hora",
+        "adjective": "metamorfósica menor",
+        "incompatible_with": [
+            "alter_self_change_appearance",
+            "polymorph_4",
+            "draconic_transformation",
+            "shapechange",
+            "true_polymorph"
+        ]
+    },
+    {
+        "id": "metamorphosis",
+        "category": "medium",
+        "type": "metamorphosis",
+        "name": "Metamorfose",
+        "description": "Você faz um teste de Constituição CD 16 para evitar transformar-se em um besta com CR1/2 por 1 hora",
+        "adjective": "metamorfósica",
+        "incompatible_with": [
+            "alter_self_change_appearance",
+            "polymorph_4",
+            "draconic_transformation",
+            "shapechange",
+            "true_polymorph"
+        ]
+    },
+    {
+        "id": "great_metamorphosis",
+        "category": "strong",
+        "type": "metamorphosis",
+        "name": "Metamorfose maior",
+        "description": "Você faz um teste de Constituição CD 20 para evitar transformar-se em um besta com CR1/2 por 1 hora",
+        "adjective": "metamorfósica maior",
+        "incompatible_with": [
+            "alter_self_change_appearance",
+            "polymorph_4",
+            "draconic_transformation",
+            "shapechange",
+            "true_polymorph"
+        ]
+    },
+    {
+        "id": "major_metamorphosis",
+        "category": "very_strong",
+        "type": "metamorphosis",
+        "name": "Metamorfose máximo",
+        "description": "Você faz um teste de Constituição CD 24 para evitar transformar-se em um besta com CR1/2 por 1 hora",
+        "adjective": "metamorfósica máxima",
+        "incompatible_with": [
+            "alter_self_change_appearance",
+            "polymorph_4",
+            "draconic_transformation",
+            "shapechange",
+            "true_polymorph"
+        ]
+    },
+    {
+        "id": "minor_memory_loss",
+        "category": "very_weak",
+        "type": "memory_loss",
+        "name": "Perda de memória mínima",
+        "description": "Você não conseguirá lembrar das coisas que acontecerão na próxima 1 hora",
+        "adjective": "do esquecimento mínima",
+        "incompatible_with": [
+            "intellect_fortress"
+        ]
+    },
+    {
+        "id": "small_memory_loss",
+        "category": "weak",
+        "type": "memory_loss",
+        "name": "Perda de memória menor",
+        "description": "Você não conseguirá lembrar das coisas que acontecerão nas próximas 4 hora",
+        "adjective": "do esquecimento menor",
+        "incompatible_with": [
+            "intellect_fortress"
+        ]
+    },
+    {
+        "id": "memory_loss",
+        "category": "medium",
+        "type": "memory_loss",
+        "name": "Perda de memória",
+        "description": "Você não conseguirá lembrar das coisas que acontecerão nas próximas 12 hora",
+        "adjective": "do esquecimento",
+        "incompatible_with": [
+            "intellect_fortress"
+        ]
+    },
+    {
+        "id": "great_memory_loss",
+        "category": "strong",
+        "type": "memory_loss",
+        "name": "Perda de memória maior",
+        "description": "Você não conseguirá lembrar das coisas que acontecerão nas próximas 24 hora",
+        "adjective": "do esquecimento maior",
+        "incompatible_with": [
+            "intellect_fortress"
+        ]
+    },
+    {
+        "id": "major_memory_loss",
+        "category": "very_strong",
+        "type": "memory_loss",
+        "name": "Perda de memória máxima",
+        "description": "Você não conseguirá lembrar das coisas que acontecerão nas próximas 48 hora",
+        "adjective": "do esquecimento máxima",
+        "incompatible_with": [
+            "intellect_fortress"
         ]
     }
 ]

@@ -503,7 +503,7 @@
         "id": "tongues",
         "level": 3,
         "name": "Idiomas",
-        "description": "Por 1 hora, você pode compreender e falar qualquer idioma ouvir. Além disso, quando você falar, você é compreendido por qualquer criatura que saiba pelo menos um idioma e possa te ouvir.",
+        "description": "Por 1 hora, você pode compreender e falar qualquer idioma que ouvir. Além disso, quando você falar, você é compreendido por qualquer criatura que saiba pelo menos um idioma e possa te ouvir.",
         "duration": "1 Hora",
         "reference": "http://dnd5e.wikidot.com/spell:tongues"
     },
@@ -739,7 +739,7 @@
         "id": "teleport_7",
         "level": 7,
         "name": "Teleporte",
-        "description": "Você teleporta-se instantanemente com todas as suas coisas para alguma localidade escolhida por você. Quanto mais você conhecer o lugar maior a probabilidade de ir parar no lugar correto. Caso o lugar seja muito familiar há 75% de chance de acerto, conhecimento casula 50%, visto apenas uma vez ou descrito para você 25% de chance. Fica a critério do mestre indicar o tamanho do erro e onde você irá parar ao tomar a poção caso não acerte o alvo.",
+        "description": "Você teleporta-se instantanemente com todas as suas coisas para alguma localidade escolhida por você. Quanto mais você conhecer o lugar maior a probabilidade de ir parar no lugar correto. Caso o lugar seja muito familiar há 75% de chance de acerto, conhecimento casual 50%, visto apenas uma vez ou descrito para você 25% de chance. Fica a critério do mestre indicar o tamanho do erro e onde você irá parar ao tomar a poção caso não acerte o alvo.",
         "duration": "Instantâneo",
         "reference": "http://dnd5e.wikidot.com/spell:teleport"
     },
