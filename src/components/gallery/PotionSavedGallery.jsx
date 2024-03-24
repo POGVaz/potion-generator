@@ -21,7 +21,7 @@ function PotionGallery({ potions, onSelect, onDelete, onDeleteAll }) {
   }) : null;
   
   return (
-    <Accordion defaultExpanded>
+    <Accordion defaultExpanded variant="dense" >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
         >

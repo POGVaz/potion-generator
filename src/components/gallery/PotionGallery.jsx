@@ -7,7 +7,7 @@ function PotionGallery({ potions, onSelect, onSave }) {
     
   const potionItems = potions? potions.map((potion) => {
     return (
-      <Grid item sm={2}>
+      <Grid item sm={2} >
         <PotionGalleryItem
           key={potion.name}
           potion={potion}
@@ -21,7 +21,7 @@ function PotionGallery({ potions, onSelect, onSave }) {
   }) : null;
   
   return (
-    <Accordion defaultExpanded>
+    <Accordion defaultExpanded variant="dense" >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
         >
