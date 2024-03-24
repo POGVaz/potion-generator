@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/potion-generator/static/css/main.0f6f3966.css",
-    "main.js": "/potion-generator/static/js/main.3f1e831e.js",
+    "main.js": "/potion-generator/static/js/main.dc2306f4.js",
     "static/media/potions (4).png": "/potion-generator/static/media/potions (4).ffc0d9ac3cb47cd38cb6.png",
     "static/media/potions (7).png": "/potion-generator/static/media/potions (7).526a7c4a053e5a8412dd.png",
     "static/media/potions (5).png": "/potion-generator/static/media/potions (5).2aa67e907015aa1a7fc1.png",
@@ -15,10 +15,10 @@
     "static/media/mortar-pestle.mp4": "/potion-generator/static/media/mortar-pestle.7e652cf7fa6726f7620b.mp4",
     "index.html": "/potion-generator/index.html",
     "main.0f6f3966.css.map": "/potion-generator/static/css/main.0f6f3966.css.map",
-    "main.3f1e831e.js.map": "/potion-generator/static/js/main.3f1e831e.js.map"
+    "main.dc2306f4.js.map": "/potion-generator/static/js/main.dc2306f4.js.map"
   },
   "entrypoints": [
     "static/css/main.0f6f3966.css",
-    "static/js/main.3f1e831e.js"
+    "static/js/main.dc2306f4.js"
   ]
 }
