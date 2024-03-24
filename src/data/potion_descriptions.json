@@ -15,7 +15,7 @@
         {
             "id": "solution",
             "text": "Solução",
-            "weight": 50
+            "weight": 75
         },
         {
             "id": "philter",
@@ -35,7 +35,7 @@
         {
             "id": "dose",
             "text": "Dose",
-            "weight": 20
+            "weight": 30
         },
         {
             "id": "ointment",
@@ -61,6 +61,41 @@
             "id": "collyrium",
             "text": "Colírio",
             "weight": 20
+        },
+        {
+            "id": "infusion",
+            "text": "Infusão",
+            "weight": 75
+        },
+        {
+            "id": "liquor",
+            "text": "Licor",
+            "weight": 50
+        },
+        {
+            "id": "composite",
+            "text": "Composto",
+            "weight": 50
+        },
+        {
+            "id": "amalgam",
+            "text": "Amálgama",
+            "weight": 25
+        },
+        {
+            "id": "essence",
+            "text": "Essência",
+            "weight": 50
+        },
+        {
+            "id": "oil",
+            "text": "Óleo",
+            "weight": 20
+        },
+        {
+            "id": "substance",
+            "text": "Substância",
+            "weight": 20
         }
     ],
 
@@ -81,9 +116,9 @@
             "weight": 100
         },
         {
-            "id": "black and white",
+            "id": "black_and_white",
             "text": "que alterna entre branco e preto",
-            "weight": 100
+            "weight": 60
         },
         {
             "id": "blue",
@@ -102,7 +137,7 @@
         },
         {
             "id": "pink",
-            "text": "core de rosa",
+            "text": "cor de rosa",
             "weight": 100
         },
         {
@@ -164,6 +199,26 @@
             "id": "dark_red",
             "text": "vermelho escuro",
             "weight": 100
+        },
+        {
+            "id": "red_and_blue",
+            "text": "que alterna entre vermelho e azul",
+            "weight": 60
+        },
+        {
+            "id": "orange_and_purple",
+            "text": "que alterna entre laranje e roxo",
+            "weight": 60
+        },
+        {
+            "id": "red_and_green",
+            "text": "que alterna entre vermelho e verde",
+            "weight": 60
+        },
+        {
+            "id": "yellow_and_blue",
+            "text": "que alterna entre amarelo e azul",
+            "weight": 60
         }
     ],
 
@@ -171,7 +226,7 @@
         {
             "id": "vial",
             "text": "um frasco",
-            "weight": 50
+            "weight": 150
         },
         {
             "id": "wine_bottle",
@@ -277,17 +332,32 @@
             "id": "a_small_metal_vial",
             "text": "um pequeno frasco de metal",
             "weight": 100
+        },
+        {
+            "id": "crystal_orb",
+            "text": "um orbe de cristal que precisa ser quebrado",
+            "weight": 50
+        },
+        {
+            "id": "test_tube",
+            "text": "um tubo de ensaio",
+            "weight": 50
+        },
+        {
+            "id": "hourglass",
+            "text": "uma ampulheta com uma tampa",
+            "weight": 50
         }
     ],
 
     "liquid_texture": [
         {
-            "id": "thin and watery",
+            "id": "thin_and_watery",
             "text": "fino e aguado",
             "weight": 100
         },
         {
-            "id": "airy and bubbly",
+            "id": "airy_and_bubbly",
             "text": "arejado e borbulhante",
             "weight": 100
         },
@@ -334,6 +404,16 @@
         {
             "id": "gaseous",
             "text": "é quase gasoso",
+            "weight": 50
+        },
+        {
+            "id": "molasses",
+            "text": "flui como melaço",
+            "weight": 50
+        },
+        {
+            "id": "sand",
+            "text": "flui como areia",
             "weight": 50
         }
     ],
@@ -551,7 +631,7 @@
         },
         {
             "id": "the_sea",
-            "text": "como o a brisa do mar",
+            "text": "como a brisa do mar",
             "weight": 60
         },
         {
@@ -608,6 +688,31 @@
             "id": "feywild",
             "text": "como se você estivesse no plano das fadas",
             "weight": 40
+        },
+        {
+            "id": "rockface",
+            "text": "como os rochedos de Grotambar",
+            "weight": 60
+        },
+        {
+            "id": "depths",
+            "text": "como as profundezas da cadeia de Olim",
+            "weight": 60
+        },
+        {
+            "id": "forest",
+            "text": "como as florestas de Turimpa",
+            "weight": 60
+        },
+        {
+            "id": "market",
+            "text": "como os mercados de Beluir",
+            "weight": 60
+        },
+        {
+            "id": "hunt",
+            "text": "como uma caçada recém chegada em Oban-kiir",
+            "weight": 60
         }
     ],
 
@@ -663,7 +768,7 @@
         },
         {
             "id": "leaves_and_flowers_in_it",
-            "text": "Há folhas e flores nele flutuando no líquido.",
+            "text": "Há folhas e flores flutuando no líquido.",
             "weight": 100
         },
         {
@@ -715,6 +820,36 @@
             "id": "clouds_float_over_it",
             "text": "Nuvens flutuam constamente sobre o líquido.",
             "weight": 100
+        },
+        {
+            "id": "rests_at_top",
+            "text": "O líquido repousa no topo ao invés do fundo, desafiando a gravidade.",
+            "weight": 50
+        },
+        {
+            "id": "rests_at_sides",
+            "text": "O líquido repousa nos lados ao invés do fundo, desafiando a gravidade.",
+            "weight": 50
+        },
+        {
+            "id": "mixing_liquids",
+            "text": "O líquido tem duas fases diferentes que se misturam, mas naturalmente voltam a se separar.",
+            "weight": 100
+        },
+        {
+            "id": "constant_low_sound",
+            "text": "O líquido emite um leve som grave constantemente.",
+            "weight": 100
+        },
+        {
+            "id": "heat_bubble",
+            "text": "Uma pequena bolha em formato de coração fica constantemente suspensa no líquido.",
+            "weight": 100
+        },
+        {
+            "id": "heat_bubbles",
+            "text": "Bolhas em formato de coração flutuam constantemente no líquido.",
+            "weight": 100
         }
     ],
 
@@ -737,6 +872,16 @@
         {
             "id": "constant_heat",
             "text": "o invólucro constantemente emite calor",
+            "weight": 100
+        },
+        {
+            "id": "constant_cold",
+            "text": "o invólucro constantemente emite frio",
+            "weight": 100
+        },
+        {
+            "id": "static_shock",
+            "text": "o invólucro acumula energia estática e da pequenos choques quando tocado",
             "weight": 100
         },
         {
@@ -960,6 +1105,11 @@
             "weight": 100
         },
         {
+            "id": "a_note_saying_do_drink",
+            "text": "há uma nota dizendo ME BEBA",
+            "weight": 100
+        },
+        {
             "id": "brightly_glowing_letters",
             "text": "o invólucro está decorado com letras brilhantes",
             "weight": 100
@@ -977,6 +1127,11 @@
         {
             "id": "unholy_symbols",
             "text": "o invólucro está ornamentado com símbolos profanos",
+            "weight": 100
+        },
+        {
+            "id": "arcane_symbols",
+            "text": "o invólucro está ornamentado com símbolos arcanos",
             "weight": 100
         },
         {
@@ -1047,6 +1202,11 @@
         {
             "id": "shamanistic_symbols_and_shavings",
             "text": "há símbolos xamânicos e marcações",
+            "weight": 100
+        },
+        {
+            "id": "music_sheet",
+            "text": "há uma partitura de uma canção popular",
             "weight": 100
         }
     ]

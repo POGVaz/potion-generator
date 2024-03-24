@@ -285,7 +285,7 @@
     {
         "id": "locate_animals_or_plants",
         "level": 2,
-        "name": "Localize Animais ou Plantas",
+        "name": "Localizar Animais ou Plantas",
         "description": "Descreva ou nomeie um tipo especifico de besta ou planta. Você descobre a direção e distância da criatura ou planta mais próxima desse tipo dentro de 7,5 quilômetros [5 milhas], se houver alguma presente.",
         "duration": "-",
         "reference": "http://dnd5e.wikidot.com/spell:locate-animals-or-plants"
