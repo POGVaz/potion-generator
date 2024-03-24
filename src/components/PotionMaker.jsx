@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import { Grid } from '@mui/material';
 
 import PotionViewer from "./PotionViewer";
 import PotionMakerForm from "./PotionMakerForm";
@@ -81,6 +82,10 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
   return (
     <div className="PotionMaker">
 
+      <PotionMakerForm
+        onSubmit={handleGenerate}
+      />
+
       <PotionGallery
         className="generated-potions"
         potions={generatedPotions}
@@ -96,25 +101,25 @@ const PotionMaker = ({ effects = [], side_effects = [] }) => {
         onDeleteAll={handleDeleteAllSavedItems}
       />
 
-      <div style={{ "display": "flex" }}>
-        <div>
+      <Grid container spacing={2}>
+
+        <Grid item sm={3}>
           <PotionViewer
             potion={potionToDisplay}
             error={potionError}
           />
+        </Grid>
 
-          <PotionMakerForm
-            onSubmit = {handleGenerate}
+        <Grid item sm={9}>
+          <EffectTables
+            effectsList={effects}
+            sideEffectsList={side_effects}
+            onEffectsChange={handleEffectsSelectionChange}
+            onSideEffectsChange={handleSideEffectsSelectionChange}
           />
-        </div>
+        </Grid>
 
-        <EffectTables
-          effectsList={effects}
-          sideEffectsList={side_effects}
-          onEffectsChange={handleEffectsSelectionChange}
-          onSideEffectsChange={handleSideEffectsSelectionChange}
-        />
-      </div>
+      </Grid>
     </div>
   );
 };

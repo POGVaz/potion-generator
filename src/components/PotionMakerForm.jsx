@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Button, Slider, Grid, Input, Typography } from "@mui/material"
 
 const initialValues = {
   minPrice: 0,
@@ -10,117 +11,169 @@ const initialValues = {
 }
 
 const PotionMakerForm = ({ onSubmit }) => {
-  const [state, setState] = useState(initialValues);
+  const [price, setPrice] = useState([initialValues.minPrice, initialValues.maxPrice]);
+  const [effects, setEffects] = useState([initialValues.minEffects, initialValues.maxEffects]);
+  const [sideEffects, setSideEffects] = useState([initialValues.minSideEffects, initialValues.maxSideEffects]);
 
-  //Use only for Number changes on the form
-  const handleChange = e => {
-    let { value, name } = e.target;
-    setState({
-      ...state,
-      [name]: Number(value),
+  const handleSubmit = () => {
+    onSubmit({
+      minPrice: price[0],
+      maxPrice: price[1],
+      minEffects: effects[0],
+      maxEffects: effects[1],
+      minSideEffects: sideEffects[0],
+      maxSideEffects: sideEffects[1],
     });
   };
 
-  const handleSubmit = () => {
-    onSubmit(state);
-  };
-
   return (
-    <div>
-      <label htmlFor="price">Price</label>
-      <div id="priceInput" style={{ "textAlign": "center" }}>
-        <label htmlFor="minPrice">Min</label>
-        <input
-          id="minPrice"
-          name="minPrice"
-          type="number"
-          min="0"
-          max="999999"
-          placeholder="0"
-          value={state.minPrice}
-          onChange={handleChange}
-        />
-        <span> - </span>
-        <label htmlFor="maxPrice">Max</label>
-        <input
-          id="maxPrice"
-          name="maxPrice"
-          type="number"
-          min="0"
-          max="999999"
-          placeholder="100"
-          value={state.maxPrice}
-          onChange={handleChange}
-        />
-        <span> 💰</span>
-      </div>
+    // <Box sx={{ width: 500 }}>
 
-      <label htmlFor="effects">Potion Effects</label>
-      <div id="effectsInput" style={{ "textAlign": "center" }}>
-        <label htmlFor="minEffects">Min</label>
-        <input
-          id="minEffects"
-          name="minEffects"
-          type="number"
-          min="0"
-          max="10"
-          placeholder="1"
-          value={state.minEffects}
-          onChange={handleChange}
-        />
-        <span> - </span>
-        <label htmlFor="maxEffects">Max</label>
-        <input
-          id="maxEffects"
-          name="maxEffects"
-          type="number"
-          min="0"
-          max="10"
-          placeholder="1"
-          value={state.maxEffects}
-          onChange={handleChange}
-        />
-      </div>
+      <Grid container spacing={6}>
+        <Grid container item sm={4} spacing={2} alignItems="center">
+          <Grid item >
+            <Typography gutterBottom>
+              Price:
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Input
+              value={price[0]}
+              size="small"
+              onChange={(event) => { setPrice([Number(event.target.value), price[1]]) }}
+              inputProps={{
+                step: 10,
+                min: 0,
+                max: 9999,
+                type: 'number',
+                'aria-labelledby': 'input-slider',
+              }}
+            />
+          </Grid>
+          <Grid item xs>
+            <Slider
+              getAriaLabel={() => 'Price range'}
+              value={price}
+              onChange={(event, newValue) => { setPrice(newValue) }}
+              valueLabelDisplay="auto"
+              min={1}
+              max={10000}
+            />
+          </Grid>
+          <Grid item>
+            <Input
+              value={price[1]}
+              size="small"
+              onChange={(event) => { setPrice([price[0], Number(event.target.value)]) }}
+              inputProps={{
+                step: 10,
+                min: 0,
+                max: 10000,
+                type: 'number',
+                'aria-labelledby': 'input-slider',
+              }}
+            />
+          </Grid>
+        </Grid>
 
-      <label htmlFor="sideEffects">Potion Side Effects</label>
-      <div id="sideEffectsInput" style={{ "textAlign": "center" }}>
-        <label htmlFor="minSideEffects">Min</label>
-        <input
-          id="minSideEffects"
-          name="minSideEffects"
-          type="number"
-          min="0"
-          max="10"
-          placeholder="1"
-          value={state.minSideEffects}
-          onChange={handleChange}
-        />
-        <span> - </span>
-        <label htmlFor="maxSideEffects">Max</label>
-        <input
-          id="maxSideEffects"
-          name="maxSideEffects"
-          type="number"
-          min="0"
-          max="10"
-          placeholder="1"
-          value={state.maxSideEffects}
-          onChange={handleChange}
-        />
-      </div>
+        <Grid container item sm={3} spacing={2} alignItems="center">
+          <Grid item >
+            <Typography gutterBottom>
+              Effects
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Input
+              value={effects[0]}
+              size="small"
+              onChange={(event) => { setEffects([Number(event.target.value), effects[1]]) }}
+              inputProps={{
+                step: 1,
+                min: 0,
+                max: 5,
+                type: 'number',
+                'aria-labelledby': 'input-slider',
+              }}
+            />
+          </Grid>
+          <Grid item xs>
+            <Slider
+              getAriaLabel={() => 'effects range'}
+              value={effects}
+              onChange={(event, newValue) => { setEffects(newValue) }}
+              valueLabelDisplay="auto"
+              min={0}
+              max={5}
+            />
+          </Grid>
+          <Grid item>
+            <Input
+              value={effects[1]}
+              size="small"
+              onChange={(event) => { setEffects([effects[0], Number(event.target.value)]) }}
+              inputProps={{
+                step: 1,
+                min: 1,
+                max: 5,
+                type: 'number',
+                'aria-labelledby': 'input-slider',
+              }}
+            />
+          </Grid>
+        </Grid>
 
+        <Grid container item sm={3} spacing={2} alignItems="center">
+          <Grid item >
+            <Typography gutterBottom>
+              Side Effects
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Input
+              value={sideEffects[0]}
+              size="small"
+              onChange={(event) => { setSideEffects([Number(event.target.value), sideEffects[1]]) }}
+              inputProps={{
+                step: 1,
+                min: 0,
+                max: 5,
+                type: 'number',
+                'aria-labelledby': 'input-slider',
+              }}
+            />
+          </Grid>
+          <Grid item xs>
+            <Slider
+              getAriaLabel={() => 'sideEffects range'}
+              value={sideEffects}
+              onChange={(event, newValue) => { setSideEffects(newValue) }}
+              valueLabelDisplay="auto"
+              min={0}
+              max={5}
+            />
+          </Grid>
+          <Grid item>
+            <Input
+              value={sideEffects[1]}
+              size="small"
+              onChange={(event) => { setSideEffects([sideEffects[0], Number(event.target.value)]) }}
+              inputProps={{
+                step: 1,
+                min: 1,
+                max: 5,
+                type: 'number',
+                'aria-labelledby': 'input-slider',
+              }}
+            />
+          </Grid>
+        </Grid>
 
-      <div className="GenerateButton" style={{ "textAlign": "center" }}>
-        <button
-          id="generate-potion-btn"
-          className="generate-btn"
-          type="button"
-          onClick={handleSubmit}
-        >
-          Generate Potion
-        </button>
-      </div>
-    </div>
+        <Grid item sm={2}>
+          <Button variant="contained" onClick={handleSubmit}>Generate Potions</Button>
+        </Grid>
+
+      </Grid>
+    
   );
 };
 
